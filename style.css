@@ -1534,10 +1534,3 @@ body {
 .hero-section::before, .hero-section::after {
   pointer-events: none;
 }
-#navLinks {
-  position: absolute;
-  z-index: 999999;
-}
-#navLinks.show {
-  pointer-events: auto;
-}

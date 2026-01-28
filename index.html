@@ -19,27 +19,22 @@
     <!-- 3D Background Container -->
     <div id="canvas-container"></div>
 
-   <!-- Navigation -->
-<nav class="navbar">
-  <div class="logo brand-logo">
-    <img src="assets/logo.png" alt="T-Mat Global Logo" class="logo-image">
-    <span>T-Mat Global</span>
-  </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="logo brand-logo">
+  <img src="assets/logo.png" alt="T-Mat Global Logo" class="logo-image">
+  <span>T-Mat Global</span>
+</div>
 
-  <!-- Mobile Toggle -->
-  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-    ☰
-  </button>
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#mission">Mission</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#careers">Careers</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
+        <ul class="nav-links">
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- 1. Hero Section -->
     <section id="hero">
@@ -644,28 +639,6 @@
     // close menu on click
     links.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => links.classList.remove('show'));
-    });
-  }
-</script>
-<script>
-  const toggleBtn = document.querySelector('.nav-toggle');
-  const navLinks = document.getElementById('navLinks');
-
-  if (toggleBtn && navLinks) {
-    toggleBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-      const open = navLinks.classList.contains('show');
-      toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggleBtn.textContent = open ? '✕' : '☰';
-    });
-
-    // Close menu when clicking a link
-    navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        navLinks.classList.remove('show');
-        toggleBtn.setAttribute('aria-expanded', 'false');
-        toggleBtn.textContent = '☰';
-      });
     });
   }
 </script>
