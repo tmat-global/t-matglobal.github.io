@@ -1422,3 +1422,85 @@ body, html {
     text-decoration: none;
   }
 }
+/* ===== NAVBAR MOBILE FIX (SAFE) ===== */
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 9999; /* always above hero/earth */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 16px;
+  background: rgba(0,0,0,0.70);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Logo sizing */
+.brand-logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-image{
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+/* Desktop nav */
+.nav-links{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Toggle hidden on desktop */
+.nav-toggle{
+  display: none;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* Mobile layout */
+@media (max-width: 900px){
+  .nav-toggle{ display: block; }
+
+  .nav-links{
+    display: none; /* hidden until opened */
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    top: 60px;
+    background: rgba(0,0,0,0.92);
+    border: 1px solid rgba(234,148,1,0.35); /* your gold theme */
+    border-radius: 14px;
+    padding: 10px;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  }
+
+  .nav-links.show{ display: flex; }
+
+  .nav-links a{
+    display: block;
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .nav-links a:hover{
+    background: rgba(234,148,1,0.15);
+  }
+}
