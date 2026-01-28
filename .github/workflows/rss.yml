@@ -1,20 +1,17 @@
-name: SEO - Sitemap & RSS
+name: Generate RSS Feed
 
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  generate:
+  rss:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate sitemap.xml and rss.xml
+      - name: Generate RSS
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://www.t-matglobal.com
