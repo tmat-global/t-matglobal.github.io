@@ -869,6 +869,40 @@ Business Analytics,
   });
 </script>
 
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value || 'Website Enquiry';
+    const message = document.getElementById('message').value;
+
+    const whatsappMessage =
+      `New Website Enquiry 🚀\n\n` +
+      `Name: ${name}\n` +
+      `Email: ${email}\n` +
+      `Phone: ${phone}\n` +
+      `Subject: ${subject}\n\n` +
+      `Message:\n${message}`;
+
+    const whatsappURL =
+      `https://wa.me/919356307015?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappURL, '_blank');
+  });
+</script>
+
+<a href="https://wa.me/919356307015"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+       alt="WhatsApp"
+       width="28">
+</a>
+
 
 </body>
 </html>
