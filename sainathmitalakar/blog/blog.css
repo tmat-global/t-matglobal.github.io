@@ -1,0 +1,117 @@
+/* ====== GLOBAL RESET ====== */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, sans-serif;
+  background: radial-gradient(circle at top, #14110c, #0a0906);
+  color: #e9e4d4;
+  line-height: 1.9;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== ARTICLE CONTAINER ====== */
+article {
+  max-width: 860px;
+  margin: 80px auto;
+  padding: 56px 52px;
+  background: linear-gradient(180deg, #16130d, #0f0d08);
+  border-radius: 18px;
+  border: 1px solid rgba(212,175,55,0.15);
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.6),
+    inset 0 0 0 1px rgba(255,215,100,0.05);
+}
+
+/* ====== MAIN TITLE ====== */
+h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, #f5d27a, #d4af37, #f5d27a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ====== SUB HEADINGS ====== */
+h2 {
+  margin-top: 52px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #e6c87a;
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: 8px;
+  width: 4px;
+  height: 70%;
+  background: linear-gradient(180deg, #d4af37, transparent);
+  border-radius: 4px;
+}
+
+/* ====== PARAGRAPHS ====== */
+p {
+  font-size: 1.08rem;
+  color: #e3dcc8;
+  margin-top: 20px;
+}
+
+/* ====== LINKS ====== */
+a {
+  color: #f0d87a;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(212,175,55,0.4);
+  transition: all 0.25s ease;
+}
+
+a:hover {
+  color: #ffd700;
+  border-bottom-color: rgba(255,215,0,0.9);
+}
+
+/* ====== HORIZONTAL RULE ====== */
+hr {
+  border: none;
+  height: 1px;
+  margin: 56px 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212,175,55,0.6),
+    transparent
+  );
+}
+
+/* ====== EMPHASIS ====== */
+strong {
+  color: #f6e3a1;
+  font-weight: 600;
+}
+
+/* ====== AUTHOR FOOTER ====== */
+article p:last-of-type {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(212,175,55,0.2);
+  font-size: 0.95rem;
+  color: #cbbf9a;
+}
+
+/* ====== MOBILE OPTIMIZATION ====== */
+@media (max-width: 768px) {
+  article {
+    margin: 40px 16px;
+    padding: 36px 26px;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+}
