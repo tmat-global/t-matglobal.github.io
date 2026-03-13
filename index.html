@@ -89,20 +89,23 @@
     <!-- 3D Background Container -->
     <div id="canvas-container"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="logo brand-logo">
-        <img src="assets/t-mat-global-logo.png" alt="T-Mat Global Logo" class="logo-image">
-        <span>T-Mat Global</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#careers">Careers</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+ <nav class="navbar">
+  <div class="logo brand-logo">
+    <img src="assets/t-mat-global-logo.png" alt="T-Mat Global Logo" class="logo-image">
+    <span>T-Mat Global</span>
+  </div>
+
+  <!-- ADD THIS ONE LINE 👇 -->
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#careers">Careers</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
     <!-- 1. Hero Section -->
     <section id="hero">
@@ -674,6 +677,21 @@
 
     })();
     </script>
-
+ <!-- ✅ Mobile Nav Toggle — ADD THIS -->
+    <script>
+      const btn = document.querySelector('.nav-toggle');
+      const links = document.getElementById('navLinks');
+      if (btn && links) {
+        btn.addEventListener('click', () => {
+          links.classList.toggle('show');
+          const open = links.classList.contains('show');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          btn.textContent = open ? '✕' : '☰';
+        });
+        links.querySelectorAll('a').forEach(a => {
+          a.addEventListener('click', () => links.classList.remove('show'));
+        });
+      }
+    </script>
 </body>
 </html>
