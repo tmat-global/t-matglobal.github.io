@@ -1,20 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>T-Mat Global Updates</title>
+    <title>T-Mat Global — News &amp; Updates</title>
     <link>https://www.t-matglobal.com/</link>
-    <description>Official news, announcements, and updates from T-Mat Global.</description>
+    <description>Official news, announcements, and technology insights from T-Mat Global — DPIIT Recognized IT Startup from India.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jan 2026 00:00:00 GMT</lastBuildDate>
-    <generator>T-Mat Global RSS</generator>
+    <lastBuildDate>Thu, 13 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <managingEditor>hr@t-matglobal.com (T-Mat Global)</managingEditor>
+    <webMaster>hr@t-matglobal.com (T-Mat Global)</webMaster>
+    <generator>T-Mat Global RSS Feed</generator>
+    <image>
+      <url>https://www.t-matglobal.com/assets/t-mat-global-logo.png</url>
+      <title>T-Mat Global</title>
+      <link>https://www.t-matglobal.com/</link>
+    </image>
+    <atom:link href="https://www.t-matglobal.com/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <!-- ── Add new items at the TOP as you publish updates ── -->
 
     <item>
-      <title>Website Launched</title>
+      <title>T-Mat Global Now Serving US, UAE &amp; UK Markets</title>
       <link>https://www.t-matglobal.com/</link>
-      <guid isPermaLink="true">https://www.t-matglobal.com/</guid>
+      <guid isPermaLink="true">https://www.t-matglobal.com/#global-launch</guid>
+      <pubDate>Thu, 13 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        T-Mat Global is now actively serving clients across the USA, UAE, and UK with offshore
+        software development, cloud engineering, DevOps, and AI infrastructure services.
+        Operating in US time zones from India for seamless real-time collaboration.
+      ]]></description>
+    </item>
+
+    <item>
+      <title>T-Mat Global Officially Recognized by DPIIT — Startup India Initiative</title>
+      <link>https://www.t-matglobal.com/</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/#dpiit-recognition</guid>
+      <pubDate>Wed, 30 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        T-Mat Global Technologies Private Limited has been officially recognized by the
+        Department for Promotion of Industry and Internal Trade (DPIIT) under the
+        Startup India Initiative, Government of India.
+      ]]></description>
+    </item>
+
+    <item>
+      <title>T-Mat Global Website Launched</title>
+      <link>https://www.t-matglobal.com/</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/#website-launch</guid>
       <pubDate>Thu, 30 Jan 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[
-        T-Mat Global official website is now live, delivering global IT and consulting services.
+        T-Mat Global official website is now live. We deliver world-class IT services including
+        software development, cloud engineering, DevOps, big data, and AI infrastructure
+        for global businesses.
       ]]></description>
     </item>
 
