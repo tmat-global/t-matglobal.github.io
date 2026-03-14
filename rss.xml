@@ -5,10 +5,10 @@
     <link>https://www.t-matglobal.com/</link>
     <description>Official news, announcements, and technology insights from T-Mat Global — DPIIT Recognized IT Startup from India.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 14 Mar 2026 00:00:00 GMT</lastBuildDate>
     <managingEditor>hr@t-matglobal.com (T-Mat Global)</managingEditor>
     <webMaster>hr@t-matglobal.com (T-Mat Global)</webMaster>
-    <generator>T-Mat Global RSS Feed</generator>
+    <generator>T-Mat Global RSS Auto-Feed via GitHub Actions</generator>
     <image>
       <url>https://www.t-matglobal.com/assets/t-mat-global-logo.png</url>
       <title>T-Mat Global</title>
@@ -16,7 +16,24 @@
     </image>
     <atom:link href="https://www.t-matglobal.com/rss.xml" rel="self" type="application/rss+xml"/>
 
-    <!-- ── Add new items at the TOP as you publish updates ── -->
+    <!-- ═══════════════════════════════════════════════════════
+      ✅ DO NOT manually edit dates in this file.
+      ✅ GitHub Actions auto-updates lastBuildDate daily at 6:00 AM IST.
+      ✅ To add a new news item — add it here at the TOP and push.
+         The workflow will keep the date fresh automatically.
+    ═══════════════════════════════════════════════════════════ -->
+
+    <item>
+      <title>T-Mat Global — Website Contact Form Now Live</title>
+      <link>https://www.t-matglobal.com/#contact</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/#contact-form-live</guid>
+      <pubDate>Fri, 14 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        T-Mat Global's website contact form is now fully operational.
+        Reach out to us at t-matglobal.com to start a project, request a proposal,
+        or discuss your technology needs. We respond within 24 hours.
+      ]]></description>
+    </item>
 
     <item>
       <title>T-Mat Global Now Serving US, UAE &amp; UK Markets</title>
