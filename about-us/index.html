@@ -28,9 +28,10 @@
     body{font-family:var(--fb);background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6;}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;}}
 
-    /* Reveal */
-    .reveal{opacity:0;transform:translateY(20px);transition:opacity 600ms var(--ease),transform 600ms var(--ease);}
-    .reveal.is-visible{opacity:1;transform:translateY(0);}
+    /* Reveal — visible by default, animate when JS fires */
+    .reveal{opacity:1;transform:translateY(0);}
+    .reveal.js-ready{opacity:0;transform:translateY(20px);transition:opacity 600ms var(--ease),transform 600ms var(--ease);}
+    .reveal.js-ready.is-visible{opacity:1;transform:translateY(0);}
 
     /* Buttons */
     .btn-p{display:inline-block;padding:.8rem 1.8rem;border-radius:10px;background:var(--gold);color:#000;font-family:var(--fh);font-weight:700;font-size:.88rem;text-decoration:none;letter-spacing:.3px;transition:transform .2s,box-shadow .2s;}
@@ -207,7 +208,6 @@
       <img src="../assets/t-mat-global-logo.png" alt="T-Mat Global">
       <span class="hdr-brand-n">T-Mat Global</span>
     </a>
-   
   </header>
 
   <!-- HERO -->
@@ -551,7 +551,7 @@
       T-Mat Global Technologies Pvt. Ltd. &nbsp;|&nbsp; CIN: U62010PN2026PTC252419 &nbsp;|&nbsp; GST: 27AAMCT8388H1ZI<br>
       DPIIT Recognized Startup India &nbsp;|&nbsp; CERT NO: DIPP248437 &nbsp;|&nbsp; &copy; 2026 All Rights Reserved
     </div>
-
+    
   </footer>
 
   <script data-cfa
