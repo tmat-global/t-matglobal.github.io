@@ -1,0 +1,11 @@
+name: RSS Redirect
+# This workflow is now handled by daily-seo-update.yml
+# Keeping this file empty to avoid conflicts
+on:
+  workflow_dispatch:
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Info
+        run: echo "RSS updates are handled by daily-seo-update.yml"
