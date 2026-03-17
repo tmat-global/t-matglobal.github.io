@@ -113,6 +113,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>emailjs.init("PzGIi3ICZBs4sSqrC");</script>
+
+  <!-- SVG icon style — inherits accent color from your existing CSS -->
+  <style>
+    .service-card .icon { display:flex; align-items:center; justify-content:center; width:52px; height:52px; border-radius:12px; background:rgba(99,102,241,0.08); border:1px solid rgba(99,102,241,0.18); margin-bottom:18px; }
+    .service-card .icon svg { stroke: #6366f1; }
+  </style>
 </head>
 <body>
 
@@ -218,7 +224,9 @@
     <div class="services-grid">
 
       <div class="service-card">
-        <div class="icon">&#128187;</div>
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
         <h3>Software Engineering</h3>
         <p class="service-lead">We architect and engineer reliable, production-grade software — from early-stage MVPs to large-scale enterprise platforms built for performance and longevity.</p>
         <ul class="service-points">
@@ -229,7 +237,9 @@
       </div>
 
       <div class="service-card">
-        <div class="icon">&#129514;</div>
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
         <h3>Quality Engineering</h3>
         <p class="service-lead">We embed quality at every layer of the delivery pipeline — ensuring your software ships with confidence, performs under load, and holds up in production.</p>
         <ul class="service-points">
@@ -240,7 +250,9 @@
       </div>
 
       <div class="service-card">
-        <div class="icon">&#128200;</div>
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+        </div>
         <h3>Revenue Operations</h3>
         <p class="service-lead">We help you build a high-performance revenue engine — aligning sales processes, pipeline visibility, and conversion systems to drive predictable growth.</p>
         <ul class="service-points">
@@ -251,7 +263,9 @@
       </div>
 
       <div class="service-card">
-        <div class="icon">&#127911;</div>
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
         <h3>Customer Success Operations</h3>
         <p class="service-lead">Always-on customer operations designed for enterprise SLAs — fast response, structured escalation, and proactive communication across every time zone.</p>
         <ul class="service-points">
@@ -262,7 +276,9 @@
       </div>
 
       <div class="service-card">
-        <div class="icon">&#128202;</div>
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
         <h3>Data Engineering &amp; Analytics</h3>
         <p class="service-lead">We turn raw, siloed data into a strategic asset — building the pipelines, warehouses, and dashboards that power confident, data-driven decision-making.</p>
         <ul class="service-points">
@@ -273,7 +289,9 @@
       </div>
 
       <div class="service-card">
-        <div class="icon">&#9729;&#65039;</div>
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+        </div>
         <h3>Cloud &amp; DevOps Engineering</h3>
         <p class="service-lead">We design, build, and operate cloud-native infrastructure and DevSecOps pipelines — engineered for uptime, security, and cost efficiency at scale.</p>
         <ul class="service-points">
@@ -285,7 +303,9 @@
       </div>
 
       <div class="service-card">
-        <div class="icon">&#128084;</div>
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
         <h3>IT Consulting Services</h3>
         <p class="service-lead">Strategic technology advisory that aligns your IT investments with business outcomes — from boardroom decisions to ground-level execution.</p>
         <ul class="service-points">
@@ -299,7 +319,9 @@
       </div>
 
       <div class="service-card">
-        <div class="icon">&#128101;</div>
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
         <h3>IT Staffing &amp; Workforce Solutions</h3>
         <p class="service-lead">End-to-end talent solutions designed to help enterprises scale their technology teams — compliantly, efficiently, and on demand.</p>
         <ul class="service-points">
@@ -312,7 +334,9 @@
       </div>
 
       <div class="service-card">
-        <div class="icon">&#127760;</div>
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
         <h3>Offshore Team Building &amp; Support</h3>
         <p class="service-lead">Build high-performance dedicated technology teams in India — fully managed, time-zone aligned, and seamlessly integrated into your delivery model.</p>
         <ul class="service-points">
@@ -529,7 +553,6 @@
       });
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => revealIO.observe(el));
-
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         const id = this.getAttribute('href');
@@ -539,7 +562,6 @@
         }
       });
     });
-
     const navToggle = document.getElementById('navToggle');
     const navLinks  = document.getElementById('navLinks');
     if (navToggle && navLinks) {
@@ -564,7 +586,6 @@
         }
       });
     }
-
     document.querySelectorAll('.orbit-ring').forEach(ring => {
       const radius = Number(ring.dataset.radius || 180);
       const speed  = Number(ring.dataset.speed  || 90);
@@ -576,7 +597,6 @@
         icon.style.top  = Math.sin(angle) * radius + 'px';
       });
     });
-
     const form      = document.getElementById('contactForm');
     const submitBtn = form ? form.querySelector('.submit-btn') : null;
     if (form && submitBtn) {
@@ -599,7 +619,6 @@
         .finally(() => { submitBtn.disabled = false; submitBtn.textContent = 'Send Message'; });
       });
     }
-
     function showFormStatus(type, msg) {
       const existing = document.getElementById('formStatus');
       if (existing) existing.remove();
