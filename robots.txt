@@ -6,6 +6,7 @@ Allow: /about-us/
 Allow: /why-us/
 Allow: /policies/
 Allow: /trust-and-transparency.html
+Allow: /sainathmitalakar
 
 # Location SEO pages
 Allow: /pune/
