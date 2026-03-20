@@ -114,10 +114,108 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>emailjs.init("PzGIi3ICZBs4sSqrC");</script>
 
-  <!-- SVG icon style — inherits accent color from your existing CSS -->
   <style>
     .service-card .icon { display:flex; align-items:center; justify-content:center; width:52px; height:52px; border-radius:12px; background:rgba(99,102,241,0.08); border:1px solid rgba(99,102,241,0.18); margin-bottom:18px; }
     .service-card .icon svg { stroke: #6366f1; }
+
+    /* ── INSIGHTS SECTION ── */
+    #insights {
+      padding: 80px 24px;
+      background: #0a0a0a;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .insights-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .insights-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 48px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .insights-header .section-title {
+      margin-bottom: 6px;
+    }
+    .insights-header p {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.45);
+      margin: 0;
+    }
+    .insights-view-all {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: #f59500;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      border: 1px solid rgba(245,149,0,0.3);
+      padding: 8px 18px;
+      border-radius: 4px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .insights-view-all:hover {
+      background: rgba(245,149,0,0.08);
+    }
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .insight-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 8px;
+      padding: 28px 24px;
+      text-decoration: none;
+      display: block;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .insight-card:hover {
+      border-color: rgba(245,149,0,0.35);
+      background: rgba(245,149,0,0.04);
+    }
+    .insight-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #f59500;
+      margin-bottom: 14px;
+    }
+    .insight-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+    .insight-desc {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+    .insight-meta {
+      font-size: 0.74rem;
+      color: rgba(255,255,255,0.28);
+      letter-spacing: 0.02em;
+    }
+    .insight-card-featured {
+      grid-column: span 1;
+      border-color: rgba(245,149,0,0.2);
+    }
+    @media (max-width: 860px) {
+      .insights-grid { grid-template-columns: 1fr; }
+      .insight-card-featured { grid-column: span 1; }
+    }
   </style>
 </head>
 <body>
@@ -135,6 +233,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#careers">Careers</a></li>
+      <li><a href="/blog/">Insights</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -427,6 +526,46 @@
           <span class="o-icon"><img src="assets/icons/claude-ai-icon.svg" alt="Claude"></span>
           <span class="o-icon"><img src="assets/icons/langchain--Streamline-Simple-Icons.svg" alt="LangChain"></span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INSIGHTS SECTION — add new posts here daily ── -->
+  <section id="insights">
+    <div class="insights-inner">
+      <div class="insights-header">
+        <div>
+          <h2 class="section-title" style="margin-bottom:6px;">Insights</h2>
+          <p>Perspectives on enterprise technology, consulting and global delivery.</p>
+        </div>
+        <a href="/blog/" class="insights-view-all">View All Insights &#8594;</a>
+      </div>
+      <div class="insights-grid">
+
+        <!-- POST 1 — update this block when you add a new post, push the others down -->
+        <a href="/blog/it-consulting-cost-2026/" class="insight-card insight-card-featured">
+          <span class="insight-tag">IT Consulting</span>
+          <p class="insight-title">IT Consulting Cost in 2026: US, UK, UAE and India Pricing Guide</p>
+          <p class="insight-desc">What companies actually pay for IT consulting engagements today — broken down by market, engagement model and company size.</p>
+          <span class="insight-meta">March 20, 2026 &nbsp;&#183;&nbsp; 9 min read</span>
+        </a>
+
+        <!-- POST 2 placeholder — replace with your next post -->
+        <a href="/blog/" class="insight-card">
+          <span class="insight-tag">Staff Augmentation</span>
+          <p class="insight-title">Staff Augmentation vs Outsourcing: Which Model Saves More?</p>
+          <p class="insight-desc">A clear breakdown of when staff augmentation delivers better ROI than full outsourcing — and vice versa.</p>
+          <span class="insight-meta">Coming Soon</span>
+        </a>
+
+        <!-- POST 3 placeholder — replace with your next post -->
+        <a href="/blog/" class="insight-card">
+          <span class="insight-tag">Product Development</span>
+          <p class="insight-title">How to Build an MVP in 90 Days: Our Product Development Process</p>
+          <p class="insight-desc">The exact framework T-Mat Global uses to take a product from validated concept to live production in under 90 days.</p>
+          <span class="insight-meta">Coming Soon</span>
+        </a>
+
       </div>
     </div>
   </section>

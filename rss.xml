@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>T-Mat Global — News &amp; Updates</title>
+    <title>T-Mat Global — Insights &amp; Updates</title>
     <link>https://www.t-matglobal.com/</link>
-    <description>Official news, announcements, and technology insights from T-Mat Global — DPIIT Recognized IT Startup from India.</description>
+    <description>Expert perspectives on IT consulting, product development, staff augmentation and digital transformation — plus company news from T-Mat Global, DPIIT Recognized IT company from India.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 20 Mar 2026 00:00:00 GMT</lastBuildDate>
     <managingEditor>hr@t-matglobal.com (T-Mat Global)</managingEditor>
     <webMaster>hr@t-matglobal.com (T-Mat Global)</webMaster>
     <generator>T-Mat Global RSS Auto-Feed via GitHub Actions</generator>
@@ -17,11 +17,31 @@
     <atom:link href="https://www.t-matglobal.com/rss.xml" rel="self" type="application/rss+xml"/>
 
     <!-- ═══════════════════════════════════════════════════════
-      ✅ DO NOT manually edit dates in this file.
-      ✅ GitHub Actions auto-updates lastBuildDate daily at 6:00 AM IST.
-      ✅ To add a new news item — add it here at the TOP and push.
-         The workflow will keep the date fresh automatically.
+      ✅ lastBuildDate is auto-updated daily by GitHub Actions.
+      ✅ DO NOT manually edit dates.
+      ✅ TO ADD A NEW BLOG POST — paste one <item> block at the
+         very top of the items list (below this comment).
+         Copy the template at the bottom of this file.
+         GitHub Actions will keep lastBuildDate fresh.
     ═══════════════════════════════════════════════════════════ -->
+
+    <!-- ── BLOG POSTS — newest first ── -->
+
+    <item>
+      <title>IT Consulting Cost in 2026: US, UK, UAE and India Pricing Guide</title>
+      <link>https://www.t-matglobal.com/blog/it-consulting-cost-2026/</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/blog/it-consulting-cost-2026/</guid>
+      <pubDate>Thu, 20 Mar 2026 00:00:00 GMT</pubDate>
+      <category>IT Consulting</category>
+      <description><![CDATA[
+        What companies actually pay for IT consulting engagements today — broken down
+        by market, engagement model and company size. Covers hourly rates, monthly
+        retainers and project pricing across the US, UK, UAE and India. No estimates.
+        No padding. Read the full guide at t-matglobal.com.
+      ]]></description>
+    </item>
+
+    <!-- ── COMPANY NEWS ── -->
 
     <item>
       <title>T-Mat Global — Website Contact Form Now Live</title>
@@ -70,6 +90,25 @@
         for global businesses.
       ]]></description>
     </item>
+
+    <!-- ═══════════════════════════════════════════════════════
+      TEMPLATE — copy this block for every new blog post.
+      Paste it at the TOP of the items list, above the previous newest post.
+      Change: title, link, guid, pubDate, category, description.
+
+    <item>
+      <title>YOUR POST TITLE HERE</title>
+      <link>https://www.t-matglobal.com/blog/YOUR-POST-SLUG/</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/blog/YOUR-POST-SLUG/</guid>
+      <pubDate>Fri, 21 Mar 2026 00:00:00 GMT</pubDate>
+      <category>IT Consulting</category>
+      <description><![CDATA[
+        2-3 sentence summary of your post. What does it answer?
+        Who is it for? End with: Read the full guide at t-matglobal.com.
+      ]]></description>
+    </item>
+
+    ═══════════════════════════════════════════════════════ -->
 
   </channel>
 </rss>

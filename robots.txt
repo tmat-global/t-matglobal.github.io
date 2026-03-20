@@ -8,6 +8,9 @@ Allow: /policies/
 Allow: /trust-and-transparency.html
 Allow: /sainathmitalakar
 
+# Blog
+Allow: /blog/
+
 # Location SEO pages
 Allow: /pune/
 Allow: /bangalore/

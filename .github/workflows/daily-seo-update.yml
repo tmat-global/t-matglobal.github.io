@@ -3,7 +3,8 @@ name: 🔄 Daily SEO Auto-Update
 # ══════════════════════════════════════════════════════════════
 # Runs on schedule (6AM IST) AND on every push to main
 # Schedule = updates SEO dates only
-# Push = just triggers Pages to redeploy (no file changes)
+# Push = scans blog/ folder and adds any new post URLs
+#         to sitemap.xml automatically — no manual work needed
 # ══════════════════════════════════════════════════════════════
 
 on:
@@ -21,7 +22,7 @@ env:
 
 jobs:
   update-seo-files:
-    name: Update RSS & Sitemap Dates
+    name: Update RSS, Sitemap & Auto-Index Blog Posts
     runs-on: ubuntu-latest
 
     steps:
@@ -38,7 +39,6 @@ jobs:
           echo "TODAY_RFC=$(date -u '+%a, %d %b %Y 00:00:00 GMT')" >> $GITHUB_ENV
 
       - name: Update rss.xml lastBuildDate
-        # Only update on schedule or manual trigger, not on regular push
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           cd repo
@@ -52,16 +52,56 @@ jobs:
           sed -i "s|<lastmod>[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}</lastmod>|<lastmod>${{ env.TODAY_ISO }}</lastmod>|g" sitemap.xml
           echo "✅ sitemap.xml updated"
 
+      # ── NEW STEP ──────────────────────────────────────────────
+      # Runs on EVERY push to main.
+      # Scans all subfolders inside blog/ that contain index.html.
+      # For each one, checks if its URL is already in sitemap.xml.
+      # If missing — adds it automatically. No manual work needed.
+      # ─────────────────────────────────────────────────────────
+      - name: Auto-index new blog posts into sitemap.xml
+        run: |
+          cd repo
+
+          # Only proceed if blog/ folder exists
+          if [ ! -d "blog" ]; then
+            echo "ℹ️ No blog/ folder found — skipping"
+            exit 0
+          fi
+
+          ADDED=0
+
+          for post_dir in blog/*/; do
+            # Must contain an index.html to be a real post
+            [ -f "${post_dir}index.html" ] || continue
+
+            # Extract the slug (folder name)
+            slug=$(basename "$post_dir")
+
+            # Skip the root blog index itself if named oddly
+            [ "$slug" = "blog" ] && continue
+
+            # Build the full canonical URL
+            url="https://www.t-matglobal.com/blog/${slug}/"
+
+            # Check if this URL already exists in sitemap.xml
+            if grep -qF "$url" sitemap.xml; then
+              echo "✔ Already indexed: $url"
+            else
+              # Insert new URL entry just before the closing </urlset> tag
+              new_entry="  <url><loc>${url}<\/loc><lastmod>${{ env.TODAY_ISO }}<\/lastmod><changefreq>monthly<\/changefreq><priority>0.8<\/priority><\/url>"
+              sed -i "s|</urlset>|${new_entry}\n<\/urlset>|" sitemap.xml
+              echo "✅ Added to sitemap: $url"
+              ADDED=$((ADDED + 1))
+            fi
+          done
+
+          echo "📝 Total new posts added to sitemap: $ADDED"
+
       - name: Commit & Push if changed
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           cd repo
           git diff --quiet && echo "ℹ️ No changes" && exit 0
-          git add rss.xml sitemap.xml
-          git commit -m "chore: daily SEO update — ${{ env.TODAY_ISO }}"
+          git add sitemap.xml rss.xml
+          git commit -m "chore: SEO auto-update — ${{ env.TODAY_ISO }}"
           git push
           echo "✅ Pushed"
-
-      - name: Log push event
-        if: github.event_name == 'push'
-        run: echo "✅ Push detected — GitHub Pages will auto-deploy from branch"
