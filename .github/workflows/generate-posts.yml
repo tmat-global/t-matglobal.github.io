@@ -5,11 +5,16 @@ on:
     branches:
       - main  # change to 'master' if your branch is master
 
+permissions:
+  contents: write
+
 jobs:
   generate-posts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate posts.json from blog folders
         run: |
