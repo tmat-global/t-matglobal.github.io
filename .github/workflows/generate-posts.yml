@@ -29,14 +29,11 @@ jobs:
               folder_path = os.path.join(blog_dir, folder)
               index_file  = os.path.join(folder_path, "index.html")
 
-              # Skip non-folders and missing index.html
               if not os.path.isdir(folder_path): continue
               if not os.path.exists(index_file):  continue
 
               with open(index_file, "r", encoding="utf-8") as f:
                   html = f.read()
-
-              # --- Extract fields from meta tags & HTML ---
 
               def meta(name):
                   m = re.search(r'<meta\s+name=["\']' + name + r'["\']\s+content=["\'](.*?)["\']', html, re.I)
@@ -50,28 +47,39 @@ jobs:
                   m = re.search(r'<meta\s+content=["\'](.*?)["\']\s+property=["\']og:' + prop + r'["\']', html, re.I)
                   return m.group(1).strip() if m else ""
 
-              # Title: og:title → <title> tag
+              # Title: og:title -> <title> tag
               title = og("title")
               if not title:
                   m = re.search(r'<title>(.*?)</title>', html, re.I | re.S)
                   title = m.group(1).strip() if m else folder
 
-              # Description: meta description → og:description
+              # Description
               desc = meta("description") or og("description")
 
-              # Tag / Category: look for <meta name="category"> or <meta name="tag">
-              tag = meta("category") or meta("tag") or meta("article:section") or ""
+              # Tag / Category: meta -> <span class="hero-category"> -> <span class="insight-tag">
+              tag = meta("category") or meta("tag") or ""
+              if not tag:
+                  m = re.search(r'class=["\'][^"\']*hero-category[^"\']*["\'][^>]*>(.*?)</span>', html, re.I | re.S)
+                  if m: tag = re.sub(r'<[^>]+>', '', m.group(1)).strip()
+              if not tag:
+                  m = re.search(r'class=["\'][^"\']*insight-tag[^"\']*["\'][^>]*>(.*?)</span>', html, re.I | re.S)
+                  if m: tag = re.sub(r'<[^>]+>', '', m.group(1)).strip()
 
-              # Date: look for <meta name="date"> or <time datetime="..."> or published_time
+              # Date: meta name="date" -> article:published_time -> datePublished JSON-LD -> <time>
               date_str = meta("date") or meta("publish_date") or ""
               if not date_str:
-                  m = re.search(r'<meta\s+property=["\']article:published_time["\']\s+content=["\']([\d\-T:Z+]+)["\']', html, re.I)
+                  m = re.search(r'property=["\']article:published_time["\']\s+content=["\']([\d\-]+)', html, re.I)
+                  if not m:
+                      m = re.search(r'content=["\']([\d\-]+)["\']\s+property=["\']article:published_time["\']', html, re.I)
+                  if m: date_str = m.group(1)[:10]
+              if not date_str:
+                  m = re.search(r'"datePublished"\s*:\s*"([\d\-]+)"', html)
                   if m: date_str = m.group(1)[:10]
               if not date_str:
                   m = re.search(r'<time[^>]+datetime=["\']([\d\-]+)["\']', html, re.I)
                   if m: date_str = m.group(1)
 
-              # Format date nicely: 2026-03-22 → March 22, 2026
+              # Format date: 2026-03-30 -> March 30, 2026
               date_display = ""
               if date_str:
                   try:
@@ -84,14 +92,16 @@ jobs:
               else:
                   date_sort = "0000-00-00"
 
-              # Read time: look for <meta name="read"> or calculate from word count
+              # Read time: meta -> any "X min read" text in page -> word count
               read = meta("read") or meta("read_time") or ""
+              if not read:
+                  m = re.search(r'(\d+\s+min\s+read)', html, re.I)
+                  if m: read = m.group(1)
               if not read:
                   words = len(re.sub(r'<[^>]+>', '', html).split())
                   mins  = max(1, round(words / 200))
                   read  = f"{mins} min read"
 
-              # URL
               url = f"/blog/{folder}/"
 
               posts.append({
@@ -107,15 +117,12 @@ jobs:
 
           # Sort newest first
           posts.sort(key=lambda x: x["_sort"], reverse=True)
-
-          # Remove internal sort key
-          for p in posts:
-              del p["_sort"]
+          for p in posts: del p["_sort"]
 
           with open("blog/posts.json", "w", encoding="utf-8") as f:
               json.dump(posts, f, indent=2, ensure_ascii=False)
 
-          print(f"✅ Generated posts.json with {len(posts)} posts")
+          print(f"Generated posts.json with {len(posts)} posts")
           EOF
 
       - name: Commit and push posts.json
