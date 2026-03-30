@@ -1,0 +1,122 @@
+name: Auto Generate posts.json
+
+on:
+  push:
+    branches:
+      - main  # change to 'master' if your branch is master
+
+jobs:
+  generate-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Generate posts.json from blog folders
+        run: |
+          python3 - <<'EOF'
+          import os, json, re
+          from datetime import datetime
+
+          blog_dir = "blog"
+          posts = []
+
+          for folder in os.listdir(blog_dir):
+              folder_path = os.path.join(blog_dir, folder)
+              index_file  = os.path.join(folder_path, "index.html")
+
+              # Skip non-folders and missing index.html
+              if not os.path.isdir(folder_path): continue
+              if not os.path.exists(index_file):  continue
+
+              with open(index_file, "r", encoding="utf-8") as f:
+                  html = f.read()
+
+              # --- Extract fields from meta tags & HTML ---
+
+              def meta(name):
+                  m = re.search(r'<meta\s+name=["\']' + name + r'["\']\s+content=["\'](.*?)["\']', html, re.I)
+                  if m: return m.group(1).strip()
+                  m = re.search(r'<meta\s+content=["\'](.*?)["\']\s+name=["\']' + name + r'["\']', html, re.I)
+                  return m.group(1).strip() if m else ""
+
+              def og(prop):
+                  m = re.search(r'<meta\s+property=["\']og:' + prop + r'["\']\s+content=["\'](.*?)["\']', html, re.I)
+                  if m: return m.group(1).strip()
+                  m = re.search(r'<meta\s+content=["\'](.*?)["\']\s+property=["\']og:' + prop + r'["\']', html, re.I)
+                  return m.group(1).strip() if m else ""
+
+              # Title: og:title → <title> tag
+              title = og("title")
+              if not title:
+                  m = re.search(r'<title>(.*?)</title>', html, re.I | re.S)
+                  title = m.group(1).strip() if m else folder
+
+              # Description: meta description → og:description
+              desc = meta("description") or og("description")
+
+              # Tag / Category: look for <meta name="category"> or <meta name="tag">
+              tag = meta("category") or meta("tag") or meta("article:section") or ""
+
+              # Date: look for <meta name="date"> or <time datetime="..."> or published_time
+              date_str = meta("date") or meta("publish_date") or ""
+              if not date_str:
+                  m = re.search(r'<meta\s+property=["\']article:published_time["\']\s+content=["\']([\d\-T:Z+]+)["\']', html, re.I)
+                  if m: date_str = m.group(1)[:10]
+              if not date_str:
+                  m = re.search(r'<time[^>]+datetime=["\']([\d\-]+)["\']', html, re.I)
+                  if m: date_str = m.group(1)
+
+              # Format date nicely: 2026-03-22 → March 22, 2026
+              date_display = ""
+              if date_str:
+                  try:
+                      d = datetime.strptime(date_str[:10], "%Y-%m-%d")
+                      date_display = d.strftime("%B %-d, %Y")
+                      date_sort    = date_str[:10]
+                  except:
+                      date_display = date_str
+                      date_sort    = "0000-00-00"
+              else:
+                  date_sort = "0000-00-00"
+
+              # Read time: look for <meta name="read"> or calculate from word count
+              read = meta("read") or meta("read_time") or ""
+              if not read:
+                  words = len(re.sub(r'<[^>]+>', '', html).split())
+                  mins  = max(1, round(words / 200))
+                  read  = f"{mins} min read"
+
+              # URL
+              url = f"/blog/{folder}/"
+
+              posts.append({
+                  "_sort": date_sort,
+                  "published": True,
+                  "url":   url,
+                  "tag":   tag,
+                  "title": title,
+                  "desc":  desc,
+                  "date":  date_display,
+                  "read":  read
+              })
+
+          # Sort newest first
+          posts.sort(key=lambda x: x["_sort"], reverse=True)
+
+          # Remove internal sort key
+          for p in posts:
+              del p["_sort"]
+
+          with open("blog/posts.json", "w", encoding="utf-8") as f:
+              json.dump(posts, f, indent=2, ensure_ascii=False)
+
+          print(f"✅ Generated posts.json with {len(posts)} posts")
+          EOF
+
+      - name: Commit and push posts.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add blog/posts.json
+          git diff --staged --quiet || git commit -m "chore: auto-update posts.json [skip ci]"
+          git push
