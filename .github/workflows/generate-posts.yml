@@ -3,18 +3,25 @@ name: Auto Generate posts.json
 on:
   push:
     branches:
-      - main  # change to 'master' if your branch is master
+      - main
 
 permissions:
   contents: write
 
+# 🚀 Prevent multiple workflows clashing
+concurrency:
+  group: "posts-json-update"
+  cancel-in-progress: true
+
 jobs:
   generate-posts:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0   # ✅ IMPORTANT (needed for rebase)
 
       - name: Generate posts.json from blog folders
         run: |
@@ -47,16 +54,13 @@ jobs:
                   m = re.search(r'<meta\s+content=["\'](.*?)["\']\s+property=["\']og:' + prop + r'["\']', html, re.I)
                   return m.group(1).strip() if m else ""
 
-              # Title: og:title -> <title> tag
               title = og("title")
               if not title:
                   m = re.search(r'<title>(.*?)</title>', html, re.I | re.S)
                   title = m.group(1).strip() if m else folder
 
-              # Description
               desc = meta("description") or og("description")
 
-              # Tag / Category: meta -> <span class="hero-category"> -> <span class="insight-tag">
               tag = meta("category") or meta("tag") or ""
               if not tag:
                   m = re.search(r'class=["\'][^"\']*hero-category[^"\']*["\'][^>]*>(.*?)</span>', html, re.I | re.S)
@@ -65,7 +69,6 @@ jobs:
                   m = re.search(r'class=["\'][^"\']*insight-tag[^"\']*["\'][^>]*>(.*?)</span>', html, re.I | re.S)
                   if m: tag = re.sub(r'<[^>]+>', '', m.group(1)).strip()
 
-              # Date: meta name="date" -> article:published_time -> datePublished JSON-LD -> <time>
               date_str = meta("date") or meta("publish_date") or ""
               if not date_str:
                   m = re.search(r'property=["\']article:published_time["\']\s+content=["\']([\d\-]+)', html, re.I)
@@ -79,12 +82,11 @@ jobs:
                   m = re.search(r'<time[^>]+datetime=["\']([\d\-]+)["\']', html, re.I)
                   if m: date_str = m.group(1)
 
-              # Format date: 2026-03-30 -> March 30, 2026
               date_display = ""
               if date_str:
                   try:
                       d = datetime.strptime(date_str[:10], "%Y-%m-%d")
-                      date_display = d.strftime("%B %-d, %Y")
+                      date_display = d.strftime("%B %d, %Y")
                       date_sort    = date_str[:10]
                   except:
                       date_display = date_str
@@ -92,7 +94,6 @@ jobs:
               else:
                   date_sort = "0000-00-00"
 
-              # Read time: meta -> any "X min read" text in page -> word count
               read = meta("read") or meta("read_time") or ""
               if not read:
                   m = re.search(r'(\d+\s+min\s+read)', html, re.I)
@@ -115,7 +116,6 @@ jobs:
                   "read":  read
               })
 
-          # Sort newest first
           posts.sort(key=lambda x: x["_sort"], reverse=True)
           for p in posts: del p["_sort"]
 
@@ -127,9 +127,18 @@ jobs:
 
       - name: Commit and push posts.json
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add blog/posts.json
-          git diff --staged --quiet || git commit -m "chore: auto-update posts.json [skip ci]"
-          git pull --rebase
-          git push
+
+          # ✅ Avoid empty commit errors
+          git diff --staged --quiet && echo "No changes" && exit 0
+
+          git commit -m "chore: auto-update posts.json [skip ci]"
+
+          # ✅ Pull latest safely (FIXED)
+          git pull --rebase origin main
+
+          # ✅ Retry push (handles race conditions)
+          git push origin main || (sleep 5 && git pull --rebase origin main && git push origin main)
