@@ -1,0 +1,40 @@
+{
+  "brand": {
+    "name": "T-Mat Global",
+    "legal_name": "T-Mat Global Technologies Private Limited",
+    "tagline": "Enterprise Technology Delivery. Offshore Economics. Zero Compromise.",
+    "sub_tagline": "DevOps Engineering, Cloud Infrastructure, AI Systems and Dedicated Offshore Teams for Enterprises in the US, UAE and UK.",
+    "recognition": "DPIIT Recognized Startup — CERT NO: DIPP248437",
+    "tone": "professional, confident, minimal, corporate, outcome-driven",
+    "prohibited": ["emojis", "casual language", "startup jargon", "informal contractions in headlines", "hype words"]
+  },
+  "voice_principles": [
+    "Lead with outcomes, not features",
+    "Use precise, corporate language consistent with tier-one technology consultancies",
+    "Every claim must be supported by a credential, proof point, or concrete deliverable",
+    "Avoid superlatives without evidence — 'world-class' requires substantiation",
+    "Write for senior decision-makers: CTOs, VPs of Engineering, COOs",
+    "Confidence without arrogance — state capability directly, without overselling"
+  ],
+  "trust_signals": [
+    "DPIIT Recognized — Government of India (DIPP248437)",
+    "CIN: U62010PN2026PTC252419",
+    "GST: 27AAMCT8388H1ZI",
+    "Founded by former T-Mobile USA DevOps Engineer",
+    "AWS Certified DevOps Professional",
+    "Top 25 Global DevOps Thought Leader — Thinkers360",
+    "US Time-Zone Aligned Delivery",
+    "NDA-Ready Engagement Frameworks",
+    "Milestone-Based Billing and Transparent Governance"
+  ],
+  "service_markets": ["United States", "United Arab Emirates", "United Kingdom", "India", "Canada"],
+  "cta_primary": "Request a Consultation",
+  "cta_secondary": "View Our Work",
+  "response_commitment": "Structured proposal delivered within 24 hours of inquiry submission",
+  "engagement_models": [
+    "Fixed-Scope Project Delivery",
+    "Dedicated Offshore Engineering Team",
+    "IT Staff Augmentation and Third-Party Payroll Management",
+    "IT Consulting and Strategic Advisory Retainer"
+  ]
+}

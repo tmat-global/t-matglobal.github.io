@@ -1,0 +1,86 @@
+{
+  "page": "homepage",
+  "url": "https://www.t-matglobal.com/",
+  "sections": {
+    "hero": {
+      "eyebrow": "DPIIT Recognized — DIPP248437",
+      "headline": "T-Mat Global",
+      "subheadline": "DevOps Engineering, Cloud Migration, AI Systems and Dedicated Offshore Teams for Enterprise Clients in the US, UAE and UK.",
+      "badges": [
+        "Startup India — DPIIT Recognized",
+        "US — UAE — UK",
+        "US Time-Zone Aligned",
+        "DevOps — Cloud — AI"
+      ],
+      "cta_primary": "Request a Free Consultation and Proposal",
+      "cta_note": "Submit your project requirements and receive a structured proposal within 24 hours. US time-zone aligned delivery."
+    },
+    "trust_bar": [
+      "DPIIT Recognized — DIPP248437",
+      "CIN: U62010PN2026PTC252419",
+      "US Time-Zone Aligned",
+      "NDA-Friendly Engagements",
+      "Startup India Certified",
+      "Founded by Former T-Mobile USA Engineer"
+    ],
+    "mission": {
+      "headline": "Our Mission",
+      "primary": "To engineer meaningful outcomes by deeply understanding our clients and delivering solutions built to scale, perform, and last.",
+      "body": "We bring together customer-centric thinking, modern engineering practices, and a global delivery mindset to help businesses move from strategy to execution — with speed, precision, and accountability. Every engagement is outcome-focused. Every delivery is built to matter.",
+      "pillars": [
+        {
+          "title": "Commitment",
+          "lead": "Full ownership. Uncompromised standards. Every single delivery.",
+          "points": [
+            "End-to-end accountability from kickoff through production",
+            "Velocity without compromise on engineering quality",
+            "Outcomes over output — consistently"
+          ]
+        },
+        {
+          "title": "Engineering Excellence",
+          "lead": "Discovery-first engineering built for scale and long-term resilience.",
+          "points": [
+            "Deep discovery and gap analysis preceding every solution",
+            "Process simplification and intelligent automation",
+            "Secure, fault-tolerant, infinitely scalable systems"
+          ]
+        },
+        {
+          "title": "Core Values",
+          "lead": "Radical transparency. Relentless quality. Continuous improvement.",
+          "points": [
+            "Open and honest communication at every level of engagement",
+            "Quality as a non-negotiable engineering standard",
+            "Iterative improvement built into every delivery cycle"
+          ]
+        },
+        {
+          "title": "Integrity",
+          "lead": "Clear accountability. Responsible execution. Zero compromise.",
+          "points": [
+            "Defined standards of professional conduct from day one",
+            "Client confidentiality and data integrity protected at all times",
+            "A culture of respect that enables elite performance"
+          ]
+        }
+      ]
+    },
+    "about": {
+      "headline": "About T-Mat Global",
+      "body": [
+        "T-Mat Global is a DPIIT Recognized Startup under the Startup India Initiative, Government of India (CERT: DIPP248437 | CIN: U62010PN2026PTC252419). Founded by Sainath Shivaji Mitalakar — former DevOps Engineer at T-Mobile USA, AWS Certified, Top 25 Global DevOps Thought Leader.",
+        "We deliver high-impact DevOps engineering, cloud infrastructure, AI systems, software development and strategic IT consulting to enterprises across the US, UAE, UK and beyond. Startup agility meets enterprise operational maturity.",
+        "Our engineering teams are built for precision. Our processes are built for accountability. Our culture is built around one unwavering commitment — outcomes that move the needle.",
+        "Headquartered in India. Engineered for the world. Operating across every major time zone."
+      ]
+    },
+    "contact_form": {
+      "headline": "Initiate an Engagement",
+      "subtext": "Describe your project objectives, timeline, and requirements. We will respond with a structured proposal and recommended approach.",
+      "form_fields": ["Full Name", "Phone", "Business Email", "Subject", "Message"],
+      "submit_label": "Submit Inquiry",
+      "footer_note": "By submitting, you agree to be contacted. We respect your privacy and maintain full confidentiality on all inquiries."
+    }
+  }
+}

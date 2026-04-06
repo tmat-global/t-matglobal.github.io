@@ -1,0 +1,81 @@
+{
+  "page": "about",
+  "url": "https://www.t-matglobal.com/about-us/",
+  "headline": "About T-Mat Global",
+  "sections": {
+    "company_overview": {
+      "headline": "Who We Are",
+      "body": "T-Mat Global Technologies Private Limited is a DPIIT Recognized technology company headquartered in Pune, India, delivering enterprise-grade software engineering, cloud infrastructure, DevOps, AI systems, staff augmentation, and IT consulting to clients in the United States, United Arab Emirates, United Kingdom, and globally. We operate at the intersection of startup agility and enterprise delivery discipline — combining the responsiveness of a modern technology firm with the standards of a tier-one systems integrator.",
+      "credentials": [
+        "DPIIT Recognized Startup — DIPP248437",
+        "CIN: U62010PN2026PTC252419",
+        "GST: 27AAMCT8388H1ZI",
+        "Registered: Pune, Maharashtra, India"
+      ]
+    },
+    "founder": {
+      "headline": "Leadership",
+      "name": "Sainath Shivaji Mitalakar",
+      "title": "Founder and Chief Executive Officer",
+      "bio": "Sainath Shivaji Mitalakar is a B.Tech Computer Engineer, AWS Certified DevOps Professional, and former DevOps Engineer on the System Design and Architecture team at T-Mobile USA. Recognized as a Top 25 Global DevOps Thought Leader by Thinkers360, he founded T-Mat Global to deliver enterprise-grade technology solutions from India to global clients — with the operational standards and time-zone alignment that US, UAE, and UK enterprises require.",
+      "credentials": [
+        "Former DevOps Engineer — T-Mobile USA (System Design and Architecture)",
+        "AWS Certified DevOps Professional",
+        "Top 25 Global DevOps Thought Leader — Thinkers360",
+        "B.Tech Computer Engineering"
+      ]
+    },
+    "operating_model": {
+      "headline": "How We Operate",
+      "points": [
+        "US time-zone aligned delivery — genuine real-time collaboration during EST and PST business hours",
+        "Dedicated offshore teams integrated directly into client workflows and sprint cadences",
+        "Milestone-based billing with transparent OKR-driven delivery governance",
+        "NDA-ready engagement frameworks and full IP ownership protection",
+        "Full statutory compliance: HR, payroll, background verification, and regulatory documentation managed end-to-end"
+      ]
+    },
+    "differentiators": {
+      "headline": "Why T-Mat Global",
+      "items": [
+        {
+          "title": "Enterprise Standards at Offshore Economics",
+          "description": "We deliver the engineering quality of a tier-one systems integrator — CI/CD pipelines, security hardening, automated testing, infrastructure as code — at offshore cost structures that provide 40-60% savings versus equivalent onshore teams."
+        },
+        {
+          "title": "Genuine US Time-Zone Alignment",
+          "description": "We operate in US business hours from India — providing real-time collaboration, same-day responses, daily standups, and live sprint demonstrations. This is not nominal availability. This is genuine alignment."
+        },
+        {
+          "title": "AI-Native Engineering by Default",
+          "description": "AI and automation are embedded into every engagement by default — not as an add-on. From MLOps infrastructure to intelligent automation pipelines, we engineer systems that are ready for the AI era."
+        },
+        {
+          "title": "Institutional Credibility",
+          "description": "Full government recognition under Startup India (DIPP248437), complete corporate documentation (CIN, GST), and a founder with direct enterprise background at T-Mobile USA. Every engagement is contract-ready from day one."
+        }
+      ]
+    },
+    "markets": {
+      "headline": "Markets We Serve",
+      "regions": [
+        {
+          "name": "United States",
+          "detail": "Primary market. Full EST and PST time-zone alignment. Engineering teams synchronized with US sprint cadences, standups, and delivery milestones."
+        },
+        {
+          "name": "United Arab Emirates",
+          "detail": "Abu Dhabi and Dubai engagements. UAE business hour alignment available. Expanding operations with planned UAE office presence."
+        },
+        {
+          "name": "United Kingdom",
+          "detail": "GMT and BST-aligned delivery available. Enterprise software engineering and staff augmentation for UK-based technology organizations."
+        },
+        {
+          "name": "India",
+          "detail": "Domestic engagements across enterprise, SaaS, and healthcare technology sectors."
+        }
+      ]
+    }
+  }
+}
