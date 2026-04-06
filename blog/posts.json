@@ -1,6 +1,42 @@
 [
   {
     "published": true,
+    "url": "/blog/cloud-native-architecture-healthcare-fintech-2026/",
+    "tag": "Cloud Engineering",
+    "title": "Cloud-Native Architecture for Healthcare and FinTech in 2026: Compliance, Cost and Design Guide",
+    "desc": "What HIPAA and PCI-DSS require from your cloud infrastructure in 2026, what compliant builds cost, and how India-based cloud engineering partners are changing the economics for regulated industry platforms.",
+    "date": "April 06, 2026",
+    "read": "10 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/offshore-it-governance-compliance-2026/",
+    "tag": "IT Consulting",
+    "title": "Offshore IT Governance and Compliance in 2026: What US and UAE Enterprises Must Require",
+    "desc": "What contractual protections, delivery governance practices and compliance documentation US and UAE enterprises must require from India-based IT partners before signing — and the red flags that predict governance failure.",
+    "date": "April 05, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/saas-product-development-b2b-enterprise-2026/",
+    "tag": "Product Development",
+    "title": "SaaS Product Development for B2B Enterprises in 2026: Architecture, Cost and Build Strategy",
+    "desc": "What enterprise-grade B2B SaaS development actually requires, what it costs in 2026, how to sequence a build that survives enterprise procurement, and what to look for in a development partner with genuine SaaS delivery experience.",
+    "date": "April 04, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/enterprise-application-modernization-2026/",
+    "tag": "Digital Transformation",
+    "title": "Enterprise Application Modernization in 2026: Strategy, Cost and Execution Guide",
+    "desc": "A complete 2026 guide to enterprise application modernization — the five modernization strategies, what each costs, how to sequence migration without disrupting operations, and how to evaluate delivery partners who execute reliably at enterprise scale.",
+    "date": "April 03, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/software-product-development-outsourcing-india-2026/",
     "tag": "Product Development",
     "title": "Software Product Development Outsourcing to India: Complete 2026 Guide for US Companies",
