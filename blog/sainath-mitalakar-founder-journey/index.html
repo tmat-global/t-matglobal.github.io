@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>From T-Mobile USA to Building a Software Startup in India | Sainath Mitalakar</title>
+<meta name="description" content="Sainath Mitalakar shares his journey from T-Mobile USA DevOps Engineer to founding T-Mat Global Technologies — a DPIIT-recognized startup now running three enterprise software projects across three countries.">
+<link rel="canonical" href="https://t-matglobal.com/blog/sainath-mitalakar-founder-journey/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--accent:#e07b00;--accent-light:#fff3e0;--surface:#fff8f0;--surface-2:#fffdf9;--border:#f0dfc0;--text:#1a1a1a;--muted:#6b6b6b;--serif:'DM Serif Display',serif;--sans:'DM Sans',sans-serif;--max:760px;--wide:1100px}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);color:var(--text);background:#fff;line-height:1.7}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--border);padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between}
+  .nav-logo{font-family:var(--serif);font-size:1.2rem;color:var(--text)}
+  .nav-links{display:flex;gap:24px;font-size:.9rem}
+  .nav-cta{background:var(--accent);color:#fff!important;padding:8px 18px;border-radius:6px;font-weight:600;font-size:.85rem}
+  .nav-cta:hover{text-decoration:none;background:#c96e00}
+  .hero{background:var(--surface);border-bottom:1px solid var(--border);padding:52px 24px 44px}
+  .hero-inner{max-width:var(--wide);margin:0 auto}
+  .breadcrumb{font-size:.8rem;color:var(--muted);margin-bottom:14px}
+  .breadcrumb a{color:var(--muted)}
+  .hero-category{display:inline-block;background:var(--accent);color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:16px}
+  .hero h1{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.2;max-width:720px;margin-bottom:18px}
+  .hero-lead{font-size:1.1rem;color:#444;max-width:640px;margin-bottom:22px}
+  .hero-meta{font-size:.82rem;color:var(--muted);display:flex;gap:16px;flex-wrap:wrap}
+  .layout{max-width:var(--wide);margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 300px;gap:48px;align-items:start}
+  @media(max-width:768px){.layout{grid-template-columns:1fr}.sidebar{order:-1}}
+  article h2{font-family:var(--serif);font-size:1.55rem;margin:40px 0 14px}
+  article h3{font-size:1.1rem;font-weight:600;margin:28px 0 10px}
+  article p{margin-bottom:16px;color:#333}
+  article ul,article ol{padding-left:22px;margin-bottom:16px}
+  article li{margin-bottom:8px;color:#333}
+  .highlight-box{background:var(--accent-light);border-left:4px solid var(--accent);border-radius:0 8px 8px 0;padding:20px 24px;margin:28px 0}
+  .highlight-box strong{display:block;margin-bottom:8px;font-size:1rem}
+  .highlight-box p,.highlight-box li{font-size:.92rem;color:#444;margin-bottom:6px}
+  .pull-quote{border-left:4px solid var(--accent);padding:16px 24px;margin:32px 0;font-family:var(--serif);font-size:1.2rem;color:#444;font-style:italic}
+  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
+  .stat-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center}
+  .stat-card .num{font-family:var(--serif);font-size:2rem;color:var(--accent)}
+  .stat-card .label{font-size:.8rem;color:var(--muted);margin-top:4px}
+  .timeline{list-style:none;padding:0;margin:24px 0;position:relative}
+  .timeline:before{content:'';position:absolute;left:18px;top:0;bottom:0;width:2px;background:var(--border)}
+  .timeline li{padding:0 0 28px 48px;position:relative}
+  .timeline li:before{content:'';position:absolute;left:10px;top:6px;width:16px;height:16px;background:var(--accent);border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px var(--accent)}
+  .timeline-year{font-size:.8rem;color:var(--accent);font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+  .timeline-title{font-weight:600;font-size:1rem;margin-bottom:6px}
+  .timeline-body{font-size:.9rem;color:#555}
+  .cta-block{background:var(--accent);color:#fff;border-radius:12px;padding:36px;text-align:center;margin:40px 0}
+  .cta-block h3{font-family:var(--serif);font-size:1.5rem;margin-bottom:10px}
+  .cta-block p{margin-bottom:20px;opacity:.92}
+  .cta-block a{display:inline-block;background:#fff;color:var(--accent);font-weight:700;padding:12px 28px;border-radius:8px;font-size:.95rem}
+  .sidebar{display:flex;flex-direction:column;gap:24px}
+  .sidebar-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:22px}
+  .sidebar-card h4{font-weight:700;font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px;color:var(--muted)}
+  .toc-list{list-style:none;padding:0}
+  .toc-list li{padding:6px 0;border-bottom:1px solid var(--border);font-size:.88rem}
+  .toc-list a{color:var(--text)}
+  .sidebar-contact p{font-size:.88rem;color:#444;margin-bottom:14px}
+  .sidebar-btn{display:block;background:var(--accent);color:#fff;text-align:center;padding:11px;border-radius:7px;font-weight:600;font-size:.88rem;margin-top:8px}
+  .sidebar-btn:hover{text-decoration:none;background:#c96e00}
+  .sidebar-tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{background:var(--accent-light);color:var(--accent);font-size:.78rem;padding:4px 10px;border-radius:20px;font-weight:500}
+  footer{background:#1a1a1a;color:#ccc;padding:40px 24px;text-align:center;font-size:.85rem}
+  footer a{color:#e07b00}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"From T-Mobile USA to Building a Software Startup in India",
+  "description":"Sainath Mitalakar shares his journey from T-Mobile USA DevOps Engineer to founding T-Mat Global Technologies — a DPIIT-recognized startup running three enterprise projects.",
+  "datePublished":"2026-04-20",
+  "dateModified":"2026-04-20",
+  "author":{"@type":"Person","name":"Sainath Mitalakar","jobTitle":"Founder & CEO","worksFor":{"@type":"Organization","name":"T-Mat Global Technologies"}},
+  "publisher":{"@type":"Organization","name":"T-Mat Global Technologies","url":"https://t-matglobal.com"},
+  "mainEntityOfPage":"https://t-matglobal.com/blog/sainath-mitalakar-founder-journey/"
+}
+</script>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="/">T-Mat Global</a>
+  <div class="nav-links">
+    <a href="/about-us/">About</a>
+    <a href="/projects.html">Projects</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contact/" class="nav-cta">Get a Quote</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb"><a href="/">Home</a> › <a href="/blog/">Blog</a> › Founder Journey</div>
+    <span class="hero-category">Founder Post</span>
+    <h1>From T-Mobile USA to Building a Software Startup in India</h1>
+    <p class="hero-lead">How working inside one of America's largest telecoms taught me more about enterprise software than any course, and why I came back to India to build something of my own.</p>
+    <div class="hero-meta">
+      <span>By Sainath Mitalakar, Founder — T-Mat Global</span>
+      <span>April 20, 2026</span>
+      <span>8 min read</span>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+<article>
+
+<h2>Why I'm Writing This</h2>
+<p>I get asked the same question often enough that it deserves a proper answer: why leave a stable role at a US telecom giant to start a software company in India from scratch? The short answer is that I didn't leave because I was dissatisfied. I left because working at T-Mobile USA gave me a clear view of what enterprise software actually looks like at scale — and I wanted to build it myself.</p>
+
+<p>This is not a rags-to-riches story. It is a story about paying attention to what you are learning, waiting until you know enough to do the work properly, and then starting.</p>
+
+<h2>The T-Mobile USA Years</h2>
+<p>T-Mobile USA is not a typical employer. It runs some of the most complex distributed infrastructure in North America — millions of active subscribers, real-time billing, network orchestration, and a CI/CD pipeline that needs to handle deployments without service interruption. Working there as a DevOps Engineer meant being responsible for systems where downtime is measured in revenue per second.</p>
+
+<div class="highlight-box">
+  <strong>What working at T-Mobile USA actually teaches you</strong>
+  <ul>
+    <li>How enterprise CI/CD works at scale — not tutorial scale, but hundreds-of-services scale</li>
+    <li>What infrastructure-as-code discipline looks like when the stakes are real</li>
+    <li>How observability (Prometheus, Grafana, alerting) prevents 2am incidents</li>
+    <li>What it means to own a system — not just deploy it, but be responsible for it running</li>
+    <li>How engineering teams communicate under pressure when something breaks in production</li>
+  </ul>
+</div>
+
+<p>I earned my AWS certification during this period — not as a box to check, but because understanding cloud architecture made me better at the job. The certification is a credential. The understanding is what I brought back to India.</p>
+
+<div class="pull-quote">"The thing T-Mobile gave me wasn't a resume line. It was a visceral understanding of what breaks, what doesn't, and why the difference matters."</div>
+
+<h2>The Decision to Come Back</h2>
+<p>The decision wasn't sudden. I had been watching the Indian software market from the inside out — seeing what clients in the US expected, what "offshore" meant to them, and where the gap was between what they received and what they actually needed.</p>
+
+<p>The gap was not skill. India has extraordinary engineering talent. The gap was credibility, process, and accountability. Clients didn't trust offshore vendors not because of technical capability but because of experiences with communication theatre, scope creep, and teams that disappeared after handoff.</p>
+
+<p>I came back to India to build the kind of software company that I would have hired as a client — with verifiable credentials, milestone-based contracts, direct access to the technical team, and work that ships and runs in production.</p>
+
+<ul class="timeline">
+  <li>
+    <div class="timeline-year">2022–2023</div>
+    <div class="timeline-title">T-Mobile USA — DevOps Engineering</div>
+    <div class="timeline-body">Enterprise CI/CD, infrastructure automation, cloud architecture. AWS certification earned. First clear view of how enterprise delivery actually works at scale.</div>
+  </li>
+  <li>
+    <div class="timeline-year">2024</div>
+    <div class="timeline-title">T-Mat Global Technologies — Founded</div>
+    <div class="timeline-body">Registered in India. DPIIT application filed and approved. Company infrastructure set up: contracts, IP assignment templates, tooling, client onboarding workflow.</div>
+  </li>
+  <li>
+    <div class="timeline-year">2025</div>
+    <div class="timeline-title">First Two Projects — ERP + LIMS</div>
+    <div class="timeline-body">Custom .NET 8.0 ERP for retail client in Guyana signed and started. Java Spring Boot LIMS+HIMS for healthcare diagnostics in India signed and started. Both in pre-delivery phase.</div>
+  </li>
+  <li>
+    <div class="timeline-year">2026</div>
+    <div class="timeline-title">Third Project — DevOps & Cybersecurity Contract</div>
+    <div class="timeline-body">Long-term managed DevOps and cybersecurity contract signed with a cybersecurity firm. Three active projects, three countries, three technology stacks.</div>
+  </li>
+</ul>
+
+<h2>What T-Mat Global Is — and Is Not</h2>
+<p>T-Mat Global is not an IT staffing company. It is not a body shop. We do not subcontract to other vendors and pass the work off as ours. We are a small, focused engineering team that takes on projects we can deliver, staffs them with people who have worked on the relevant technology stack, and owns the outcome.</p>
+
+<div class="stat-row">
+  <div class="stat-card"><div class="num">3</div><div class="label">Active projects across 3 countries</div></div>
+  <div class="stat-card"><div class="num">DPIIT</div><div class="label">Recognized startup — government verified</div></div>
+  <div class="stat-card"><div class="num">AWS</div><div class="label">Certified cloud architecture</div></div>
+</div>
+
+<p>The DPIIT recognition matters more than it sounds. It means T-Mat Global is a verified legal entity — CIN registered, government-audited, with a documented founding history. For international clients, this is the difference between a vendor with a LinkedIn page and a vendor with a paper trail.</p>
+
+<h2>What I Have Learned as a Founder</h2>
+<p>The hardest part of running a software company is not the code. It is the judgment calls that happen before and after the code — scoping a project so it is actually deliverable, writing a contract that protects both parties, managing a client's expectations when requirements change mid-flight, and building the kind of working relationship where the client trusts you enough to tell you when something is not right before it becomes a problem.</p>
+
+<p>The T-Mobile years helped with this more than I expected. Working inside an enterprise means you understand the pressures your client is under — the internal stakeholders, the budget cycles, the executive expectations. When a client tells me they need a demo for a board meeting in three weeks, I understand exactly what that means because I have been on the other side of that meeting.</p>
+
+<div class="highlight-box">
+  <strong>What I bring to every project from the T-Mobile years</strong>
+  <ul>
+    <li>Architecture decisions made for production, not prototyping</li>
+    <li>CI/CD pipelines built to run unattended, not to pass a demo</li>
+    <li>Security thinking baked in at the design layer, not bolted on later</li>
+    <li>Observability as a first-class deliverable — dashboards, alerts, runbooks</li>
+    <li>Honest timelines: enterprise software takes as long as it takes, and I will tell you that upfront</li>
+  </ul>
+</div>
+
+<h2>What Comes Next</h2>
+<p>Three projects in year two is not a lot by volume, but it is the right number for the quality standard I hold. Every system we build carries the T-Mat Global name — that means it needs to run in production, not just in a staging environment, and the client needs to be able to maintain it after we hand it over.</p>
+
+<p>The goal is not to grow fast. The goal is to build a track record of systems that work. When that track record is three systems, then five, then ten — the company earns the right to grow.</p>
+
+<p>If you are evaluating software vendors for an enterprise project and you want to have a direct technical conversation — not a sales call — I am available. The contact form on this site reaches me directly.</p>
+
+<div class="cta-block">
+  <h3>Let's Talk About Your Project</h3>
+  <p>I respond personally to every inquiry. Bring your requirements — I'll give you an honest scope and cost estimate with no sales pressure.</p>
+  <a href="/contact/">Contact Sainath Directly</a>
+</div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>Contents</h4>
+    <ul class="toc-list">
+      <li><a href="#">Why I'm Writing This</a></li>
+      <li><a href="#">The T-Mobile USA Years</a></li>
+      <li><a href="#">The Decision to Return</a></li>
+      <li><a href="#">T-Mat Global Timeline</a></li>
+      <li><a href="#">What T-Mat Is</a></li>
+      <li><a href="#">Lessons as a Founder</a></li>
+      <li><a href="#">What Comes Next</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-card sidebar-contact">
+    <h4>About the Author</h4>
+    <p>Sainath Mitalakar is the founder and CEO of T-Mat Global Technologies. Former DevOps Engineer at T-Mobile USA. AWS Certified. DPIIT recognized startup.</p>
+    <a class="sidebar-btn" href="/about-us/">Read Full Bio</a>
+  </div>
+  <div class="sidebar-card">
+    <h4>Active Projects</h4>
+    <ul class="toc-list">
+      <li><a href="/blog/custom-erp-retail-guyana-2026/">ERP — Retail, Guyana</a></li>
+      <li><a href="/blog/lims-healthcare-diagnostics-india-2026/">LIMS+HIMS — Healthcare, India</a></li>
+      <li><a href="/blog/devops-cybersecurity-managed-contract-2026/">DevOps & Cybersecurity Contract</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-card">
+    <h4>Tags</h4>
+    <div class="sidebar-tags">
+      <span class="tag">Founder Story</span>
+      <span class="tag">T-Mobile USA</span>
+      <span class="tag">Startup India</span>
+      <span class="tag">DevOps</span>
+      <span class="tag">AWS</span>
+      <span class="tag">DPIIT</span>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <p>&copy; 2026 T-Mat Global Technologies Pvt. Ltd. · DPIIT Recognized Startup · <a href="/privacy/">Privacy</a></p>
+</footer>
+</body>
+</html>

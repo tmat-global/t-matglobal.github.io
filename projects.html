@@ -92,6 +92,7 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;z-index:2}
 .erp-card::before{background:linear-gradient(90deg,transparent,rgba(234,148,1,0.8),transparent)}
 .lims-card::before{background:linear-gradient(90deg,transparent,rgba(0,229,176,0.8),transparent)}
+.devops-card::before{background:linear-gradient(90deg,transparent,rgba(139,92,246,0.8),transparent)}
 
 .card-header{padding:clamp(1.5rem,3vw,2.2rem);display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:start;border-bottom:1px solid rgba(255,255,255,0.05)}
 @media(max-width:650px){.card-header{grid-template-columns:1fr}}
@@ -99,10 +100,12 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .card-type{font-size:var(--fs-xs);font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:0.28rem 0.75rem;border-radius:999px;display:inline-flex;align-items:center;gap:0.4rem;margin-bottom:0.9rem}
 .erp-card .card-type{color:var(--gold-lt);background:rgba(234,148,1,0.08);border:1px solid rgba(234,148,1,0.22)}
 .lims-card .card-type{color:var(--teal);background:rgba(0,229,176,0.06);border:1px solid rgba(0,229,176,0.20)}
+.devops-card .card-type{color:#c4b5fd;background:rgba(139,92,246,0.08);border:1px solid rgba(139,92,246,0.25)}
 
 .card-title{font-family:var(--font-d);font-size:var(--fs-xl);font-weight:900;line-height:1.05;letter-spacing:-1px;margin-bottom:0.7rem}
 .erp-card .card-title{background:linear-gradient(135deg,#fff,#ffdf6e,#ea9401);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .lims-card .card-title{background:linear-gradient(135deg,#fff,#a0ffe8,#00e5b0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.devops-card .card-title{background:linear-gradient(135deg,#fff,#ddd6fe,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 
 .card-desc{font-size:var(--fs-base);color:var(--muted-lt);line-height:1.8;margin-bottom:1.2rem;max-width:580px}
 
@@ -121,6 +124,11 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .btn-teal:hover{background:linear-gradient(135deg,rgba(0,229,176,0.18),rgba(0,229,176,0.06));box-shadow:0 0 36px rgba(0,229,176,0.18);transform:translateY(-2px)}
 .btn-ghost{display:inline-flex;align-items:center;gap:0.5rem;padding:0.65rem 1.5rem;border-radius:11px;font-size:var(--fs-sm);font-weight:700;border:1px solid rgba(255,255,255,0.09);background:rgba(255,255,255,0.025);color:rgba(255,255,255,0.55);transition:all .25s;cursor:pointer}
 .btn-ghost:hover{border-color:rgba(255,255,255,0.20);color:#fff;transform:translateY(-2px)}
+.btn-purple{display:inline-flex;align-items:center;gap:0.5rem;padding:0.65rem 1.5rem;border-radius:11px;font-size:var(--fs-sm);font-weight:700;border:1px solid rgba(139,92,246,0.40);background:linear-gradient(135deg,rgba(139,92,246,0.15),rgba(139,92,246,0.05));color:#c4b5fd;box-shadow:0 0 24px rgba(139,92,246,0.12);transition:all .25s;cursor:pointer}
+.btn-purple:hover{background:linear-gradient(135deg,rgba(139,92,246,0.28),rgba(139,92,246,0.10));box-shadow:0 0 40px rgba(139,92,246,0.28);transform:translateY(-2px)}
+.cb.purple{border:1px solid rgba(139,92,246,0.28);background:rgba(139,92,246,0.07);color:#c4b5fd}
+.sp-val.purple{color:#c4b5fd}
+.fill-purple{background:linear-gradient(90deg,#5b21b6,#8b5cf6,#c4b5fd)}
 
 /* STATUS PANEL */
 .status-panel{background:rgba(0,0,0,0.25);border-left:1px solid rgba(255,255,255,0.05);min-width:200px;padding:1.4rem}
@@ -173,6 +181,7 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .media-placeholder{border:1.5px dashed rgba(255,255,255,0.10);border-radius:var(--radius);background:rgba(255,255,255,0.015);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.6rem;min-height:180px;margin-bottom:2rem;transition:border-color .25s;cursor:default}
 .media-placeholder:hover{border-color:rgba(234,148,1,0.25)}
 .lims-card .media-placeholder:hover{border-color:rgba(0,229,176,0.22)}
+.devops-card .media-placeholder:hover{border-color:rgba(139,92,246,0.28)}
 .mp-icon{font-size:2rem;opacity:0.3}
 .mp-text{font-size:var(--fs-xs);font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.22)}
 .mp-sub{font-size:0.62rem;color:rgba(255,255,255,0.15)}
@@ -183,6 +192,7 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .bf-card{background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.055);border-radius:var(--radius);padding:1.1rem 1.2rem;transition:border-color .25s,transform .25s}
 .erp-card .bf-card:hover{border-color:rgba(234,148,1,0.22);transform:translateY(-4px)}
 .lims-card .bf-card:hover{border-color:rgba(0,229,176,0.20);transform:translateY(-4px)}
+.devops-card .bf-card:hover{border-color:rgba(139,92,246,0.25);transform:translateY(-4px)}
 .bf-icon{font-size:1.5rem;margin-bottom:0.6rem}
 .bf-card h4{font-family:var(--font-d);font-size:var(--fs-sm);font-weight:800;color:#fff;margin-bottom:0.4rem}
 .bf-card p{font-size:var(--fs-xs);color:var(--muted-lt);line-height:1.65}
@@ -224,15 +234,15 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 <!-- PAGE HERO -->
 <div class="page-hero">
   <div class="hero-glow"></div>
-  <div class="page-tag">Live Projects — 2026</div>
-  <h1 class="page-title">Active Engagements</h1>
-  <p class="page-sub">T-Mat Global is a purpose-built software engineering partner delivering production-grade systems for enterprise and growth-stage clients. These are our current active project deliveries.</p>
+  <div class="page-tag">Live Delivery — April 2026</div>
+  <h1 class="page-title">3 Projects.<br>3 Countries.<br>Pre-Delivery.</h1>
+  <p class="page-sub">Not case studies. Not mockups. These are active engineering engagements — running sprints, weekly client reviews, and scheduled production deliveries. Built by engineers who shipped at T-Mobile USA scale.</p>
 </div>
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
   <div class="trust-badge"><span class="trust-dot"></span> DPIIT Recognized Startup</div>
-  <div class="trust-badge"><span class="trust-dot"></span> 2 Active Projects</div>
+  <div class="trust-badge"><span class="trust-dot"></span> 3 Active Projects</div>
   <div class="trust-badge"><span class="trust-dot"></span> Global Remote Team</div>
   <div class="trust-badge"><span class="trust-dot"></span> Ex T-Mobile USA Engineers</div>
   <div class="trust-badge"><span class="trust-dot"></span> AWS Certified</div>
@@ -243,7 +253,7 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 
   <!-- PIPELINE -->
   <div class="pipeline-wrap reveal">
-    <div class="pipeline-label">Project Delivery Pipeline — Both Projects</div>
+    <div class="pipeline-label">Project Delivery Pipeline — All Active Projects</div>
     <div class="pipeline">
       <div class="pipeline-step">
         <div class="step-inner">
@@ -435,11 +445,92 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
     </div>
   </div>
 
+  <!-- DEVOPS & CYBERSECURITY PROJECT CARD -->
+  <div class="project-card devops-card reveal" style="margin-bottom:2rem">
+    <div class="card-header">
+      <div>
+        <div class="card-type">DevOps &amp; Cybersecurity — Managed Contract</div>
+        <h2 class="card-title">DevOps &amp; Cybersecurity Managed Services</h2>
+        <p class="card-desc">A long-term managed contract with a cybersecurity firm — covering CI/CD pipeline management, cloud infrastructure automation, Kubernetes orchestration, security operations, and 24/7 observability. Built on enterprise-grade DevOps practices from T-Mobile USA.</p>
+        <div class="card-badges">
+          <span class="cb green">Active — Retainer</span>
+          <span class="cb purple">Cybersecurity</span>
+          <span class="cb cyan">Long-Term</span>
+          <span class="cb muted">AWS Certified</span>
+          <span class="cb muted">Kubernetes</span>
+        </div>
+        <div class="card-actions">
+          <a href="https://wa.me/919325479476?text=Hi%20Sainath%2C%20I%20need%20DevOps%20managed%20services" class="btn-purple">Enquire About Managed DevOps</a>
+          <a href="https://topmate.io/sainathmitalakar/2004329" class="btn-ghost">Schedule a Consultation</a>
+        </div>
+      </div>
+      <div class="status-panel">
+        <div class="sp-title">Contract Status</div>
+        <div class="sp-row"><span class="sp-key">Status</span><span class="sp-val green">Active Retainer</span></div>
+        <div class="sp-row"><span class="sp-key">Industry</span><span class="sp-val purple">Cybersecurity</span></div>
+        <div class="sp-row"><span class="sp-key">Model</span><span class="sp-val cyan">Managed Services</span></div>
+        <div class="sp-row"><span class="sp-key">P1 SLA</span><span class="sp-val green">1 Hour</span></div>
+        <div class="sp-row"><span class="sp-key">Cloud</span><span class="sp-val purple">AWS / Azure</span></div>
+        <div class="progress-wrap">
+          <div class="prog-label"><span>Uptime Target</span><span id="devops-pct">0%</span></div>
+          <div class="prog-bar"><div class="prog-fill fill-purple" id="devops-bar"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <!-- MEDIA PLACEHOLDER -->
+      <div class="body-label">Infrastructure Preview</div>
+      <div class="media-placeholder" style="border-color:rgba(139,92,246,0.10)">
+        <div class="mp-text">Dashboard Screenshots — Available Under NDA</div>
+        <div class="mp-sub">Observability dashboards and pipeline architecture available to qualified prospects under NDA.</div>
+      </div>
+
+      <!-- MODULES -->
+      <div class="body-label">Service Coverage</div>
+      <div class="module-list">
+        <div class="module-item done"><div class="m-check done">✓</div>CI/CD Pipeline Management</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Infrastructure as Code (Terraform)</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Kubernetes Orchestration</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Security &amp; Vulnerability Monitoring</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Cloud Cost Optimization</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Observability — Prometheus / Grafana</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Incident Response (SLA-Backed)</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Monthly Reporting &amp; Reviews</div>
+      </div>
+
+      <!-- WHO WE BUILT FOR -->
+      <div class="body-label">Who We Serve</div>
+      <div class="built-for">
+        <div class="bf-card">
+          <h4>Cybersecurity Firm — Direct Client</h4>
+          <p>A cybersecurity company that required a trusted DevOps engineering partner for ongoing infrastructure management, security automation, and cloud operations — without building an in-house team.</p>
+        </div>
+        <div class="bf-card">
+          <h4>T-Mobile USA Background Applied</h4>
+          <p>This contract is built on enterprise DevOps discipline developed at T-Mobile USA — CI/CD at scale, real-time observability, and infrastructure ownership under production-level SLAs.</p>
+        </div>
+      </div>
+
+      <!-- TECH STACK -->
+      <div class="body-label">Tech Stack</div>
+      <div class="tech-row">
+        <div class="tech-pill"><span class="t-dot d-purple"></span>Kubernetes</div>
+        <div class="tech-pill"><span class="t-dot d-cyan"></span>Terraform (IaC)</div>
+        <div class="tech-pill"><span class="t-dot d-gold"></span>AWS / Azure</div>
+        <div class="tech-pill"><span class="t-dot d-green"></span>Prometheus &amp; Grafana</div>
+        <div class="tech-pill"><span class="t-dot d-purple"></span>GitHub Actions CI/CD</div>
+        <div class="tech-pill"><span class="t-dot d-cyan"></span>Docker</div>
+        <div class="tech-pill"><span class="t-dot d-teal"></span>Security Scanning Tools</div>
+        <div class="tech-pill"><span class="t-dot d-gold"></span>Cloud Cost Dashboards</div>
+      </div>
+    </div>
+  </div>
+
   <!-- CTA STRIP -->
   <div class="cta-strip reveal">
     <div>
-      <h3>Seeking a Dedicated Software Engineering Partner?</h3>
-      <p>T-Mat Global engineers custom ERP systems, LIMS platforms, SaaS products, and enterprise-grade software. Submit your requirements and receive a structured proposal within 24 hours.</p>
+      <h3>One Project Slot Available — Q3 2026</h3>
+      <p>We take on one new project at a time to maintain delivery quality. If your requirements are a fit, you will receive a scoped proposal with timeline and cost — within 24 hours, no discovery call required.</p>
     </div>
     <div class="cta-btns">
       <a href="https://wa.me/919325479476" class="btn-gold">Connect via WhatsApp</a>
@@ -494,10 +585,11 @@ const observer = new IntersectionObserver((entries) => {
     if (e.isIntersecting) {
       if (e.target.id === 'erp-bar') animateBar('erp-bar', 'erp-pct', 82);
       if (e.target.id === 'lims-bar') animateBar('lims-bar', 'lims-pct', 78);
+      if (e.target.id === 'devops-bar') animateBar('devops-bar', 'devops-pct', 99);
     }
   });
 }, { threshold: 0.3 });
-['erp-bar','lims-bar'].forEach(id => {
+['erp-bar','lims-bar','devops-bar'].forEach(id => {
   const el = document.getElementById(id);
   if (el) observer.observe(el);
 });
