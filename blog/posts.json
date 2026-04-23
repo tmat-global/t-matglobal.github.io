@@ -1,6 +1,168 @@
 [
   {
     "published": true,
+    "url": "/blog/dpiit-recognized-startup-india-software/",
+    "tag": "SEO Guide",
+    "title": "DPIIT Recognized Startup India: What It Means for Software Clients | T-Mat Global",
+    "desc": "What DPIIT recognition actually means for a software startup in India — legal standing, tax benefits, compliance verification, and why it matters when you are choosing an offshore development partner.",
+    "date": "April 23, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/t-mat-global-three-projects-three-countries-2026/",
+    "tag": "Company Update",
+    "title": "Three Projects, Three Countries: T-Mat Global 2026 Update | T-Mat Global",
+    "desc": "T-Mat Global Technologies is now running three active enterprise projects across three countries: a custom ERP in Guyana, a LIMS+HIMS in India, and a DevOps & Cybersecurity managed contract. A full recap.",
+    "date": "April 22, 2026",
+    "read": "7 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/building-t-mat-global-remotely-india/",
+    "tag": "Founder Post",
+    "title": "Building T-Mat Global Remotely From India: Tools, Process, and Hard Lessons",
+    "desc": "How T-Mat Global operates three active enterprise projects across three countries from India — the async-first workflows, tooling stack, client communication practices, and what actually works.",
+    "date": "April 21, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/sainath-mitalakar-founder-journey/",
+    "tag": "Founder Post",
+    "title": "From T-Mobile USA to Building a Software Startup in India | Sainath Mitalakar",
+    "desc": "Sainath Mitalakar shares his journey from T-Mobile USA DevOps Engineer to founding T-Mat Global Technologies — a DPIIT-recognized startup now running three enterprise software projects across three countries.",
+    "date": "April 20, 2026",
+    "read": "8 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/java-spring-boot-development-india/",
+    "tag": "Technical Guide",
+    "title": "Java Spring Boot Development India: Capabilities, Costs & Real Projects | T-Mat Global",
+    "desc": "Java Spring Boot development from India — real-world cost benchmarks, architecture patterns, LIMS case study, and how to evaluate Indian Spring Boot development teams in 2026.",
+    "date": "April 19, 2026",
+    "read": "10 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/offshore-software-development-india-guide/",
+    "tag": "SEO Guide",
+    "title": "Offshore Software Development India: Complete 2026 Guide | T-Mat Global",
+    "desc": "Everything you need to know about offshore software development in India — costs, risks, vendor selection, contracts, and time-zone management. A practical guide for US, UK, and UAE buyers.",
+    "date": "April 18, 2026",
+    "read": "12 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/devops-managed-services-faq/",
+    "tag": "DevOps",
+    "title": "DevOps Managed Services: Every Question Engineering Leaders Ask — Answered",
+    "desc": "Complete FAQ on DevOps managed services — what they include, what they cost, how teams are structured, SLAs, time zones, and how to evaluate India-based DevOps partners.",
+    "date": "April 17, 2026",
+    "read": "7 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/lims-system-faq/",
+    "tag": "Healthcare Technology",
+    "title": "LIMS System: Every Question Healthcare Leaders Ask Before Buying or Building — Answered",
+    "desc": "Complete FAQ on LIMS systems for diagnostics labs and healthcare organisations — what LIMS does, cost, build vs buy, technology, implementation timeline, and compliance requirements.",
+    "date": "April 16, 2026",
+    "read": "7 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/custom-erp-software-faq/",
+    "tag": "ERP",
+    "title": "Custom ERP Software: Every Question Enterprise Buyers Ask — Answered",
+    "desc": "Custom ERP software answers — what it is, what it costs, how long it takes, build vs buy, what stack to use, and how to choose a development partner. Voice-search optimized FAQ.",
+    "date": "April 15, 2026",
+    "read": "7 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/enterprise-software-development-uk/",
+    "tag": "United Kingdom",
+    "title": "Enterprise Software Development for UK Companies: Why India-Based Teams Win on Value",
+    "desc": "T-Mat Global delivers enterprise software development for UK companies from India — ERP, LIMS, DevOps, and custom software with UK time zone overlap and DPIIT-backed governance.",
+    "date": "April 14, 2026",
+    "read": "6 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/enterprise-software-development-usa/",
+    "tag": "USA",
+    "title": "Enterprise Software Development for US Companies: India-Based Delivery That Performs",
+    "desc": "T-Mat Global delivers enterprise software development for US companies from India — ERP, LIMS, DevOps, and custom software with US time zone alignment and AWS-certified engineering.",
+    "date": "April 13, 2026",
+    "read": "6 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/enterprise-software-development-uae/",
+    "tag": "UAE",
+    "title": "Enterprise Software Development for UAE Companies: How T-Mat Global Works with Gulf Clients",
+    "desc": "T-Mat Global delivers enterprise software development for UAE companies from India — ERP, LIMS, DevOps, and custom software with Gulf time zone alignment and DPIIT-backed governance.",
+    "date": "April 12, 2026",
+    "read": "6 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/devops-managed-services-india/",
+    "tag": "DevOps",
+    "title": "DevOps Managed Services India: What the Engagement Looks Like and What It Costs",
+    "desc": "DevOps managed services from India — what the engagement includes, what it costs, how teams are structured, and what to expect from an India-based DevOps managed services partner.",
+    "date": "April 11, 2026",
+    "read": "7 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/devops-cybersecurity-managed-contract-2026/",
+    "tag": "Company Update",
+    "title": "T-Mat Global Signs Long-Term DevOps and Cybersecurity Managed Services Contract",
+    "desc": "T-Mat Global has signed a long-term managed services contract with a cybersecurity firm covering DevOps infrastructure management and cybersecurity operations. This is our third active project in 2026.",
+    "date": "April 10, 2026",
+    "read": "5 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/lims-software-india/",
+    "tag": "Healthcare Technology",
+    "title": "LIMS Software India: What Diagnostics Labs Need to Know Before Building or Buying",
+    "desc": "LIMS software in India — what it includes, build vs buy comparison, cost benchmarks, and how to evaluate a LIMS development partner for your diagnostics or research laboratory.",
+    "date": "April 09, 2026",
+    "read": "8 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/lims-healthcare-diagnostics-india-2026/",
+    "tag": "Company Update",
+    "title": "Building a Laboratory Information System for Healthcare Diagnostics in India",
+    "desc": "T-Mat Global is delivering a full-stack LIMS and HIMS for a healthcare diagnostics company in India, built on Java Spring Boot. This is the system we built and the clinical workflow it supports.",
+    "date": "April 08, 2026",
+    "read": "7 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/custom-erp-software-india/",
+    "tag": "ERP Development",
+    "title": "Custom ERP Software India: Costs, Timelines and What Enterprise Clients Actually Get",
+    "desc": "Custom ERP software development from India costs 60–70% less than US or UK equivalents. This guide covers what you get, what it costs, typical timelines, and how to evaluate India-based ERP developers.",
+    "date": "April 07, 2026",
+    "read": "8 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/custom-erp-retail-guyana-2026/",
+    "tag": "Company Update",
+    "title": "How T-Mat Global Built a Custom ERP for a Retail Business in Guyana",
+    "desc": "T-Mat Global built a fully custom .NET 8.0 ERP system for a retail business in Guyana, delivered as a white-label product for a SaaS founder. This is the story of how we engineered it.",
+    "date": "April 06, 2026",
+    "read": "6 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/cloud-native-architecture-healthcare-fintech-2026/",
     "tag": "Cloud Engineering",
     "title": "Cloud-Native Architecture for Healthcare and FinTech in 2026: Compliance, Cost and Design Guide",
