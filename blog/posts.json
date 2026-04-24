@@ -2,8 +2,8 @@
   {
     "published": true,
     "url": "/blog/how-to-evaluate-software-development-partner-2026/",
-    "tag": "IT Consulting",
-    "title": "How to Evaluate a Software Development Partner: The 2026 Buyer's Checklist",
+    "tag": "",
+    "title": "How to Evaluate a Software Development Partner: The 2026 Buyer",
     "desc": "A practical 12-question due diligence checklist for evaluating offshore software development partners in 2026. What to ask, what to verify, and what red flags to walk away from.",
     "date": "April 24, 2026",
     "read": "10 min read"
@@ -163,21 +163,21 @@
   },
   {
     "published": true,
-    "url": "/blog/cloud-native-architecture-healthcare-fintech-2026/",
-    "tag": "Cloud Engineering",
-    "title": "Cloud-Native Architecture for Healthcare and FinTech in 2026: Compliance, Cost and Design Guide",
-    "desc": "A complete 2026 guide to cloud-native architecture for Healthcare and FinTech — what HIPAA and PCI-DSS require from your infrastructure, what compliant cloud builds cost, and how India-based delivery partners are changing the economics for regulated industry platforms.",
-    "date": "April 06, 2026",
-    "read": "10 min read"
-  },
-  {
-    "published": true,
     "url": "/blog/custom-erp-retail-guyana-2026/",
     "tag": "Company Update",
     "title": "How T-Mat Global Built a Custom ERP for a Retail Business in Guyana",
     "desc": "T-Mat Global built a fully custom .NET 8.0 ERP system for a retail business in Guyana, delivered as a white-label product for a SaaS founder. This is the story of how we engineered it.",
     "date": "April 06, 2026",
     "read": "6 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/cloud-native-architecture-healthcare-fintech-2026/",
+    "tag": "Cloud Engineering",
+    "title": "Cloud-Native Architecture for Healthcare and FinTech in 2026: Compliance, Cost and Design Guide",
+    "desc": "A complete 2026 guide to cloud-native architecture for Healthcare and FinTech — what HIPAA and PCI-DSS require from your infrastructure, what compliant cloud builds cost, and how India-based delivery partners are changing the economics for regulated industry platforms.",
+    "date": "April 06, 2026",
+    "read": "10 min read"
   },
   {
     "published": true,
