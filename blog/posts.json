@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/platform-engineering-cto-guide-2026/",
+    "tag": "DevOps",
+    "title": "Platform Engineering in 2026: What Every CTO Needs to Build Before Scaling DevOps",
+    "desc": "Platform Engineering is replacing DevOps-as-a-function at forward-thinking enterprises. What it means, why it matters in 2026, and exactly what your engineering org needs to build before you scale.",
+    "date": "April 25, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/how-to-evaluate-software-development-partner-2026/",
     "tag": "",
     "title": "How to Evaluate a Software Development Partner: The 2026 Buyer",
