@@ -230,5 +230,8 @@
   </div>
 </footer>
 
+<script>
+document.querySelectorAll(".card").forEach(function(c,i){c.style.cssText="opacity:0;transform:translateY(20px);transition:opacity .5s "+(i*.07)+"s ease,transform .5s "+(i*.07)+"s ease,border-color .3s,box-shadow .3s";});var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){var el=e.target;el.style.opacity="1";el.style.transform="translateY(0)";io.unobserve(el);setTimeout(function(){el.style.cssText="";},700);}});},{threshold:0.1,rootMargin:"0px 0px -40px 0px"});document.querySelectorAll(".card").forEach(function(c){io.observe(c);});
+</script>
 </body>
 </html>
