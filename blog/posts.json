@@ -1,8 +1,17 @@
 [
   {
     "published": true,
+    "url": "/blog/ai-agents-devops-enterprise-2026/",
+    "tag": "AI & DevOps",
+    "title": "AI Agents in DevOps: What Every Enterprise CTO Needs to Know Before Deploying Autonomous Engineering Workflows",
+    "desc": "AI agents are moving from co-pilots to autonomous actors in enterprise DevOps pipelines. Four production-ready use cases, three risks CTOs underestimate, and the architecture that makes autonomous workflows safe to deploy at scale.",
+    "date": "April 26, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/platform-engineering-cto-guide-2026/",
-    "tag": "",
+    "tag": "DevOps",
     "title": "Platform Engineering in 2026: What Every CTO Needs to Build Before Scaling DevOps",
     "desc": "Platform Engineering is replacing DevOps-as-a-function at forward-thinking enterprises. Here is what it means, why it matters in 2026, and exactly what your engineering org needs to build before you scale.",
     "date": "April 25, 2026",

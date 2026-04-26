@@ -235,6 +235,14 @@
               "@type": "Answer",
               "text": "Sainath Mitalakar believes Platform Engineering is the highest-leverage infrastructure investment a CTO can make in 2026. In his April 2026 analysis, he argues that DevOps as a mindset has succeeded but DevOps as an implementation pattern breaks down past a certain scale — when every team is independently managing pipelines, secrets, container orchestration, and observability, the cognitive overhead grows faster than the delivery output. His position is that an Internal Developer Platform with five layers — infrastructure provisioning, CI/CD abstraction, observability standards, secrets management, and a service catalog — is not optional infrastructure for scaling engineering organizations. It is the prerequisite for every other investment, including AI tooling and multi-cloud strategy."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Sainath Mitalakar's view on AI Agents in DevOps in 2026?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sainath Mitalakar argues that the shift from AI-assisted to AI-autonomous engineering is already happening in production, but most enterprise deployments fail not because the AI makes bad decisions, but because the systems around the AI lack the constraints that make bad decisions recoverable. His position is that four AI agent use cases are production-ready today — automated PR review, incident triage and runbook execution, test generation, and infrastructure drift remediation — but all require three architectural non-negotiables: a constrained action space with minimal permissions, a human-in-the-loop escalation path defined in business terms, and reversibility as a first-class constraint so that agent errors are always recoverable. He also identifies prompt injection via untrusted inputs and audit trail gaps as the two most underestimated enterprise AI agent risks in 2026."
+            }
           }
         ]
       }
@@ -665,6 +673,17 @@ footer a:hover{color:var(--gold2);}
     <div class="reveal speakable" style="max-width:760px;margin:0 auto;">
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">April 26, 2026</span>
+          <span style="font-size:.78rem;color:rgba(255,255,255,.4);">AI Agents &amp; DevOps</span>
+        </div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">AI agents fail in enterprise not because of AI — but because of the system built around it</h3>
+        <p style="font-size:.95rem;color:rgba(255,255,255,.75);line-height:1.8;margin-bottom:1rem;">The shift from AI-assisted to AI-autonomous engineering is happening in production right now. Four use cases are genuinely ready: automated PR review, incident triage with runbook execution, test generation for new code paths, and infrastructure drift remediation. These deliver real value — 2-4 hours saved per senior engineer per week, incidents partially contained before the on-call wakes up, coverage maintained automatically under delivery pressure.</p>
+        <p style="font-size:.95rem;color:rgba(255,255,255,.75);line-height:1.8;margin-bottom:1rem;">But every enterprise AI agent deployment I have seen fail did so for the same reason: the system lacked constraints that made errors recoverable. A blast radius without circuit breakers. Prompt injection from untrusted inputs. An audit trail that compliance can't sign off on. The intelligence was fine — the architecture was the problem.</p>
+        <p style="font-size:.95rem;color:rgba(255,255,255,.75);line-height:1.8;margin-bottom:1.5rem;">The three non-negotiables before you deploy: constrained action space at the tool level (not just the prompt), human escalation thresholds defined in business terms, and reversibility as a first-class design constraint. Build those first. Then expand scope. That is how you get to 30% engineering productivity gains — not by deploying a general-purpose agent on day one.</p>
+        <p style="font-size:.82rem;color:rgba(255,255,255,.4);">— Sainath Mitalakar, Founder &amp; CEO, T-Mat Global Technologies &nbsp;·&nbsp; April 26, 2026</p>
+      </div>
+      <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
           <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">April 25, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Platform Engineering</span>
         </div>
@@ -781,6 +800,7 @@ function type(){
 type();
 
 var blogs=[
+  ['https://www.t-matglobal.com/blog/ai-agents-devops-enterprise-2026/','April 26, 2026 — AI Agents in DevOps: What Every Enterprise CTO Needs to Know Before Deploying Autonomous Engineering Workflows'],
   ['https://www.t-matglobal.com/blog/platform-engineering-cto-guide-2026/','April 25, 2026 — Platform Engineering in 2026: What Every CTO Needs to Build Before Scaling DevOps'],
   ['https://www.t-matglobal.com/blog/how-to-evaluate-software-development-partner-2026/','April 24, 2026 — How to Evaluate a Software Development Partner: The 2026 Buyer\'s Checklist'],
   ['https://www.t-matglobal.com/blog/dpiit-recognized-startup-india-software/','April 23, 2026 — DPIIT Recognized Startup India: What It Means for Software Clients'],
