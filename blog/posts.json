@@ -1,20 +1,20 @@
 [
   {
     "published": true,
+    "url": "/blog/finops-cloud-cost-enterprise-2026/",
+    "tag": "",
+    "title": "FinOps in 2026: How Enterprise CTOs Are Cutting Cloud Spend by 40% Without Slowing Engineering",
+    "desc": "FinOps is no longer a finance function — it is an engineering discipline. Here are the four proven strategies enterprise CTOs are using to cut cloud spend by 40%, the three governance failures that cause budgets to collapse, and the three-layer FinOps framework that makes cost efficiency permanent.",
+    "date": "April 27, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/ai-agents-devops-enterprise-2026/",
     "tag": "",
     "title": "AI Agents in DevOps: What Every Enterprise CTO Needs to Know Before Deploying Autonomous Engineering Workflows",
     "desc": "AI agents are moving from co-pilots to autonomous actors in enterprise DevOps pipelines. Here is what actually works in production today, what risks CTOs are underestimating, and the architecture decisions that determine whether AI-augmented engineering scales or collapses.",
     "date": "April 26, 2026",
-    "read": "9 min read"
-  },
-  {
-    "published": true,
-    "url": "/blog/finops-cloud-cost-enterprise-2026/",
-    "tag": "FinOps",
-    "title": "FinOps in 2026: How Enterprise CTOs Are Cutting Cloud Spend by 40% Without Slowing Engineering",
-    "desc": "Four proven FinOps strategies, three governance failures to avoid, and the three-layer framework enterprise CTOs are using to cut cloud spend by 40% without degrading engineering velocity.",
-    "date": "April 27, 2026",
     "read": "9 min read"
   },
   {
