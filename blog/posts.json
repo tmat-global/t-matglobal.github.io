@@ -10,6 +10,15 @@
   },
   {
     "published": true,
+    "url": "/blog/finops-cloud-cost-enterprise-2026/",
+    "tag": "FinOps",
+    "title": "FinOps in 2026: How Enterprise CTOs Are Cutting Cloud Spend by 40% Without Slowing Engineering",
+    "desc": "Four proven FinOps strategies, three governance failures to avoid, and the three-layer framework enterprise CTOs are using to cut cloud spend by 40% without degrading engineering velocity.",
+    "date": "April 27, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/platform-engineering-cto-guide-2026/",
     "tag": "",
     "title": "Platform Engineering in 2026: What Every CTO Needs to Build Before Scaling DevOps",
