@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/kubernetes-security-production-2026/",
+    "tag": "",
+    "title": "Kubernetes Security in 2026: The CTO",
+    "desc": "Most Kubernetes breaches are not zero-days — they are misconfigurations that existed from day one. Here is the 5-point pre-production security checklist, the 3 vulnerabilities that cause enterprise K8s breaches, and how to build a Zero-Trust Kubernetes architecture before you ship.",
+    "date": "April 28, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/finops-cloud-cost-enterprise-2026/",
     "tag": "",
     "title": "FinOps in 2026: How Enterprise CTOs Are Cutting Cloud Spend by 40% Without Slowing Engineering",
@@ -15,15 +24,6 @@
     "title": "AI Agents in DevOps: What Every Enterprise CTO Needs to Know Before Deploying Autonomous Engineering Workflows",
     "desc": "AI agents are moving from co-pilots to autonomous actors in enterprise DevOps pipelines. Here is what actually works in production today, what risks CTOs are underestimating, and the architecture decisions that determine whether AI-augmented engineering scales or collapses.",
     "date": "April 26, 2026",
-    "read": "9 min read"
-  },
-  {
-    "published": true,
-    "url": "/blog/kubernetes-security-production-2026/",
-    "tag": "Security",
-    "title": "Kubernetes Security in 2026: The CTO's Checklist Before You Go Production",
-    "desc": "Most K8s breaches are misconfigurations from day one. The 5-point pre-production security checklist, 3 enterprise breach patterns, Zero-Trust Kubernetes architecture, and how to evaluate a DevOps partner's security practices.",
-    "date": "April 28, 2026",
     "read": "9 min read"
   },
   {
