@@ -19,6 +19,15 @@
   },
   {
     "published": true,
+    "url": "/blog/kubernetes-security-production-2026/",
+    "tag": "Security",
+    "title": "Kubernetes Security in 2026: The CTO's Checklist Before You Go Production",
+    "desc": "Most K8s breaches are misconfigurations from day one. The 5-point pre-production security checklist, 3 enterprise breach patterns, Zero-Trust Kubernetes architecture, and how to evaluate a DevOps partner's security practices.",
+    "date": "April 28, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/platform-engineering-cto-guide-2026/",
     "tag": "",
     "title": "Platform Engineering in 2026: What Every CTO Needs to Build Before Scaling DevOps",
