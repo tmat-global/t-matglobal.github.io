@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/gitops-vs-cicd-enterprise-2026/",
+    "tag": "",
+    "title": "GitOps vs Traditional CI/CD: Why Enterprise CTOs Are Switching to Pull-Based Deployments",
+    "desc": "GitOps replaces push-based CI/CD with a pull-based model where Git is the single source of truth for infrastructure and application state. Here are the four reasons enterprise CTOs are making the switch, three pitfalls to avoid, and the adoption framework that makes the transition safe.",
+    "date": "April 29, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/kubernetes-security-production-2026/",
     "tag": "",
     "title": "Kubernetes Security in 2026: The CTO",
@@ -15,15 +24,6 @@
     "title": "FinOps in 2026: How Enterprise CTOs Are Cutting Cloud Spend by 40% Without Slowing Engineering",
     "desc": "FinOps is no longer a finance function — it is an engineering discipline. Here are the four proven strategies enterprise CTOs are using to cut cloud spend by 40%, the three governance failures that cause budgets to collapse, and the three-layer FinOps framework that makes cost efficiency permanent.",
     "date": "April 27, 2026",
-    "read": "9 min read"
-  },
-  {
-    "published": true,
-    "url": "/blog/gitops-vs-cicd-enterprise-2026/",
-    "tag": "GitOps",
-    "title": "GitOps vs Traditional CI/CD: Why Enterprise CTOs Are Making the Switch in 2026",
-    "desc": "GitOps is replacing traditional CI/CD in enterprise at a faster rate than most CTOs anticipated. Here is the comparison that matters, four structural reasons GitOps wins at scale, three adoption pitfalls, and a four-phase implementation framework for engineering teams making the transition.",
-    "date": "April 29, 2026",
     "read": "9 min read"
   },
   {
