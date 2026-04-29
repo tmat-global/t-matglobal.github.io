@@ -19,6 +19,15 @@
   },
   {
     "published": true,
+    "url": "/blog/gitops-vs-cicd-enterprise-2026/",
+    "tag": "GitOps",
+    "title": "GitOps vs Traditional CI/CD: Why Enterprise CTOs Are Making the Switch in 2026",
+    "desc": "GitOps is replacing traditional CI/CD in enterprise at a faster rate than most CTOs anticipated. Here is the comparison that matters, four structural reasons GitOps wins at scale, three adoption pitfalls, and a four-phase implementation framework for engineering teams making the transition.",
+    "date": "April 29, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/ai-agents-devops-enterprise-2026/",
     "tag": "",
     "title": "AI Agents in DevOps: What Every Enterprise CTO Needs to Know Before Deploying Autonomous Engineering Workflows",
