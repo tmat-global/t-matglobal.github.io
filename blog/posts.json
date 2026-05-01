@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/devsecops-enterprise-2026/",
+    "tag": "",
+    "title": "DevSecOps in 2026: Why Security Can No Longer Be a Sprint Zero Checkbox for Enterprise CTOs",
+    "desc": "DevSecOps shifts security left into every stage of the software delivery pipeline — not as a handoff to a security team at release, but as automated controls owned by engineering. Here are the four shift-left practices with the highest impact, three compliance failures, and the DevSecOps maturity model for enterprise CTOs in 2026.",
+    "date": "May 01, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/platform-engineering-idp-2026/",
     "tag": "",
     "title": "Internal Developer Platforms in 2026: Why Fortune 500 CTOs Are Investing in IDP Before It",
@@ -15,15 +24,6 @@
     "title": "GitOps vs Traditional CI/CD: Why Enterprise CTOs Are Switching to Pull-Based Deployments",
     "desc": "GitOps replaces push-based CI/CD with a pull-based model where Git is the single source of truth for infrastructure and application state. Here are the four reasons enterprise CTOs are making the switch, three pitfalls to avoid, and the adoption framework that makes the transition safe.",
     "date": "April 29, 2026",
-    "read": "9 min read"
-  },
-  {
-    "published": true,
-    "url": "/blog/devsecops-enterprise-2026/",
-    "tag": "DevSecOps",
-    "title": "DevSecOps in 2026: Why Security Can No Longer Be a Sprint Zero Checkbox for Enterprise CTOs",
-    "desc": "DevSecOps shifts security left into every stage of the delivery pipeline. Here are the four shift-left practices with the highest enterprise impact (SAST, SCA, container scanning, secrets detection), three compliance failures, and the four-level DevSecOps maturity model for CTOs in 2026.",
-    "date": "May 1, 2026",
     "read": "9 min read"
   },
   {
