@@ -19,6 +19,15 @@
   },
   {
     "published": true,
+    "url": "/blog/platform-engineering-idp-2026/",
+    "tag": "Platform Engineering",
+    "title": "Internal Developer Platforms in 2026: Why Fortune 500 CTOs Are Investing in IDP Before It's Too Late",
+    "desc": "An IDP is not a product you buy — it is an engineering capability you build deliberately. Here are the four core IDP capabilities with the highest ROI, the three adoption mistakes that stall delivery, and the golden path framework Fortune 500 CTOs are using to ship IDPs in 2026.",
+    "date": "April 30, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/finops-cloud-cost-enterprise-2026/",
     "tag": "",
     "title": "FinOps in 2026: How Enterprise CTOs Are Cutting Cloud Spend by 40% Without Slowing Engineering",
