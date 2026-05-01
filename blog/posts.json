@@ -19,6 +19,15 @@
   },
   {
     "published": true,
+    "url": "/blog/devsecops-enterprise-2026/",
+    "tag": "DevSecOps",
+    "title": "DevSecOps in 2026: Why Security Can No Longer Be a Sprint Zero Checkbox for Enterprise CTOs",
+    "desc": "DevSecOps shifts security left into every stage of the delivery pipeline. Here are the four shift-left practices with the highest enterprise impact (SAST, SCA, container scanning, secrets detection), three compliance failures, and the four-level DevSecOps maturity model for CTOs in 2026.",
+    "date": "May 1, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/kubernetes-security-production-2026/",
     "tag": "",
     "title": "Kubernetes Security in 2026: The CTO",
