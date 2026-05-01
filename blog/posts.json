@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/platform-engineering-idp-2026/",
+    "tag": "",
+    "title": "Internal Developer Platforms in 2026: Why Fortune 500 CTOs Are Investing in IDP Before It",
+    "desc": "Internal Developer Platforms are the infrastructure investment that separates scaling engineering organizations from ones stuck in platform debt. Here are the four core IDP capabilities, three adoption mistakes, and the golden path framework Fortune 500 CTOs are using to ship IDPs in 2026.",
+    "date": "April 30, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/gitops-vs-cicd-enterprise-2026/",
     "tag": "",
     "title": "GitOps vs Traditional CI/CD: Why Enterprise CTOs Are Switching to Pull-Based Deployments",
@@ -15,15 +24,6 @@
     "title": "Kubernetes Security in 2026: The CTO",
     "desc": "Most Kubernetes breaches are not zero-days — they are misconfigurations that existed from day one. Here is the 5-point pre-production security checklist, the 3 vulnerabilities that cause enterprise K8s breaches, and how to build a Zero-Trust Kubernetes architecture before you ship.",
     "date": "April 28, 2026",
-    "read": "9 min read"
-  },
-  {
-    "published": true,
-    "url": "/blog/platform-engineering-idp-2026/",
-    "tag": "Platform Engineering",
-    "title": "Internal Developer Platforms in 2026: Why Fortune 500 CTOs Are Investing in IDP Before It's Too Late",
-    "desc": "An IDP is not a product you buy — it is an engineering capability you build deliberately. Here are the four core IDP capabilities with the highest ROI, the three adoption mistakes that stall delivery, and the golden path framework Fortune 500 CTOs are using to ship IDPs in 2026.",
-    "date": "April 30, 2026",
     "read": "9 min read"
   },
   {
