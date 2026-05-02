@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/observability-enterprise-2026/",
+    "tag": "",
+    "title": "Observability in 2026: Why Enterprise CTOs Are Moving Beyond Monitoring to Full-Stack Telemetry",
+    "desc": "Monitoring tells you something is wrong. Observability tells you why. Here are the three telemetry pillars, four enterprise observability failures, and the OpenTelemetry adoption framework for CTOs moving to full-stack observability in 2026.",
+    "date": "May 02, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/devsecops-enterprise-2026/",
     "tag": "",
     "title": "DevSecOps in 2026: Why Security Can No Longer Be a Sprint Zero Checkbox for Enterprise CTOs",
@@ -15,15 +24,6 @@
     "title": "Internal Developer Platforms in 2026: Why Fortune 500 CTOs Are Investing in IDP Before It",
     "desc": "Internal Developer Platforms are the infrastructure investment that separates scaling engineering organizations from ones stuck in platform debt. Here are the four core IDP capabilities, three adoption mistakes, and the golden path framework Fortune 500 CTOs are using to ship IDPs in 2026.",
     "date": "April 30, 2026",
-    "read": "9 min read"
-  },
-  {
-    "published": true,
-    "url": "/blog/observability-enterprise-2026/",
-    "tag": "Observability",
-    "title": "Observability in 2026: Why Enterprise CTOs Are Moving Beyond Monitoring to Full-Stack Telemetry",
-    "desc": "Monitoring tells you something is wrong. Observability tells you why. Here are the three telemetry pillars (logs, metrics, distributed traces), four enterprise observability failures, and the OpenTelemetry adoption framework for CTOs implementing full-stack observability in 2026.",
-    "date": "May 2, 2026",
     "read": "9 min read"
   },
   {
