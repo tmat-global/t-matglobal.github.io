@@ -19,6 +19,15 @@
   },
   {
     "published": true,
+    "url": "/blog/cloud-migration-enterprise-2026/",
+    "tag": "Cloud Migration",
+    "title": "Cloud Migration in 2026: The Enterprise CTO's Playbook for Zero-Downtime Moves to AWS and Azure",
+    "desc": "Cloud migration fails not in technical execution but in strategic framing. Here are the five migration strategies from the 7Rs framework, three enterprise migration failures, and the four-phase zero-downtime migration playbook for CTOs moving production workloads to AWS and Azure in 2026.",
+    "date": "May 3, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/platform-engineering-idp-2026/",
     "tag": "",
     "title": "Internal Developer Platforms in 2026: Why Fortune 500 CTOs Are Investing in IDP Before It",
