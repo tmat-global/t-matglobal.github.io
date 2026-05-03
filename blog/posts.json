@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/cloud-migration-enterprise-2026/",
+    "tag": "",
+    "title": "Cloud Migration in 2026: The Enterprise CTO",
+    "desc": "Cloud migration in 2026 is not a lift-and-shift exercise — it is a strategic re-architecture decision. Here are the five migration strategies (7Rs framework), three enterprise migration failures, and the phased migration framework for CTOs executing zero-downtime moves to AWS and Azure.",
+    "date": "May 03, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/observability-enterprise-2026/",
     "tag": "",
     "title": "Observability in 2026: Why Enterprise CTOs Are Moving Beyond Monitoring to Full-Stack Telemetry",
@@ -15,15 +24,6 @@
     "title": "DevSecOps in 2026: Why Security Can No Longer Be a Sprint Zero Checkbox for Enterprise CTOs",
     "desc": "DevSecOps shifts security left into every stage of the software delivery pipeline — not as a handoff to a security team at release, but as automated controls owned by engineering. Here are the four shift-left practices with the highest impact, three compliance failures, and the DevSecOps maturity model for enterprise CTOs in 2026.",
     "date": "May 01, 2026",
-    "read": "9 min read"
-  },
-  {
-    "published": true,
-    "url": "/blog/cloud-migration-enterprise-2026/",
-    "tag": "Cloud Migration",
-    "title": "Cloud Migration in 2026: The Enterprise CTO's Playbook for Zero-Downtime Moves to AWS and Azure",
-    "desc": "Cloud migration fails not in technical execution but in strategic framing. Here are the five migration strategies from the 7Rs framework, three enterprise migration failures, and the four-phase zero-downtime migration playbook for CTOs moving production workloads to AWS and Azure in 2026.",
-    "date": "May 3, 2026",
     "read": "9 min read"
   },
   {
