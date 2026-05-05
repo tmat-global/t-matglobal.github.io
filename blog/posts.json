@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/site-reliability-engineering-2026/",
+    "tag": "",
+    "title": "SRE in 2026: How Enterprise CTOs Are Using Site Reliability Engineering to Hit 99.99% Uptime Without Burning Out Their Teams",
+    "desc": "SRE transforms reliability from a reactive ops function into an engineering discipline built on SLOs, error budgets, toil elimination, and blameless postmortems. Here are the four SRE principles with the highest enterprise impact, three adoption failures, and the maturity roadmap for CTOs implementing SRE in 2026.",
+    "date": "May 04, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/cloud-migration-enterprise-2026/",
     "tag": "",
     "title": "Cloud Migration in 2026: The Enterprise CTO",
@@ -15,15 +24,6 @@
     "title": "Observability in 2026: Why Enterprise CTOs Are Moving Beyond Monitoring to Full-Stack Telemetry",
     "desc": "Monitoring tells you something is wrong. Observability tells you why. Here are the three telemetry pillars, four enterprise observability failures, and the OpenTelemetry adoption framework for CTOs moving to full-stack observability in 2026.",
     "date": "May 02, 2026",
-    "read": "9 min read"
-  },
-  {
-    "published": true,
-    "url": "/blog/site-reliability-engineering-2026/",
-    "tag": "SRE",
-    "title": "SRE in 2026: How Enterprise CTOs Are Using Site Reliability Engineering to Hit 99.99% Uptime Without Burning Out Their Teams",
-    "desc": "SRE transforms reliability from a reactive ops function into an engineering discipline built on SLOs, error budgets, toil elimination, and blameless postmortems. Here are the four SRE principles with the highest enterprise impact, three adoption failures, and the maturity roadmap for CTOs implementing SRE in 2026.",
-    "date": "May 04, 2026",
     "read": "9 min read"
   },
   {
