@@ -1,17 +1,8 @@
 [
   {
     "published": true,
-    "url": "/blog/site-reliability-engineering-2026/",
-    "tag": "",
-    "title": "SRE in 2026: How Enterprise CTOs Are Using Site Reliability Engineering to Hit 99.99% Uptime Without Burning Out Their Teams",
-    "desc": "SRE transforms reliability from a reactive ops function into an engineering discipline built on SLOs, error budgets, toil elimination, and blameless postmortems. Here are the four SRE principles with the highest enterprise impact, three adoption failures, and the maturity roadmap for CTOs implementing SRE in 2026.",
-    "date": "May 04, 2026",
-    "read": "9 min read"
-  },
-  {
-    "published": true,
     "url": "/blog/terraform-infrastructure-as-code-2026/",
-    "tag": "IaC",
+    "tag": "",
     "title": "Terraform in 2026: Why Enterprise CTOs Are Standardising on IaC Before Their Cloud Costs Spiral",
     "desc": "Manual cloud provisioning creates configuration drift, audit gaps, and cost surprises that compound at scale. Here are the four Terraform best practices with the highest enterprise ROI, three IaC failures, and the enterprise IaC adoption framework for CTOs standardising infrastructure as code in 2026.",
     "date": "May 06, 2026",
@@ -20,10 +11,19 @@
   {
     "published": true,
     "url": "/blog/multi-cloud-strategy-enterprise-2026/",
-    "tag": "Multi-Cloud",
+    "tag": "",
     "title": "Multi-Cloud in 2026: Why Enterprise CTOs Are Done Betting on a Single Cloud Provider",
     "desc": "Multi-cloud is not a backup strategy — it is an architectural decision that prevents vendor lock-in, optimizes cost by workload, and gives CTOs real negotiation leverage. Here are the four reasons enterprise CTOs are adopting multi-cloud, three failures, and the vendor-neutral framework for 2026.",
     "date": "May 05, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/site-reliability-engineering-2026/",
+    "tag": "",
+    "title": "SRE in 2026: How Enterprise CTOs Are Using Site Reliability Engineering to Hit 99.99% Uptime Without Burning Out Their Teams",
+    "desc": "SRE transforms reliability from a reactive ops function into an engineering discipline built on SLOs, error budgets, toil elimination, and blameless postmortems. Here are the four SRE principles with the highest enterprise impact, three adoption failures, and the maturity roadmap for CTOs implementing SRE in 2026.",
+    "date": "May 04, 2026",
     "read": "9 min read"
   },
   {
