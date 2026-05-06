@@ -28,6 +28,8 @@
   <url><loc>https://www.t-matglobal.com/london/</loc><lastmod>2026-05-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- BLOG POSTS — add one line per new post, nothing else -->
+  <url><loc>https://www.t-matglobal.com/blog/terraform-infrastructure-as-code-2026/</loc><lastmod>2026-05-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.t-matglobal.com/blog/multi-cloud-strategy-enterprise-2026/</loc><lastmod>2026-05-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.t-matglobal.com/blog/site-reliability-engineering-2026/</loc><lastmod>2026-05-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.t-matglobal.com/blog/cloud-migration-enterprise-2026/</loc><lastmod>2026-05-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.t-matglobal.com/blog/observability-enterprise-2026/</loc><lastmod>2026-05-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
