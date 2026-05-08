@@ -1,20 +1,20 @@
 [
   {
     "published": true,
+    "url": "/blog/zero-trust-security-enterprise-2026/",
+    "tag": "",
+    "title": "Zero Trust in 2026: Why Enterprise CTOs Are Replacing Perimeter Security With Identity-First Architecture",
+    "desc": "The perimeter is not degraded — it is gone. Every enterprise CTO operating cloud workloads, remote teams, and SaaS integrations has already left the network perimeter behind. Here are the four Zero Trust principles with the highest enterprise impact, three implementation failures, and the adoption framework for CTOs replacing perimeter security in 2026.",
+    "date": "May 08, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/docker-containerization-enterprise-2026/",
     "tag": "",
     "title": "Docker &amp; Containerization in 2026: Why Enterprise CTOs Are Standardising Container Strategy Before Kubernetes",
     "desc": "Running containers without a container strategy is how enterprises end up with 400 images they cannot audit, pipelines that break on dependency updates, and Kubernetes clusters running workloads no one understands. Here are the four Docker best practices with the highest enterprise ROI, three containerization failures, and the container adoption roadmap for CTOs in 2026.",
     "date": "May 07, 2026",
-    "read": "9 min read"
-  },
-  {
-    "published": true,
-    "url": "/blog/zero-trust-security-enterprise-2026/",
-    "tag": "Security",
-    "title": "Zero Trust in 2026: Why Enterprise CTOs Are Replacing Perimeter Security With Identity-First Architecture",
-    "desc": "The perimeter is not degraded — it is gone. Here are the four Zero Trust principles with the highest enterprise impact (verify explicitly, least privilege, assume breach, microsegmentation), three implementation failures, and the adoption framework for CTOs replacing perimeter security in 2026.",
-    "date": "May 08, 2026",
     "read": "9 min read"
   },
   {
