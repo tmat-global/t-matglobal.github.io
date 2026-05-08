@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/docker-containerization-enterprise-2026/",
+    "tag": "Containers",
+    "title": "Docker & Containerization in 2026: Why Enterprise CTOs Are Standardising Container Strategy Before Kubernetes",
+    "desc": "Running containers without a container strategy is how enterprises end up with 400 images they cannot audit, pipelines that break on dependency updates, and Kubernetes clusters running workloads no one understands. Here are the four Docker best practices with the highest enterprise ROI, three containerization failures, and the container adoption roadmap for CTOs in 2026.",
+    "date": "May 07, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/terraform-infrastructure-as-code-2026/",
     "tag": "",
     "title": "Terraform in 2026: Why Enterprise CTOs Are Standardising on IaC Before Their Cloud Costs Spiral",
