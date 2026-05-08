@@ -10,6 +10,15 @@
   },
   {
     "published": true,
+    "url": "/blog/zero-trust-security-enterprise-2026/",
+    "tag": "Security",
+    "title": "Zero Trust in 2026: Why Enterprise CTOs Are Replacing Perimeter Security With Identity-First Architecture",
+    "desc": "The perimeter is not degraded — it is gone. Here are the four Zero Trust principles with the highest enterprise impact (verify explicitly, least privilege, assume breach, microsegmentation), three implementation failures, and the adoption framework for CTOs replacing perimeter security in 2026.",
+    "date": "May 08, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/terraform-infrastructure-as-code-2026/",
     "tag": "",
     "title": "Terraform in 2026: Why Enterprise CTOs Are Standardising on IaC Before Their Cloud Costs Spiral",
