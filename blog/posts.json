@@ -1,19 +1,10 @@
 [
   {
     "published": true,
-    "url": "/blog/zero-trust-security-enterprise-2026/",
-    "tag": "",
-    "title": "Zero Trust in 2026: Why Enterprise CTOs Are Replacing Perimeter Security With Identity-First Architecture",
-    "desc": "The perimeter is not degraded — it is gone. Every enterprise CTO operating cloud workloads, remote teams, and SaaS integrations has already left the network perimeter behind. Here are the four Zero Trust principles with the highest enterprise impact, three implementation failures, and the adoption framework for CTOs replacing perimeter security in 2026.",
-    "date": "May 08, 2026",
-    "read": "9 min read"
-  },
-  {
-    "published": true,
     "url": "/blog/dora-metrics-engineering-velocity-2026/",
     "tag": "",
     "title": "DORA Metrics in 2026: How Enterprise CTOs Are Using Deployment Frequency to Diagnose Engineering Health",
-    "desc": "Deployment frequency is the only engineering metric that tells you whether your architecture is actually improving. Here are the four DORA metrics, three measurement failures, and the four-phase implementation framework for CTOs using engineering velocity data in 2026.",
+    "desc": "DORA metrics in 2026 give enterprise CTOs the first honest signal about engineering health: deployment frequency, lead time for changes, MTTR, and change failure rate. Here are the four metrics, three measurement failures, and the four-phase implementation framework for CTOs using DORA to diagnose and improve engineering velocity in 2026.",
     "date": "May 11, 2026",
     "read": "9 min read"
   },
@@ -22,7 +13,7 @@
     "url": "/blog/microservices-architecture-enterprise-2026/",
     "tag": "",
     "title": "Microservices in 2026: Why Enterprise CTOs Are Rethinking Service Decomposition Before They Scale",
-    "desc": "The question is never 'should we use microservices' — it is always 'does your team have the operational maturity to make microservices worth the cost.' Here are four best practices, three decomposition failures, and the maturity framework for CTOs in 2026.",
+    "desc": "Microservices in 2026 require operational maturity that most enterprises discover they lack after decomposition. Here are four best practices — DDD, API contracts, service mesh, independent deployability — plus three decomposition failures and the maturity framework for CTOs rethinking microservices architecture in 2026.",
     "date": "May 10, 2026",
     "read": "9 min read"
   },
@@ -31,8 +22,17 @@
     "url": "/blog/ci-cd-pipeline-enterprise-2026/",
     "tag": "",
     "title": "CI/CD Pipelines in 2026: Why Enterprise CTOs Are Rebuilding Deployment Automation From Scratch",
-    "desc": "A CI/CD pipeline is not a DevOps achievement — it is the starting point every enterprise CTO should have reached three years ago. Here are four best practices, three pipeline failures, and the maturity framework for CTOs rebuilding deployment automation in 2026.",
+    "desc": "CI/CD pipelines in 2026 are being rebuilt from scratch by enterprise CTOs who inherited fragile automation that slows teams down. Here are four best practices — trunk-based development, progressive delivery, pipeline-as-code, and automated rollback — plus three pipeline failures and the maturity framework for CTOs rebuilding deployment automation in 2026.",
     "date": "May 09, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/zero-trust-security-enterprise-2026/",
+    "tag": "",
+    "title": "Zero Trust in 2026: Why Enterprise CTOs Are Replacing Perimeter Security With Identity-First Architecture",
+    "desc": "The perimeter is not degraded — it is gone. Every enterprise CTO operating cloud workloads, remote teams, and SaaS integrations has already left the network perimeter behind. Here are the four Zero Trust principles with the highest enterprise impact, three implementation failures, and the adoption framework for CTOs replacing perimeter security in 2026.",
+    "date": "May 08, 2026",
     "read": "9 min read"
   },
   {
