@@ -10,6 +10,33 @@
   },
   {
     "published": true,
+    "url": "/blog/dora-metrics-engineering-velocity-2026/",
+    "tag": "",
+    "title": "DORA Metrics in 2026: How Enterprise CTOs Are Using Deployment Frequency to Diagnose Engineering Health",
+    "desc": "Deployment frequency is the only engineering metric that tells you whether your architecture is actually improving. Here are the four DORA metrics, three measurement failures, and the four-phase implementation framework for CTOs using engineering velocity data in 2026.",
+    "date": "May 11, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/microservices-architecture-enterprise-2026/",
+    "tag": "",
+    "title": "Microservices in 2026: Why Enterprise CTOs Are Rethinking Service Decomposition Before They Scale",
+    "desc": "The question is never 'should we use microservices' — it is always 'does your team have the operational maturity to make microservices worth the cost.' Here are four best practices, three decomposition failures, and the maturity framework for CTOs in 2026.",
+    "date": "May 10, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/ci-cd-pipeline-enterprise-2026/",
+    "tag": "",
+    "title": "CI/CD Pipelines in 2026: Why Enterprise CTOs Are Rebuilding Deployment Automation From Scratch",
+    "desc": "A CI/CD pipeline is not a DevOps achievement — it is the starting point every enterprise CTO should have reached three years ago. Here are four best practices, three pipeline failures, and the maturity framework for CTOs rebuilding deployment automation in 2026.",
+    "date": "May 09, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/docker-containerization-enterprise-2026/",
     "tag": "",
     "title": "Docker &amp; Containerization in 2026: Why Enterprise CTOs Are Standardising Container Strategy Before Kubernetes",
