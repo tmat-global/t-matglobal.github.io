@@ -90,6 +90,42 @@
 
 <style>
 #insights { min-height:auto; }
+
+/* ── HERO GLOBE ─────────────────────────────────────── */
+.hero-globe-wrap{position:absolute;right:clamp(2%,8vw,12%);top:50%;transform:translateY(-50%);z-index:1;pointer-events:none;opacity:0;animation:globeFadeIn 1.4s 0.8s forwards ease}
+@keyframes globeFadeIn{to{opacity:1}}
+@media(max-width:860px){.hero-globe-wrap{display:none}}
+
+.globe{position:relative;width:clamp(280px,30vw,440px);height:clamp(280px,30vw,440px);border-radius:50%;overflow:hidden;box-shadow:inset -40px -20px 80px rgba(0,0,20,0.85),inset 20px 10px 60px rgba(30,80,180,0.25),0 0 80px rgba(30,60,180,0.18),0 0 140px rgba(201,168,76,0.06)}
+
+/* base ocean */
+.globe-ocean{position:absolute;inset:0;border-radius:50%;background:radial-gradient(ellipse at 35% 35%,#2a6fd4 0%,#1a4fa0 30%,#0d2f6a 60%,#050f2a 100%)}
+
+/* spinning land layer using conic gradient */
+.globe-land{position:absolute;inset:0;border-radius:50%;animation:globeSpin 22s linear infinite;background:conic-gradient(from 0deg,transparent 0%,#2d7a3a 4%,#3d8a4a 8%,transparent 12%,transparent 16%,#1e5a28 20%,#2d7a3a 25%,transparent 30%,transparent 34%,#4a9a5a 37%,#3d8a4a 42%,transparent 47%,transparent 52%,#c8a84c 55%,#b89840 59%,transparent 63%,transparent 66%,#2d7a3a 70%,#3d8a4a 75%,transparent 80%,transparent 84%,#1e5a28 88%,transparent 93%,transparent 100%);opacity:0.72;mix-blend-mode:screen}
+@keyframes globeSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+/* second faster cloud/shimmer layer */
+.globe-clouds{position:absolute;inset:0;border-radius:50%;animation:cloudSpin 14s linear infinite reverse;background:conic-gradient(from 45deg,transparent 0%,rgba(255,255,255,0.06) 8%,transparent 16%,rgba(255,255,255,0.04) 28%,transparent 38%,rgba(255,255,255,0.07) 52%,transparent 62%,rgba(255,255,255,0.05) 74%,transparent 86%,rgba(255,255,255,0.03) 94%,transparent 100%);mix-blend-mode:screen}
+@keyframes cloudSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+/* sunlit hemisphere */
+.globe-sun{position:absolute;inset:0;border-radius:50%;background:radial-gradient(ellipse 55% 70% at 35% 32%,rgba(255,240,200,0.22) 0%,rgba(200,180,100,0.08) 40%,transparent 70%);pointer-events:none}
+
+/* atmosphere rim */
+.globe-atmos{position:absolute;inset:-6px;border-radius:50%;background:radial-gradient(ellipse at 50% 50%,transparent 65%,rgba(40,80,200,0.18) 78%,rgba(80,140,255,0.22) 88%,rgba(120,180,255,0.12) 100%);pointer-events:none}
+
+/* gold orbit ring */
+.globe-ring{position:absolute;inset:-28px;border-radius:50%;border:1px solid rgba(201,168,76,0.18);animation:ringPulse 4s ease-in-out infinite}
+.globe-ring2{position:absolute;inset:-52px;border-radius:50%;border:1px solid rgba(201,168,76,0.08);animation:ringPulse 4s 1.5s ease-in-out infinite}
+@keyframes ringPulse{0%,100%{opacity:0.5;transform:scale(1)}50%{opacity:1;transform:scale(1.02)}}
+
+/* floating dots (active project indicators) */
+.globe-dot{position:absolute;width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 10px #22c55e,0 0 20px rgba(34,197,94,0.6);animation:dotPulse 2.5s ease-in-out infinite}
+.globe-dot:nth-child(1){top:38%;left:24%;animation-delay:0s}
+.globe-dot:nth-child(2){top:44%;left:68%;animation-delay:0.8s}
+.globe-dot:nth-child(3){top:30%;left:52%;animation-delay:1.6s}
+@keyframes dotPulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.6);opacity:0.6}}
 </style>
 </head>
 <body>
@@ -160,6 +196,22 @@
     </div>
   </div>
   <div class="scroll-indicator" aria-hidden="true"><span>Scroll</span><span>&#8595;</span></div>
+
+  <!-- CSS GLOBE — right side of hero -->
+  <div class="hero-globe-wrap" aria-hidden="true">
+    <div class="globe-ring2"></div>
+    <div class="globe-ring"></div>
+    <div class="globe">
+      <div class="globe-ocean"></div>
+      <div class="globe-land"></div>
+      <div class="globe-clouds"></div>
+      <div class="globe-sun"></div>
+      <div class="globe-dot"></div>
+      <div class="globe-dot"></div>
+      <div class="globe-dot"></div>
+    </div>
+    <div class="globe-atmos"></div>
+  </div>
 </section>
 
 <!-- STATS BAR -->
