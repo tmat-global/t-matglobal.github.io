@@ -419,23 +419,23 @@
   }
   </script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
 :root {
-  --gold: #E8A020;
-  --gold2: #F5C842;
-  --bg: #0f0e0a;
-  --bg2: #141210;
-  --bg3: #1a1714;
-  --border: rgba(232,160,32,0.15);
-  --border2: rgba(232,160,32,0.3);
+  --gold: #c9a84c;
+  --gold2: #e4c97e;
+  --bg: #0a0a0f;
+  --bg2: #0d0d18;
+  --bg3: #111120;
+  --border: rgba(201,168,76,0.15);
+  --border2: rgba(201,168,76,0.30);
   --text: rgba(255,255,255,0.82);
-  --muted: rgba(255,255,255,0.42);
+  --muted: rgba(255,255,255,0.40);
   --white: #ffffff;
   --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;overflow-x:hidden;}
@@ -466,8 +466,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(15,14,10,0.
   .nav-links a{padding:11px 16px;width:100%;}
 }
 
-.hero{min-height:100vh;display:flex;align-items:center;padding-top:58px;position:relative;overflow:hidden;background:radial-gradient(ellipse 60% 80% at 75% 50%,rgba(232,160,32,0.05) 0%,transparent 70%),var(--bg);}
-.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 80%,rgba(232,160,32,0.04) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(232,160,32,0.03) 0%,transparent 50%);pointer-events:none;}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:58px;position:relative;overflow:hidden;background:radial-gradient(ellipse 60% 80% at 75% 50%,rgba(201,168,76,0.05) 0%,transparent 70%),var(--bg);}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 80%,rgba(201,168,76,0.04) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(201,168,76,0.03) 0%,transparent 50%);pointer-events:none;}
 .hero-inner{max-width:1140px;margin:0 auto;padding:80px 40px;display:grid;grid-template-columns:1fr 420px;gap:60px;align-items:center;width:100%;}
 .hero-eyebrow{font-size:10px;font-weight:600;letter-spacing:5px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:16px;}
 .hero h1{font-family:var(--font-display);font-size:clamp(48px,6vw,80px);font-weight:900;color:#fff;line-height:1.05;margin-bottom:4px;}
@@ -475,16 +475,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(15,14,10,0.
 .hero-role{font-family:var(--font-display);font-size:clamp(18px,2.5vw,26px);font-weight:700;color:var(--gold);margin-bottom:4px;display:block;min-height:36px;}
 .hero-subtitle{font-size:14px;color:var(--muted);font-weight:400;margin-bottom:28px;display:block;}
 .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px;}
-.hero-tag{border:1px solid var(--border2);color:var(--gold);background:rgba(232,160,32,0.07);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:3px;}
+.hero-tag{border:1px solid var(--border2);color:var(--gold);background:rgba(201,168,76,0.07);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:3px;}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
 .btn-gold{background:var(--gold);color:#000;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:13px 30px;border-radius:4px;display:inline-block;transition:.25s;border:none;}
 .btn-gold:hover{background:var(--gold2);color:#000;}
 .btn-ghost{border:1px solid var(--border2);color:var(--gold);background:transparent;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:13px 30px;border-radius:4px;display:inline-block;transition:.25s;}
-.btn-ghost:hover{background:rgba(232,160,32,0.1);color:var(--gold2);}
+.btn-ghost:hover{background:rgba(201,168,76,0.1);color:var(--gold2);}
 .hero-photo{position:relative;display:flex;justify-content:center;}
-.hero-photo img{width:360px;height:460px;object-fit:cover;object-position:top center;border-radius:12px;border:1px solid var(--border2);box-shadow:0 0 80px rgba(232,160,32,0.12),0 0 160px rgba(232,160,32,0.05);position:relative;z-index:1;}
-.hero-photo::before{content:'';position:absolute;top:-16px;right:-16px;width:100px;height:100px;background-image:radial-gradient(circle,rgba(232,160,32,0.5) 1.5px,transparent 1.5px);background-size:12px 12px;border-radius:6px;z-index:0;}
-.hero-photo::after{content:'';position:absolute;bottom:-16px;left:-16px;width:80px;height:80px;background-image:radial-gradient(circle,rgba(232,160,32,0.3) 1.5px,transparent 1.5px);background-size:12px 12px;border-radius:6px;z-index:0;}
+.hero-photo img{width:360px;height:460px;object-fit:cover;object-position:top center;border-radius:12px;border:1px solid var(--border2);box-shadow:0 0 80px rgba(201,168,76,0.12),0 0 160px rgba(201,168,76,0.05);position:relative;z-index:1;}
+.hero-photo::before{content:'';position:absolute;top:-16px;right:-16px;width:100px;height:100px;background-image:radial-gradient(circle,rgba(201,168,76,0.5) 1.5px,transparent 1.5px);background-size:12px 12px;border-radius:6px;z-index:0;}
+.hero-photo::after{content:'';position:absolute;bottom:-16px;left:-16px;width:80px;height:80px;background-image:radial-gradient(circle,rgba(201,168,76,0.3) 1.5px,transparent 1.5px);background-size:12px 12px;border-radius:6px;z-index:0;}
 @media(max-width:900px){.hero-inner{grid-template-columns:1fr;text-align:center;gap:40px;}.hero-photo{order:-1;}.hero-photo img{width:220px;height:280px;}.hero-photo::before,.hero-photo::after{display:none;}.hero-tags,.hero-actions{justify-content:center;}}
 @media(max-width:480px){.hero-inner{padding:60px 20px;}}
 
@@ -501,14 +501,14 @@ section{padding:88px 0;position:relative;}
 #about{background:var(--bg2);}
 .about-grid{display:grid;grid-template-columns:380px 1fr;gap:60px;align-items:start;}
 @media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px;}}
-.about-photo img{width:100%;border-radius:10px;border:1px solid var(--border2);box-shadow:0 0 40px rgba(232,160,32,0.1);}
+.about-photo img{width:100%;border-radius:10px;border:1px solid var(--border2);box-shadow:0 0 40px rgba(201,168,76,0.1);}
 .info-card{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:20px;margin-top:20px;}
 .info-row{display:flex;gap:16px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,0.04);font-size:13px;}
 .info-row:last-child{border-bottom:none;}
 .info-label{color:var(--gold);font-weight:600;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;min-width:100px;padding-top:2px;}
 .info-val{color:var(--text);flex:1;font-size:13px;}
 .badge-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px;}
-.badge{background:rgba(232,160,32,0.08);border:1px solid var(--border);color:var(--gold);font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 11px;border-radius:3px;}
+.badge{background:rgba(201,168,76,0.08);border:1px solid var(--border);color:var(--gold);font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 11px;border-radius:3px;}
 .about-text p{font-size:14px;color:var(--text);margin-bottom:16px;line-height:1.85;}
 .about-text .highlight{border-left:3px solid var(--gold);padding-left:20px;margin:24px 0;}
 .about-text .highlight p{color:var(--muted);font-size:13px;margin-bottom:8px;}
@@ -542,20 +542,20 @@ section{padding:88px 0;position:relative;}
 .ach-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;}
 .ach-item{max-width:170px;text-align:center;transition:transform .3s;}
 .ach-item:hover{transform:translateY(-6px);}
-.ach-item img{width:100%;border-radius:10px;border:1px solid var(--border);box-shadow:0 0 24px rgba(232,160,32,0.18);}
+.ach-item img{width:100%;border-radius:10px;border:1px solid var(--border);box-shadow:0 0 24px rgba(201,168,76,0.18);}
 .ach-item p{color:var(--gold);margin-top:10px;font-weight:600;font-size:11px;line-height:1.4;}
 
 #projects{background:var(--bg);}
 .video-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
 @media(max-width:760px){.video-grid{grid-template-columns:1fr;}}
-.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;border:1px solid var(--border);box-shadow:0 4px 32px rgba(232,160,32,0.1);margin-bottom:10px;}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;border:1px solid var(--border);box-shadow:0 4px 32px rgba(201,168,76,0.1);margin-bottom:10px;}
 .video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
 .video-label{font-size:12px;font-weight:600;color:var(--muted);text-align:center;line-height:1.4;}
 
 #blog{background:var(--bg2);}
 .blog-wrap{max-width:780px;margin:0 auto;}
 .blog-item{border-bottom:1px solid rgba(255,255,255,0.05);transition:background .2s;}
-.blog-item:hover{background:rgba(232,160,32,0.04);}
+.blog-item:hover{background:rgba(201,168,76,0.04);}
 .blog-item a{display:flex;align-items:center;justify-content:space-between;padding:15px 10px;color:var(--muted);font-size:13px;text-decoration:none;transition:color .2s;}
 .blog-item a:hover{color:var(--gold);}
 .blog-item a::after{content:'→';color:var(--gold);opacity:0;transition:opacity .2s;flex-shrink:0;margin-left:12px;}
@@ -568,13 +568,13 @@ section{padding:88px 0;position:relative;}
 @media(max-width:760px){.contact-grid{grid-template-columns:1fr;}}
 .contact-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:28px 20px;text-align:center;transition:border-color .3s;}
 .contact-card:hover{border-color:var(--border2);}
-.c-icon{width:58px;height:58px;background:rgba(232,160,32,0.08);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
+.c-icon{width:58px;height:58px;background:rgba(201,168,76,0.08);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
 .c-icon i{color:var(--gold);font-size:20px;}
 .contact-card h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#fff;margin-bottom:10px;}
 .contact-card p,.contact-card a{font-size:13px;color:var(--muted);}
 .contact-card a:hover{color:var(--gold);}
 .social-strip{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin-top:32px;}
-.social-strip a{width:42px;height:42px;background:rgba(232,160,32,0.06);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:16px;transition:.25s;}
+.social-strip a{width:42px;height:42px;background:rgba(201,168,76,0.06);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:16px;transition:.25s;}
 .social-strip a:hover{background:var(--gold);color:#000;border-color:var(--gold);}
 
 footer{background:#080706;border-top:1px solid var(--border);padding:36px 40px;text-align:center;}
@@ -840,9 +840,9 @@ footer a:hover{color:var(--gold2);}
       <p class="sec-desc center" style="margin-bottom:48px;">First-person writing on the decisions, lessons, and convictions behind building T-Mat Global — from someone who did it after working inside a Fortune 500 engineering organization.</p>
     </div>
     <div class="reveal" style="max-width:760px;margin:0 auto;">
-      <div style="border:1px solid rgba(232,160,32,0.4);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
+      <div style="border:1px solid rgba(201,168,76,0.4);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.4rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.3);border-radius:4px;padding:.22rem .65rem;">May 12, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.3);border-radius:4px;padding:.22rem .65rem;">May 12, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Founder Note #1</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.6rem;color:#fff;line-height:1.25;margin-bottom:1.2rem;">What T-Mobile USA Taught Me About Enterprise DevOps That No Certification Ever Could</h3>
@@ -869,7 +869,7 @@ footer a:hover{color:var(--gold2);}
     <div class="reveal speakable" style="max-width:760px;margin:0 auto;">
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 15, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 15, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Pan-India DevOps</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">India's enterprise DevOps market does not have a vendor shortage — it has a credibility shortage. T-Mat Global exists to close that gap.</h3>
@@ -881,7 +881,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 14, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 14, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Thought Leadership</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">The question Indian enterprises should ask every DevOps vendor is not "what tools do you use" — it is "have you operated infrastructure at the scale you are proposing to build for us"</h3>
@@ -893,7 +893,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 13, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 13, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Chennai DevOps</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">Chennai enterprises don't need another vendor — they need a DevOps partner who has built infrastructure at T-Mobile USA scale and can bring that standard to Indian enterprise</h3>
@@ -905,7 +905,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 12, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 12, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Founder Notes</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">I did not leave T-Mobile USA because I was unhappy — I left because I had learned enough to build something that could give other businesses what Fortune 500 companies take for granted</h3>
@@ -917,7 +917,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 12, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 12, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">API Management</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">An API gateway is not an infrastructure convenience — it is where CTOs either own microservices complexity or become its victim</h3>
@@ -928,7 +928,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 11, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 11, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Engineering Metrics</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">Deployment frequency is the only engineering metric that tells you whether your architecture is actually improving — everything else is a lagging indicator</h3>
@@ -939,7 +939,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 10, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 10, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Microservices</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">The question is never 'should we use microservices' — it is always 'does your team have the operational maturity to make microservices worth the cost'</h3>
@@ -950,7 +950,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 9, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 9, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">CI/CD</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">A CI/CD pipeline is not a DevOps achievement — it is the starting point every enterprise CTO should have reached three years ago</h3>
@@ -961,7 +961,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 8, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 8, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Zero Trust</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">Zero Trust is not a security product you buy — it is an architectural principle that requires every CTO to accept that the perimeter is already gone</h3>
@@ -972,7 +972,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 7, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 7, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Containers</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">Kubernetes without a container strategy is like building a highway before anyone knows how to drive — most enterprise CTOs are doing exactly that</h3>
@@ -983,7 +983,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 6, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 6, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Infrastructure as Code</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">Infrastructure as code is not a DevOps convenience — it is the only way enterprise CTOs can guarantee repeatability at scale</h3>
@@ -994,7 +994,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 6, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 6, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">T-Mat Global</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">T-Mat Global — known across the DevOps community as TMat or T-Mat — was built on one principle: enterprise-grade engineering should not be a privilege of companies with enterprise-grade budgets</h3>
@@ -1005,7 +1005,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 4, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 4, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">SRE</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">SRE is not a job title you hire for — it is an engineering discipline you build into every team that touches production</h3>
@@ -1016,7 +1016,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 3, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 3, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Cloud Migration</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">Cloud migration fails in enterprise not because of technology — it fails because the business case is built after the decision is already made</h3>
@@ -1027,7 +1027,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 2, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 2, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Observability</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">You cannot secure or scale what you cannot observe — observability is not a DevOps tool choice, it is a CTO accountability decision</h3>
@@ -1038,7 +1038,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">May 1, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">May 1, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">DevSecOps</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">DevSecOps fails in enterprise not because teams lack tools — it fails because security is still treated as someone else's job</h3>
@@ -1049,7 +1049,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">April 30, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">April 30, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Internal Developer Platform</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">An IDP is not a product you buy — it is an engineering capability you build deliberately or inherit accidentally</h3>
@@ -1060,7 +1060,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">April 29, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">April 29, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">GitOps &amp; CI/CD</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">GitOps is not a tool decision — it is an engineering culture decision that CTOs consistently underestimate</h3>
@@ -1071,7 +1071,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">April 28, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">April 28, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Kubernetes Security</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">Most Kubernetes breaches in enterprise are not zero-days — they are misconfigurations that existed from day one</h3>
@@ -1082,7 +1082,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">April 27, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">April 27, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">FinOps &amp; Cloud Governance</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">Cloud cost overruns in enterprise are never a cloud problem — they are a governance problem</h3>
@@ -1093,7 +1093,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">April 26, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">April 26, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">AI Agents &amp; DevOps</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">AI agents fail in enterprise not because of AI — but because of the system built around it</h3>
@@ -1104,7 +1104,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);margin-bottom:2rem;">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">April 25, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">April 25, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Platform Engineering</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">Platform Engineering is the prerequisite for every other 2026 investment</h3>
@@ -1115,7 +1115,7 @@ footer a:hover{color:var(--gold2);}
       </div>
       <div style="border:1px solid var(--border2);border-radius:16px;padding:2.5rem;background:var(--bg3);">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
-          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.2);border-radius:4px;padding:.22rem .65rem;">April 24, 2026</span>
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:.22rem .65rem;">April 24, 2026</span>
           <span style="font-size:.78rem;color:rgba(255,255,255,.4);">Offshore Partnerships</span>
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.3;margin-bottom:1rem;">The offshore evaluation failure is always a process failure, not a geography failure</h3>
