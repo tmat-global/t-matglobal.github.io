@@ -31,7 +31,7 @@
       "contactPoint": [
         {
           "@type": "ContactPoint",
-          "telephone": "+91-9356307015",
+          "telephone": "+91-7028278808",
           "contactType": "customer service",
           "email": "hr@t-matglobal.com",
           "areaServed": ["US", "GB", "AE", "IN", "CA"],
@@ -103,7 +103,7 @@
       "@id": "https://www.t-matglobal.com/#professional-service",
       "name": "T-Mat Global IT Services",
       "url": "https://www.t-matglobal.com/",
-      "telephone": "+91-9356307015",
+      "telephone": "+91-7028278808",
       "email": "hr@t-matglobal.com",
       "priceRange": "$$$$",
       "address": {
@@ -187,7 +187,7 @@
           "name": "How do I contact T-Mat Global?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Email: hr@t-matglobal.com | Phone: +91 93563 07015 | WhatsApp: +91 93254 79476 | Website: https://www.t-matglobal.com/#contact | Book a consultation with the Founder: https://topmate.io/sainathmitalakar/2004329"
+            "text": "Email: hr@t-matglobal.com | Phone: +91 70282 78808 | WhatsApp: +91 93254 79476 | Website: https://www.t-matglobal.com/#contact | Book a consultation with the Founder: https://topmate.io/sainathmitalakar/2004329"
           }
         }
       ]
