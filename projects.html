@@ -28,7 +28,7 @@ a{color:inherit;text-decoration:none}ul{list-style:none}
 button{font-family:var(--font-b);cursor:pointer;border:none;background:none}
 body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.012) 2px,rgba(0,0,0,0.012) 4px)}
 
-/* ── NAVBAR ── */
+/* NAVBAR */
 .navbar{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:9999;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(1rem,4vw,2.5rem);background:rgba(4,4,10,0.92);backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,0.055);gap:1rem}
 .navbar::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,212,255,0.35) 20%,rgba(234,148,1,0.75) 50%,rgba(139,92,246,0.35) 80%,transparent);animation:navShimmer 5s ease-in-out infinite}
 @keyframes navShimmer{0%,100%{opacity:0.4}50%{opacity:1}}
@@ -38,7 +38,7 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .nav-cta-btn{padding:0.38rem 1.1rem;border-radius:8px;border:1px solid rgba(234,148,1,0.50);background:linear-gradient(135deg,rgba(234,148,1,0.15),rgba(234,148,1,0.05));color:var(--gold-lt);font-size:var(--fs-xs);font-weight:700;box-shadow:0 0 22px rgba(234,148,1,0.15);transition:all .25s;cursor:pointer}
 .nav-cta-btn:hover{background:linear-gradient(135deg,rgba(234,148,1,0.28),rgba(234,148,1,0.10));box-shadow:0 0 35px rgba(234,148,1,0.32);transform:translateY(-1px)}
 
-/* ── PAGE HERO ── */
+/* PAGE HERO */
 .page-hero{padding:calc(var(--nav-h) + 3rem) clamp(1.2rem,7vw,9%) 3rem;position:relative;overflow:hidden;text-align:center}
 .page-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.022) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.022) 1px,transparent 1px);background-size:55px 55px;mask-image:radial-gradient(ellipse 80% 70% at 50% 50%,black 30%,transparent 100%)}
 .hero-glow{position:absolute;top:0;left:50%;transform:translateX(-50%);width:700px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(34,197,94,0.07) 0%,rgba(0,212,255,0.03) 45%,transparent 70%);pointer-events:none}
@@ -48,17 +48,17 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .page-title{font-family:var(--font-d);font-size:var(--fs-2xl);font-weight:900;line-height:1.05;letter-spacing:-2px;margin-bottom:1rem;background:linear-gradient(160deg,#ffffff 0%,#fff8e8 30%,#ffdf6e 55%,#ea9401 80%,#b8730a 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;position:relative;z-index:1}
 .page-sub{font-size:var(--fs-md);color:rgba(255,255,255,0.50);max-width:650px;margin:0 auto 0;line-height:1.75;position:relative;z-index:1}
 
-/* ── TRUST BAR ── */
+/* TRUST BAR */
 .trust-bar{display:flex;flex-wrap:wrap;justify-content:center;gap:0.55rem;padding:0.88rem clamp(1rem,5vw,8%);border-bottom:1px solid rgba(255,255,255,0.045);position:relative;z-index:2;margin-top:2.5rem}
 .trust-bar::before{content:'';position:absolute;top:0;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,rgba(0,212,255,0.28),rgba(234,148,1,0.45),rgba(139,92,246,0.28),transparent)}
 .trust-badge{display:flex;align-items:center;gap:0.42rem;font-size:var(--fs-xs);font-weight:600;color:rgba(255,255,255,0.52);padding:0.28rem 0.72rem;border-radius:7px;border:1px solid rgba(255,255,255,0.055);background:rgba(255,255,255,0.018);white-space:nowrap;transition:all .22s}
 .trust-badge:hover{color:var(--cyan);border-color:rgba(0,212,255,0.22)}
 .trust-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px rgba(34,197,94,0.9);animation:pulseDot 2.5s ease-in-out infinite;flex-shrink:0}
 
-/* ── MAIN CONTENT ── */
+/* MAIN */
 .main{padding:3rem clamp(1.2rem,7vw,9%);position:relative;z-index:2}
 
-/* ── PIPELINE ── */
+/* PIPELINE */
 .pipeline-wrap{margin-bottom:3.5rem}
 .pipeline-label{font-size:var(--fs-xs);font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-bottom:1.2rem}
 .pipeline{display:flex;align-items:stretch;gap:0;overflow-x:auto;padding-bottom:0.5rem}
@@ -66,14 +66,10 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .step-inner{padding:1.1rem 1rem 1rem;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.06);border-right:none;position:relative;height:100%}
 .pipeline-step:first-child .step-inner{border-radius:var(--radius) 0 0 var(--radius)}
 .pipeline-step:last-child .step-inner{border-right:1px solid rgba(255,255,255,0.06);border-radius:0 var(--radius) var(--radius) 0}
-/* Arrow connector */
 .pipeline-step:not(:last-child)::after{content:'';position:absolute;right:-14px;top:50%;transform:translateY(-50%);width:0;height:0;border-left:14px solid rgba(255,255,255,0.06);border-top:14px solid transparent;border-bottom:14px solid transparent;z-index:3}
 .pipeline-step:not(:last-child)::before{content:'';position:absolute;right:-13px;top:50%;transform:translateY(-50%);width:0;height:0;border-left:14px solid var(--bg);border-top:14px solid transparent;border-bottom:14px solid transparent;z-index:4}
-
-/* ACTIVE STEP — Nearly Complete */
 .step-active .step-inner{background:rgba(34,197,94,0.07);border-color:rgba(34,197,94,0.30);box-shadow:0 0 30px rgba(34,197,94,0.08),inset 0 1px 0 rgba(34,197,94,0.15)}
 .step-active::after{border-left-color:rgba(34,197,94,0.30)!important}
-
 .step-num{font-family:var(--font-d);font-size:0.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.22);margin-bottom:0.4rem}
 .step-name{font-family:var(--font-d);font-size:var(--fs-sm);font-weight:800;color:rgba(255,255,255,0.38);line-height:1.2}
 .step-active .step-name{color:var(--green);text-shadow:0 0 20px rgba(34,197,94,0.4)}
@@ -82,33 +78,25 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .step-active-badge{display:inline-flex;align-items:center;gap:0.35rem;margin-top:0.5rem;font-size:0.60rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:0.18rem 0.5rem;border-radius:4px;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.30);color:var(--green)}
 .step-active-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);animation:pulseDot 1.5s infinite}
 
-/* ── PROJECT CARDS ── */
+/* PROJECT CARDS */
 .projects-grid{display:grid;gap:2rem}
-
 .project-card{background:linear-gradient(145deg,rgba(255,255,255,0.052),rgba(8,8,20,0.92));border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);overflow:hidden;backdrop-filter:blur(16px);position:relative;transition:box-shadow .3s}
 .project-card:hover{box-shadow:0 30px 70px rgba(0,0,0,0.5)}
-
-/* top accent line */
 .project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;z-index:2}
 .erp-card::before{background:linear-gradient(90deg,transparent,rgba(234,148,1,0.8),transparent)}
 .lims-card::before{background:linear-gradient(90deg,transparent,rgba(0,229,176,0.8),transparent)}
 .devops-card::before{background:linear-gradient(90deg,transparent,rgba(139,92,246,0.8),transparent)}
-
 .card-header{padding:clamp(1.5rem,3vw,2.2rem);display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:start;border-bottom:1px solid rgba(255,255,255,0.05)}
 @media(max-width:650px){.card-header{grid-template-columns:1fr}}
-
 .card-type{font-size:var(--fs-xs);font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:0.28rem 0.75rem;border-radius:999px;display:inline-flex;align-items:center;gap:0.4rem;margin-bottom:0.9rem}
 .erp-card .card-type{color:var(--gold-lt);background:rgba(234,148,1,0.08);border:1px solid rgba(234,148,1,0.22)}
 .lims-card .card-type{color:var(--teal);background:rgba(0,229,176,0.06);border:1px solid rgba(0,229,176,0.20)}
 .devops-card .card-type{color:#c4b5fd;background:rgba(139,92,246,0.08);border:1px solid rgba(139,92,246,0.25)}
-
 .card-title{font-family:var(--font-d);font-size:var(--fs-xl);font-weight:900;line-height:1.05;letter-spacing:-1px;margin-bottom:0.7rem}
 .erp-card .card-title{background:linear-gradient(135deg,#fff,#ffdf6e,#ea9401);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .lims-card .card-title{background:linear-gradient(135deg,#fff,#a0ffe8,#00e5b0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .devops-card .card-title{background:linear-gradient(135deg,#fff,#ddd6fe,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-
 .card-desc{font-size:var(--fs-base);color:var(--muted-lt);line-height:1.8;margin-bottom:1.2rem;max-width:580px}
-
 .card-badges{display:flex;flex-wrap:wrap;gap:0.45rem;margin-bottom:1.4rem}
 .cb{padding:0.25rem 0.7rem;border-radius:999px;font-size:var(--fs-xs);font-weight:600}
 .cb.green{border:1px solid rgba(34,197,94,0.28);background:rgba(34,197,94,0.06);color:rgba(34,197,94,0.85)}
@@ -116,7 +104,7 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .cb.teal{border:1px solid rgba(0,229,176,0.25);background:rgba(0,229,176,0.05);color:var(--teal)}
 .cb.cyan{border:1px solid rgba(0,212,255,0.22);background:rgba(0,212,255,0.05);color:var(--cyan)}
 .cb.muted{border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.03);color:rgba(255,255,255,0.42)}
-
+.cb.purple{border:1px solid rgba(139,92,246,0.28);background:rgba(139,92,246,0.07);color:#c4b5fd}
 .card-actions{display:flex;flex-wrap:wrap;gap:0.7rem}
 .btn-gold{display:inline-flex;align-items:center;gap:0.5rem;padding:0.65rem 1.5rem;border-radius:11px;font-size:var(--fs-sm);font-weight:700;border:1px solid rgba(234,148,1,0.45);background:linear-gradient(135deg,rgba(234,148,1,0.18),rgba(234,148,1,0.05));color:var(--gold-lt);box-shadow:0 0 24px rgba(234,148,1,0.10);transition:all .25s;cursor:pointer}
 .btn-gold:hover{background:linear-gradient(135deg,rgba(234,148,1,0.30),rgba(234,148,1,0.12));box-shadow:0 0 40px rgba(234,148,1,0.25);transform:translateY(-2px)}
@@ -126,7 +114,6 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .btn-ghost:hover{border-color:rgba(255,255,255,0.20);color:#fff;transform:translateY(-2px)}
 .btn-purple{display:inline-flex;align-items:center;gap:0.5rem;padding:0.65rem 1.5rem;border-radius:11px;font-size:var(--fs-sm);font-weight:700;border:1px solid rgba(139,92,246,0.40);background:linear-gradient(135deg,rgba(139,92,246,0.15),rgba(139,92,246,0.05));color:#c4b5fd;box-shadow:0 0 24px rgba(139,92,246,0.12);transition:all .25s;cursor:pointer}
 .btn-purple:hover{background:linear-gradient(135deg,rgba(139,92,246,0.28),rgba(139,92,246,0.10));box-shadow:0 0 40px rgba(139,92,246,0.28);transform:translateY(-2px)}
-.cb.purple{border:1px solid rgba(139,92,246,0.28);background:rgba(139,92,246,0.07);color:#c4b5fd}
 .sp-val.purple{color:#c4b5fd}
 .fill-purple{background:linear-gradient(90deg,#5b21b6,#8b5cf6,#c4b5fd)}
 
@@ -177,7 +164,7 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .d-green{background:var(--green);box-shadow:0 0 5px var(--green)}
 .d-teal{background:var(--teal);box-shadow:0 0 5px var(--teal)}
 
-/* MEDIA PLACEHOLDER */
+/* MEDIA SECTION */
 .media-placeholder{border:1.5px dashed rgba(255,255,255,0.10);border-radius:var(--radius);background:rgba(255,255,255,0.015);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.6rem;min-height:180px;margin-bottom:2rem;transition:border-color .25s;cursor:default}
 .media-placeholder:hover{border-color:rgba(234,148,1,0.25)}
 .lims-card .media-placeholder:hover{border-color:rgba(0,229,176,0.22)}
@@ -186,7 +173,16 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 .mp-text{font-size:var(--fs-xs);font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.22)}
 .mp-sub{font-size:0.62rem;color:rgba(255,255,255,0.15)}
 
-/* WHO WE BUILT FOR */
+/* MEDIA GALLERY — for delivered project */
+.media-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-bottom:2rem}
+.media-slot{border-radius:var(--radius);overflow:hidden;background:rgba(255,255,255,0.02);border:1px solid rgba(234,148,1,0.12);min-height:160px;display:flex;align-items:center;justify-content:center;position:relative;transition:border-color .25s}
+.media-slot:hover{border-color:rgba(234,148,1,0.35)}
+.media-slot img,.media-slot video{width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
+.media-slot-empty{display:flex;flex-direction:column;align-items:center;gap:0.4rem;padding:1.5rem}
+.media-slot-empty span{font-size:var(--fs-xs);color:rgba(255,255,255,0.20);text-align:center}
+.media-slot-empty .slot-icon{font-size:1.8rem;opacity:0.25}
+
+/* BUILT FOR */
 .built-for{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem}
 @media(max-width:580px){.built-for{grid-template-columns:1fr}}
 .bf-card{background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.055);border-radius:var(--radius);padding:1.1rem 1.2rem;transition:border-color .25s,transform .25s}
@@ -220,6 +216,10 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity 650ms cubic-bezier(.22,1,.36,1),transform 650ms cubic-bezier(.22,1,.36,1)}
 .reveal.is-visible{opacity:1;transform:none}
+
+/* DELIVERED BADGE */
+.delivered-stamp{display:inline-flex;align-items:center;gap:0.5rem;padding:0.4rem 1rem;border-radius:999px;background:linear-gradient(135deg,rgba(34,197,94,0.15),rgba(34,197,94,0.05));border:1px solid rgba(34,197,94,0.40);color:var(--green);font-size:var(--fs-xs);font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:1rem;box-shadow:0 0 20px rgba(34,197,94,0.12)}
+.delivered-stamp::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
 </style>
 </head>
 <body>
@@ -228,14 +228,14 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
 <nav class="navbar">
   <div class="brand-name">T-MAT GLOBAL</div>
   <a href="https://www.t-matglobal.com" class="nav-back">← Back to Home</a>
-  <button class="nav-cta-btn" onclick="window.open('https://wa.me/919325479476','_blank')">Partner With Us</button>
+  <button class="nav-cta-btn" onclick="window.open('https://wa.me/917028278808','_blank')">Partner With Us</button>
 </nav>
 
 <!-- PAGE HERO -->
 <div class="page-hero">
   <div class="hero-glow"></div>
-  <div class="page-tag">Live Delivery — April 2026</div>
-  <h1 class="page-title">3 Projects.<br>3 Countries.<br>Pre-Delivery.</h1>
+  <div class="page-tag">Live Delivery — 2026</div>
+  <h1 class="page-title">3 Projects.<br>3 Countries.<br>Delivering.</h1>
   <p class="page-sub">Not case studies. Not mockups. These are active engineering engagements — running sprints, weekly client reviews, and scheduled production deliveries. Built by engineers who shipped at T-Mobile USA scale.</p>
 </div>
 
@@ -267,44 +267,45 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
           <div class="step-name">In Development</div>
         </div>
       </div>
-      <div class="pipeline-step step-active">
+      <div class="pipeline-step">
         <div class="step-inner">
           <div class="step-num">Stage 03</div>
           <div class="step-name">Pre-Delivery</div>
-          <div class="step-active-badge">We Are Here</div>
         </div>
       </div>
-      <div class="pipeline-step">
+      <div class="pipeline-step step-active">
         <div class="step-inner">
           <div class="step-num">Stage 04</div>
           <div class="step-name">Delivered</div>
+          <div class="step-active-badge">ERP Live</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ERP PROJECT CARD -->
+  <!-- ERP PROJECT CARD — DELIVERED -->
   <div class="project-card erp-card reveal" style="margin-bottom:2rem">
     <div class="card-header">
       <div>
-        <div class="card-type">Custom ERP Development</div>
+        <div class="delivered-stamp">Delivered — May 2026</div>
+        <div class="card-type">Custom ERP Development — Delivered</div>
         <h2 class="card-title">Enterprise Resource Planning System</h2>
-        <p class="card-desc">A fully custom-built Enterprise Resource Planning system for a retail business in Guyana. Delivered by T-Mat Global as a dedicated software engineering partner for a SaaS founder commercializing this product.</p>
+        <p class="card-desc">A fully custom-built Enterprise Resource Planning system for a retail business in Guyana. Successfully delivered by T-Mat Global as a dedicated software engineering partner for a SaaS founder commercializing this product.</p>
         <div class="card-badges">
-          <span class="cb green">Pre-Delivery</span>
+          <span class="cb green">Delivered</span>
           <span class="cb gold">Retail Industry</span>
           <span class="cb muted">Guyana</span>
           <span class="cb cyan">White-Label</span>
           <span class="cb muted">.NET 8.0</span>
         </div>
         <div class="card-actions">
-          <a href="https://wa.me/919325479476?text=Hi%20Sainath%2C%20I%20need%20a%20custom%20ERP%20like%20this" class="btn-gold">Request a Similar ERP Build</a>
+          <a href="https://wa.me/917028278808?text=Hi%20Sainath%2C%20I%20need%20a%20custom%20ERP%20like%20this" class="btn-gold">Request a Similar ERP Build</a>
           <a href="https://topmate.io/sainathmitalakar/2004329" class="btn-ghost">Schedule a Consultation</a>
         </div>
       </div>
       <div class="status-panel">
         <div class="sp-title">Project Status</div>
-        <div class="sp-row"><span class="sp-key">Status</span><span class="sp-val green">Nearly Complete</span></div>
+        <div class="sp-row"><span class="sp-key">Status</span><span class="sp-val green">Delivered</span></div>
         <div class="sp-row"><span class="sp-key">Industry</span><span class="sp-val gold">Retail</span></div>
         <div class="sp-row"><span class="sp-key">Client Type</span><span class="sp-val cyan">SaaS Founder</span></div>
         <div class="sp-row"><span class="sp-key">Stack</span><span class="sp-val gold">.NET 8.0</span></div>
@@ -316,36 +317,63 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
       </div>
     </div>
     <div class="card-body">
-      <!-- MEDIA PLACEHOLDER -->
-      <div class="body-label">Product Preview</div>
-      <div class="media-placeholder">
-        <div class="mp-text">Product Screenshots &amp; Demo — Available Post-Delivery</div>
-        <div class="mp-sub">A full product walkthrough will be published following final delivery and client sign-off.</div>
+
+      <!-- MEDIA GALLERY — ADD YOUR PHOTOS/VIDEOS HERE -->
+      <div class="body-label">Product Screenshots & Demo</div>
+      <div class="media-gallery">
+        <!-- 
+          TO ADD IMAGES: Replace the media-slot-empty div with:
+          <img src="YOUR_IMAGE_PATH.jpg" alt="ERP Screenshot" />
+          
+          TO ADD VIDEO: Replace the media-slot-empty div with:
+          <video controls><source src="YOUR_VIDEO_PATH.mp4" type="video/mp4"></video>
+          
+          TO ADD YOUTUBE: Replace the media-slot-empty div with:
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen style="min-height:160px;border-radius:12px"></iframe>
+        -->
+        <div class="media-slot">
+          <div class="media-slot-empty">
+            <div class="slot-icon">🖼️</div>
+            <span>Add Screenshot 1<br>Replace this div with img tag</span>
+          </div>
+        </div>
+        <div class="media-slot">
+          <div class="media-slot-empty">
+            <div class="slot-icon">🖼️</div>
+            <span>Add Screenshot 2<br>Replace this div with img tag</span>
+          </div>
+        </div>
+        <div class="media-slot">
+          <div class="media-slot-empty">
+            <div class="slot-icon">▶️</div>
+            <span>Add Demo Video<br>Replace this div with video or YouTube iframe</span>
+          </div>
+        </div>
       </div>
 
       <!-- MODULES -->
       <div class="body-label">Module Completion</div>
       <div class="module-list">
         <div class="module-item done"><div class="m-check done">✓</div>Inventory Management</div>
-        <div class="module-item done"><div class="m-check done">✓</div>Finance & Accounting</div>
-        <div class="module-item done"><div class="m-check done">✓</div>Sales & Order Management</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Finance &amp; Accounting</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Sales &amp; Order Management</div>
         <div class="module-item done"><div class="m-check done">✓</div>Customer Management</div>
-        <div class="module-item active"><div class="m-check active">~</div>Analytics & Reports</div>
-        <div class="module-item active"><div class="m-check active">~</div>HR & Payroll</div>
-        <div class="module-item pending"><div class="m-check pending">○</div>Final QA & Testing</div>
-        <div class="module-item pending"><div class="m-check pending">○</div>Production Deployment</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Analytics &amp; Reports</div>
+        <div class="module-item done"><div class="m-check done">✓</div>HR &amp; Payroll</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Final QA &amp; Testing</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Production Deployment</div>
       </div>
 
       <!-- WHO WE BUILT FOR -->
       <div class="body-label">Who We Built This For</div>
       <div class="built-for">
         <div class="bf-card">
-            <h4>SaaS Founder — Direct Client</h4>
-          <p>A SaaS entrepreneur who required a white-label ERP for commercial resale. T-Mat Global serves as the dedicated engineering partner responsible for product development and ongoing maintenance.</p>
+          <h4>SaaS Founder — Direct Client</h4>
+          <p>A SaaS entrepreneur who required a white-label ERP for commercial resale. T-Mat Global served as the dedicated engineering partner responsible for product development and delivery.</p>
         </div>
         <div class="bf-card">
           <h4>Retail Business — End User</h4>
-          <p>A retail business in Guyana using this ERP for day-to-day operations — inventory, finance, sales and customer management.</p>
+          <p>A retail business in Guyana now live on this ERP for day-to-day operations — inventory, finance, sales and customer management fully operational.</p>
         </div>
       </div>
 
@@ -364,7 +392,7 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
     </div>
   </div>
 
-  <!-- LIMS PROJECT CARD -->
+  <!-- LIMS PROJECT CARD — 98% -->
   <div class="project-card lims-card reveal" style="margin-bottom:2rem">
     <div class="card-header">
       <div>
@@ -372,20 +400,20 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
         <h2 class="card-title">Healthcare Laboratory Information System</h2>
         <p class="card-desc">A Laboratory Information Management System (LIMS) engineered for a healthcare diagnostics company in India. T-Mat Global serves as the full-stack software engineering partner, building this system end-to-end from architecture through delivery.</p>
         <div class="card-badges">
-          <span class="cb green">Pre-Delivery</span>
+          <span class="cb green">98% Complete</span>
           <span class="cb teal">Healthcare</span>
           <span class="cb muted">India</span>
           <span class="cb cyan">Diagnostics</span>
           <span class="cb muted">Java Spring Boot</span>
         </div>
         <div class="card-actions">
-          <a href="https://wa.me/919325479476?text=Hi%20Sainath%2C%20I%20need%20a%20custom%20LIMS%20or%20Healthcare%20software" class="btn-teal">Request a Similar LIMS Build</a>
+          <a href="https://wa.me/917028278808?text=Hi%20Sainath%2C%20I%20need%20a%20custom%20LIMS%20or%20Healthcare%20software" class="btn-teal">Request a Similar LIMS Build</a>
           <a href="https://topmate.io/sainathmitalakar/2004329" class="btn-ghost">Schedule a Consultation</a>
         </div>
       </div>
       <div class="status-panel">
         <div class="sp-title">Project Status</div>
-        <div class="sp-row"><span class="sp-key">Status</span><span class="sp-val green">Nearly Complete</span></div>
+        <div class="sp-row"><span class="sp-key">Status</span><span class="sp-val green">98% Complete</span></div>
         <div class="sp-row"><span class="sp-key">Industry</span><span class="sp-val teal">Healthcare</span></div>
         <div class="sp-row"><span class="sp-key">Client Type</span><span class="sp-val cyan">Diagnostics Lab</span></div>
         <div class="sp-row"><span class="sp-key">Stack</span><span class="sp-val teal">Java Spring</span></div>
@@ -397,31 +425,28 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
       </div>
     </div>
     <div class="card-body">
-      <!-- MEDIA PLACEHOLDER -->
       <div class="body-label">Product Preview</div>
       <div class="media-placeholder" style="border-color:rgba(0,229,176,0.10)">
         <div class="mp-text">Product Screenshots &amp; Demo — Available Post-Delivery</div>
         <div class="mp-sub">A full product walkthrough will be published following final delivery and client sign-off.</div>
       </div>
 
-      <!-- MODULES -->
       <div class="body-label">Module Completion</div>
       <div class="module-list">
         <div class="module-item done"><div class="m-check done">✓</div>Patient Registration</div>
-        <div class="module-item done"><div class="m-check done">✓</div>Sample Collection & Tracking</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Sample Collection &amp; Tracking</div>
         <div class="module-item done"><div class="m-check done">✓</div>Test Order Management</div>
         <div class="module-item done"><div class="m-check done">✓</div>Lab Workflow Management</div>
-        <div class="module-item active"><div class="m-check active">~</div>Result Entry & Reporting</div>
-        <div class="module-item active"><div class="m-check active">~</div>Doctor & Patient Portal</div>
-        <div class="module-item pending"><div class="m-check pending">○</div>Final QA & Testing</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Result Entry &amp; Reporting</div>
+        <div class="module-item done"><div class="m-check done">✓</div>Doctor &amp; Patient Portal</div>
+        <div class="module-item active"><div class="m-check active">~</div>Final QA &amp; Testing</div>
         <div class="module-item pending"><div class="m-check pending">○</div>Production Deployment</div>
       </div>
 
-      <!-- WHO WE BUILT FOR -->
       <div class="body-label">Who We Built This For</div>
       <div class="built-for">
         <div class="bf-card">
-            <h4>Diagnostics Lab — Direct Client</h4>
+          <h4>Diagnostics Lab — Direct Client</h4>
           <p>A healthcare diagnostics company requiring a comprehensive LIMS to manage laboratory operations, sample tracking, test result management, and clinical reporting within a single integrated platform.</p>
         </div>
         <div class="bf-card">
@@ -430,7 +455,6 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
         </div>
       </div>
 
-      <!-- TECH STACK -->
       <div class="body-label">Tech Stack</div>
       <div class="tech-row">
         <div class="tech-pill"><span class="t-dot d-teal"></span>Java Spring Boot</div>
@@ -460,7 +484,7 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
           <span class="cb muted">Kubernetes</span>
         </div>
         <div class="card-actions">
-          <a href="https://wa.me/919325479476?text=Hi%20Sainath%2C%20I%20need%20DevOps%20managed%20services" class="btn-purple">Enquire About Managed DevOps</a>
+          <a href="https://wa.me/917028278808?text=Hi%20Sainath%2C%20I%20need%20DevOps%20managed%20services" class="btn-purple">Enquire About Managed DevOps</a>
           <a href="https://topmate.io/sainathmitalakar/2004329" class="btn-ghost">Schedule a Consultation</a>
         </div>
       </div>
@@ -478,14 +502,12 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
       </div>
     </div>
     <div class="card-body">
-      <!-- MEDIA PLACEHOLDER -->
       <div class="body-label">Infrastructure Preview</div>
       <div class="media-placeholder" style="border-color:rgba(139,92,246,0.10)">
         <div class="mp-text">Dashboard Screenshots — Available Under NDA</div>
         <div class="mp-sub">Observability dashboards and pipeline architecture available to qualified prospects under NDA.</div>
       </div>
 
-      <!-- MODULES -->
       <div class="body-label">Service Coverage</div>
       <div class="module-list">
         <div class="module-item done"><div class="m-check done">✓</div>CI/CD Pipeline Management</div>
@@ -498,7 +520,6 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
         <div class="module-item done"><div class="m-check done">✓</div>Monthly Reporting &amp; Reviews</div>
       </div>
 
-      <!-- WHO WE BUILT FOR -->
       <div class="body-label">Who We Serve</div>
       <div class="built-for">
         <div class="bf-card">
@@ -511,7 +532,6 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
         </div>
       </div>
 
-      <!-- TECH STACK -->
       <div class="body-label">Tech Stack</div>
       <div class="tech-row">
         <div class="tech-pill"><span class="t-dot d-purple"></span>Kubernetes</div>
@@ -533,13 +553,13 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
       <p>We take on one new project at a time to maintain delivery quality. If your requirements are a fit, you will receive a scoped proposal with timeline and cost — within 24 hours, no discovery call required.</p>
     </div>
     <div class="cta-btns">
-      <a href="https://wa.me/919325479476" class="btn-gold">Connect via WhatsApp</a>
+      <a href="https://wa.me/917028278808" class="btn-gold">Connect via WhatsApp</a>
       <a href="https://topmate.io/sainathmitalakar/2004329" class="btn-ghost">Schedule a Consultation</a>
       <a href="mailto:hr@t-matglobal.com?subject=Custom%20Software%20Development%20Enquiry" class="btn-ghost">Contact via Email</a>
     </div>
   </div>
 
-</div><!-- /main -->
+</div>
 
 <!-- FOOTER -->
 <footer class="site-footer">
@@ -559,13 +579,11 @@ body::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;back
   </div>
 </footer>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/919325479476" class="whatsapp-float" aria-label="WhatsApp">
+<a href="https://wa.me/917028278808" class="whatsapp-float" aria-label="WhatsApp">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
 <script>
-// Animate progress bars
 function animateBar(barId, pctId, target) {
   const bar = document.getElementById(barId);
   const pct = document.getElementById(pctId);
@@ -578,13 +596,11 @@ function animateBar(barId, pctId, target) {
     if (current >= target) clearInterval(timer);
   }, 18);
 }
-
-// Trigger on scroll into view
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
-      if (e.target.id === 'erp-bar') animateBar('erp-bar', 'erp-pct', 82);
-      if (e.target.id === 'lims-bar') animateBar('lims-bar', 'lims-pct', 78);
+      if (e.target.id === 'erp-bar') animateBar('erp-bar', 'erp-pct', 100);
+      if (e.target.id === 'lims-bar') animateBar('lims-bar', 'lims-pct', 98);
       if (e.target.id === 'devops-bar') animateBar('devops-bar', 'devops-pct', 99);
     }
   });
@@ -593,8 +609,6 @@ const observer = new IntersectionObserver((entries) => {
   const el = document.getElementById(id);
   if (el) observer.observe(el);
 });
-
-// Reveal on scroll
 const ro = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-visible'); });
 }, { threshold: 0.08 });
