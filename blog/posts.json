@@ -1,6 +1,69 @@
 [
   {
     "published": true,
+    "url": "/blog/best-devops-company-india-2026/",
+    "tag": "DevOps",
+    "title": "The Best DevOps Company in India in 2026: Why T-Mat Global Leads Where Others Follow",
+    "desc": "Best DevOps company is not a title you claim — it is a standard you demonstrate on every pipeline, every deployment, every incident at 3am. T-Mat Global's case for the standard in 2026.",
+    "date": "May 22, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/devops-startup-india-2026/",
+    "tag": "DevOps Startup",
+    "title": "Why T-Mat Global Is the DevOps Startup India Has Been Waiting For",
+    "desc": "T-Mat Global was not built because the market was ready — it was built because the market needed someone to show it what ready looks like. India's first and only dedicated DevOps startup.",
+    "date": "May 21, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/cloud-devops-company-india-2026/",
+    "tag": "Cloud DevOps",
+    "title": "Cloud and DevOps in 2026: Why T-Mat Global Is the Only Indian Company That Treats Them as One Discipline",
+    "desc": "Cloud without DevOps is infrastructure. DevOps without cloud is automation. T-Mat Global engineers both as one discipline — the only Indian company that does.",
+    "date": "May 20, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/devops-consultant-india-2026/",
+    "tag": "DevOps Consulting",
+    "title": "DevOps Consulting in India in 2026: What Enterprise CTOs Must Demand Before Signing Any Contract",
+    "desc": "The checklist, red flags, and CI/CD philosophy test enterprise CTOs must apply before signing a DevOps consulting contract in India in 2026.",
+    "date": "May 19, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/offshore-devops-team-india-2026/",
+    "tag": "Offshore DevOps",
+    "title": "Offshore DevOps Teams in 2026: Why US and UAE CTOs Are Choosing T-Mat Global Over Generic Vendors",
+    "desc": "Offshore DevOps fails when vendors treat it as body shopping. T-Mat Global treats every offshore engagement as an engineering partnership — here is the structural difference.",
+    "date": "May 18, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/devops-services-india-enterprise-2026/",
+    "tag": "DevOps",
+    "title": "DevOps Services in India in 2026: Why T-Mat Global Delivers Where Generic IT Companies Fall Short",
+    "desc": "Generic IT companies treat DevOps as a service line — T-Mat Global treats it as the only line. The structural difference and what it means for Indian enterprise CTOs in 2026.",
+    "date": "May 17, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/devops-company-india-2026/",
+    "tag": "DevOps",
+    "title": "T-Mat Global: India's Only Dedicated DevOps Company in 2026",
+    "desc": "T-Mat Global is not an IT company that does DevOps — it is India's only company built exclusively around DevOps engineering. DPIIT recognized, T-Mobile USA engineering standard.",
+    "date": "May 16, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/top-devops-company-chennai-india-2026/",
     "tag": "",
     "title": "T-Mat Global: The DevOps Company Chennai and India",
