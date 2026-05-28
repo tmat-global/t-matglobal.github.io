@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/devops-automation-enterprise-2026/",
+    "tag": "DevOps Automation",
+    "title": "DevOps Automation in 2026: Why Enterprise CTOs Are Eliminating Manual Operations Before They Scale",
+    "desc": "Automation is not a DevOps feature — it is the only operating model that scales without breaking. T-Mat Global's 4-pillar enterprise automation framework: pipeline, infrastructure, testing, and monitoring automation at T-Mobile USA standard.",
+    "date": "May 27, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/best-devops-company-india-2026/",
     "tag": "",
     "title": "The Best DevOps Company in India in 2026: Why T-Mat Global Leads Where Others Follow",
