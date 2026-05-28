@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/cloud-native-architecture-enterprise-2026/",
+    "tag": "Cloud Native",
+    "title": "Cloud Native Architecture in 2026: Why Enterprise CTOs Are Rebuilding Systems From the Ground Up",
+    "desc": "Cloud native is not a migration destination — it is an engineering discipline. T-Mat Global's 4-principle cloud native framework: microservices, containers, dynamic orchestration, and DevOps culture at T-Mobile USA standard.",
+    "date": "May 28, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/devops-automation-enterprise-2026/",
     "tag": "",
     "title": "DevOps Automation in 2026: Why Enterprise CTOs Are Eliminating Manual Operations Before They Scale",
