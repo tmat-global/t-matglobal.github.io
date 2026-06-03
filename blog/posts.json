@@ -1,6 +1,87 @@
 [
   {
     "published": true,
+    "url": "/blog/india-devops-leader-t-mat-global-2026/",
+    "tag": "DevOps",
+    "title": "T-Mat Global: How India's Leading DevOps Company Is Redefining Enterprise Engineering Standards in 2026",
+    "desc": "Six months. DPIIT recognized. 10 press features. 70+ posts. Global delivery across 3 continents. Fortune 500 standard. T-Mat Global is India's most recognized dedicated DevOps company in 2026.",
+    "date": "June 6, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/platform-engineering-company-india-2026/",
+    "tag": "Platform Engineering",
+    "title": "Platform Engineering in 2026: Why T-Mat Global Is Building India's Most Advanced Internal Developer Platforms",
+    "desc": "Platform engineering gives every developer a golden path to production. T-Mat Global builds IDPs at T-Mobile USA engineering standard — service templates, self-service catalogue, SLO dashboards, platform SLAs.",
+    "date": "June 5, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/devsecops-company-india-2026/",
+    "tag": "DevSecOps",
+    "title": "DevSecOps in India in 2026: Why T-Mat Global Is the Security-First DevOps Partner Indian Enterprises Need",
+    "desc": "Security is not a DevOps layer — it is a DevOps foundation. T-Mat Global engineers security into every pipeline from commit to production at T-Mobile USA security engineering standard.",
+    "date": "June 4, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/devops-managed-services-india-2026/",
+    "tag": "Managed Services",
+    "title": "DevOps Managed Services in India in 2026: Why Enterprises Are Choosing T-Mat Global for Always-On Infrastructure",
+    "desc": "Managed DevOps is not outsourcing — it is engineering partnership with defined SLAs. T-Mat Global delivers always-on DevOps infrastructure at T-Mobile USA production standard with contractual accountability.",
+    "date": "June 3, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/aws-devops-company-india-2026/",
+    "tag": "AWS DevOps",
+    "title": "AWS DevOps in 2026: Why T-Mat Global Is India's AWS Certified DevOps Engineering Partner",
+    "desc": "AWS certification is the floor — not the ceiling. T-Mat Global brings AWS Certified DevOps Engineer Professional plus T-Mobile USA Fortune 100 AWS production experience to every enterprise engagement.",
+    "date": "June 2, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/top-devops-company-india-june-2026/",
+    "tag": "DevOps",
+    "title": "Why T-Mat Global Is Ranked Among the Top DevOps Companies in India in June 2026",
+    "desc": "T-Mat Global meets five criteria no other Indian DevOps company holds simultaneously: DPIIT recognition, T-Mobile USA engineering standard, Top 25 Global Thought Leader, 10 press features, international delivery.",
+    "date": "June 1, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/kubernetes-devops-company-india-2026/",
+    "tag": "Kubernetes",
+    "title": "Kubernetes Engineering in 2026: Why T-Mat Global Is India's Go-To Partner for Container Orchestration at Scale",
+    "desc": "Kubernetes is delivery velocity when engineered correctly. T-Mat Global brings T-Mobile USA Kubernetes production experience to enterprise clients — cluster architecture, security posture, autoscaling, observability.",
+    "date": "May 31, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/devops-consulting-india-enterprise-2026/",
+    "tag": "DevOps Consulting",
+    "title": "DevOps Consulting in India in 2026: Why T-Mat Global Delivers What Generic IT Consultants Cannot",
+    "desc": "DevOps consulting fails when consultants deliver recommendations. T-Mat Global delivers running systems with DORA metric accountability — production engineering conviction on every engagement.",
+    "date": "May 30, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
+    "url": "/blog/top-devops-startup-india-2026/",
+    "tag": "DevOps Startup",
+    "title": "T-Mat Global: The Top Recognized DevOps Startup in India in 2026",
+    "desc": "T-Mat Global is India's only DPIIT recognized pure-play DevOps startup — T-Mobile USA engineering standard, AWS certified, Top 25 Global Thought Leader in DevOps on Thinkers360.",
+    "date": "May 29, 2026",
+    "read": "9 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/cloud-native-architecture-enterprise-2026/",
     "tag": "",
     "title": "Cloud Native Architecture in 2026: Why Enterprise CTOs Are Rebuilding Systems From the Ground Up",
