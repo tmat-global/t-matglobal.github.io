@@ -28,6 +28,22 @@
     <!-- ── BLOG POSTS — newest first ── -->
 
     <item>
+      <title>What Is VaultRak? T-Mat Global's Managed Security Operations Platform Explained</title>
+      <link>https://www.t-matglobal.com/blog/what-is-vaultrak/</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/blog/what-is-vaultrak/</guid>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security Operations</category>
+      <description><![CDATA[
+        VaultRak is T-Mat Global's managed Security Operations platform delivering Enterprise grade
+        Security Operations, operated for you 24/7. It connects to a client's GitLab repository via
+        webhook, automatically classifies every commit by security impact, and scores the security
+        posture from 0 to 100. As of June 2026: 20 vulnerabilities remediated, 42 incidents resolved,
+        100% uptime, security score 62/100. Built on Fortune 500 production expertise.
+      ]]></description>
+      <author>hr@t-matglobal.com (Sainath Mitalakar)</author>
+    </item>
+
+    <item>
       <title>VaultRak: T-Mat Global's Managed Security Operations Platform for Enterprise in 2026</title>
       <link>https://www.t-matglobal.com/blog/vaultrak-managed-security-operations-2026/</link>
       <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-managed-security-operations-2026/</guid>
