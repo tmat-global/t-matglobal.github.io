@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/vaultrak-scanning-vs-remediation-2026/",
+    "tag": "Security Operations",
+    "title": "Vulnerability Scanning Is Not Remediation: Why Finding the Problem Is the Easy Part",
+    "desc": "Scanning finds vulnerabilities. Remediation closes them. Most security programs fail in the gap between the two. Here is why — and what closes it.",
+    "date": "June 19, 2026",
+    "read": "7 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/what-is-vaultrak/",
     "tag": "",
     "title": "What Is VaultRak? T-Mat Global",
