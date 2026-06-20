@@ -28,6 +28,22 @@
     <!-- ── BLOG POSTS — newest first ── -->
 
     <item>
+      <title>What a Security Score of 0 to 100 Actually Measures | VaultRak</title>
+      <link>https://www.t-matglobal.com/blog/vaultrak-security-score-explained-2026/</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-security-score-explained-2026/</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security Operations</category>
+      <description><![CDATA[
+        A security posture score is not a compliance certification, not a CVSS average, and not a
+        point-in-time snapshot. VaultRak's 0-to-100 score is a live composite of five signals:
+        open vulnerability count and age, remediation velocity, incident resolution rate, pipeline
+        coverage, and infrastructure compliance. The live client holds 62/100 — an honest number
+        reflecting 20 vulnerabilities remediated, 42 incidents resolved, and zero findings left to age.
+      ]]></description>
+      <author>hr@t-matglobal.com (Sainath Mitalakar)</author>
+    </item>
+
+    <item>
       <title>Vulnerability Scanning Is Not Remediation: Why Finding the Problem Is the Easy Part</title>
       <link>https://www.t-matglobal.com/blog/vaultrak-scanning-vs-remediation-2026/</link>
       <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-scanning-vs-remediation-2026/</guid>
