@@ -28,6 +28,23 @@
     <!-- ── BLOG POSTS — newest first ── -->
 
     <item>
+      <title>The Hidden Cost of Unreviewed Commits in a Fast-Moving Codebase | VaultRak</title>
+      <link>https://www.t-matglobal.com/blog/vaultrak-unreviewed-commits-hidden-cost-2026/</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-unreviewed-commits-hidden-cost-2026/</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security Operations</category>
+      <description><![CDATA[
+        Every unreviewed commit is a window of undetected exposure. In fast-moving codebases,
+        dependency additions, config changes, auth logic edits, and secrets handling refactors
+        pass through code review without a security classification. VaultRak classifies every
+        commit automatically via GitLab webhook at the speed of development. On the live
+        EncryptCoders engagement: 25 security commits classified, 20 vulnerabilities remediated,
+        zero commits left unreviewed. Built on Fortune 500 production expertise.
+      ]]></description>
+      <author>hr@t-matglobal.com (Sainath Mitalakar)</author>
+    </item>
+
+    <item>
       <title>What a Security Score of 0 to 100 Actually Measures | VaultRak</title>
       <link>https://www.t-matglobal.com/blog/vaultrak-security-score-explained-2026/</link>
       <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-security-score-explained-2026/</guid>

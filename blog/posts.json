@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/vaultrak-unreviewed-commits-hidden-cost-2026/",
+    "tag": "Security Operations",
+    "title": "The Hidden Cost of Unreviewed Commits in a Fast-Moving Codebase",
+    "desc": "Every unreviewed commit is a gap in your security posture. In fast-moving codebases those gaps accumulate silently. Here is what they actually cost and how VaultRak closes them.",
+    "date": "June 22, 2026",
+    "read": "7 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/vaultrak-security-score-explained-2026/",
     "tag": "",
     "title": "What a Security Score of 0 to 100 Actually Measures | VaultRak",
