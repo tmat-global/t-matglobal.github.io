@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/vaultrak-startup-security-audit-gaps-2026/",
+    "tag": "Security Operations",
+    "title": "Why Most Startups Discover Security Gaps During a Customer Audit, Not Before",
+    "desc": "Most startups learn they have a security problem when a customer auditor asks for evidence they do not have. Here is why that happens and how VaultRak builds audit-ready security posture before the audit call is scheduled.",
+    "date": "June 23, 2026",
+    "read": "7 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/vaultrak-unreviewed-commits-hidden-cost-2026/",
     "tag": "",
     "title": "The Hidden Cost of Unreviewed Commits in a Fast-Moving Codebase | VaultRak",

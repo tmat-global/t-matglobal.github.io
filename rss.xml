@@ -28,6 +28,24 @@
     <!-- ── BLOG POSTS — newest first ── -->
 
     <item>
+      <title>Why Most Startups Discover Security Gaps During a Customer Audit, Not Before | VaultRak</title>
+      <link>https://www.t-matglobal.com/blog/vaultrak-startup-security-audit-gaps-2026/</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-startup-security-audit-gaps-2026/</guid>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security Operations</category>
+      <description><![CDATA[
+        Most startups learn they have a security problem when a customer auditor asks for evidence
+        they do not have. Remediation records, incident logs, access control documentation, and
+        commit-level security classification are all standard audit requests that startups without
+        ongoing security operations cannot produce from existing records. VaultRak builds audit-ready
+        security posture continuously from day one of engagement. On the live EncryptCoders
+        engagement: 62/100 posture score, 20 vulnerabilities remediated, 42 incidents resolved, 25
+        security commits classified. Built on Fortune 500 production expertise.
+      ]]></description>
+      <author>hr@t-matglobal.com (Sainath Mitalakar)</author>
+    </item>
+
+    <item>
       <title>The Hidden Cost of Unreviewed Commits in a Fast-Moving Codebase | VaultRak</title>
       <link>https://www.t-matglobal.com/blog/vaultrak-unreviewed-commits-hidden-cost-2026/</link>
       <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-unreviewed-commits-hidden-cost-2026/</guid>
