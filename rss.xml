@@ -28,6 +28,24 @@
     <!-- ── BLOG POSTS — newest first ── -->
 
     <item>
+      <title>RBAC Drift: How Access Creeps Wider Over Time Without Anyone Noticing | VaultRak</title>
+      <link>https://www.t-matglobal.com/blog/vaultrak-rbac-drift-access-creep-2026/</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-rbac-drift-access-creep-2026/</guid>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security Operations</category>
+      <description><![CDATA[
+        RBAC drift is the silent accumulation of access that no single person approved. Temporary
+        permissions that never expired, roles copied from broader templates, offboarding that missed
+        a system, scope escalations nobody reverted. Together they produce an access surface wider
+        than anyone intended. VaultRak monitors the access surface continuously so drift is caught
+        before it becomes a breach vector. On the live EncryptCoders engagement: 25 security commits
+        classified, 20 vulnerabilities remediated, 42 incidents resolved, 62/100 posture score.
+        Built on Fortune 500 production expertise.
+      ]]></description>
+      <author>hr@t-matglobal.com (Sainath Mitalakar)</author>
+    </item>
+
+    <item>
       <title>Why Most Startups Discover Security Gaps During a Customer Audit, Not Before | VaultRak</title>
       <link>https://www.t-matglobal.com/blog/vaultrak-startup-security-audit-gaps-2026/</link>
       <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-startup-security-audit-gaps-2026/</guid>
