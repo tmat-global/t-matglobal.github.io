@@ -2,9 +2,9 @@
   {
     "published": true,
     "url": "/blog/vaultrak-rbac-drift-access-creep-2026/",
-    "tag": "Security Operations",
-    "title": "RBAC Drift: How Access Creeps Wider Over Time Without Anyone Noticing",
-    "desc": "RBAC drift is the silent accumulation of access that no single person approved. Temporary permissions, copied roles, incomplete offboarding, and unreversed escalations together produce an access surface wider than anyone intended.",
+    "tag": "",
+    "title": "RBAC Drift: How Access Creeps Wider Over Time Without Anyone Noticing | VaultRak",
+    "desc": "RBAC drift happens silently: temporary permissions that never expire, roles copied from broader templates, offboarding that missed a system, scope escalations nobody reverted. Here is how access creeps and how VaultRak catches it continuously.",
     "date": "June 24, 2026",
     "read": "7 min read"
   },
