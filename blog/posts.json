@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/vaultrak-webhook-security-pipeline-vs-audit-2026/",
+    "tag": "Security Operations",
+    "title": "What a Webhook-Based Security Pipeline Can Catch That a Quarterly Audit Can't",
+    "desc": "A quarterly audit is a photograph. A webhook-based pipeline is a continuous video feed. Here is exactly what each model catches, what each misses, and why the 90-day exposure window between audits is where most incidents begin.",
+    "date": "June 25, 2026",
+    "read": "7 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/vaultrak-rbac-drift-access-creep-2026/",
     "tag": "",
     "title": "RBAC Drift: How Access Creeps Wider Over Time Without Anyone Noticing | VaultRak",

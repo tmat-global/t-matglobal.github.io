@@ -28,6 +28,24 @@
     <!-- ── BLOG POSTS — newest first ── -->
 
     <item>
+      <title>What a Webhook-Based Security Pipeline Can Catch That a Quarterly Audit Can't | VaultRak</title>
+      <link>https://www.t-matglobal.com/blog/vaultrak-webhook-security-pipeline-vs-audit-2026/</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-webhook-security-pipeline-vs-audit-2026/</guid>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security Operations</category>
+      <description><![CDATA[
+        A quarterly audit photographs your security posture at one moment. A webhook-based pipeline
+        watches every change as it happens: vulnerable dependencies on the day they are pushed, config
+        changes the afternoon they are merged, access grants the moment they land. The 90-day exposure
+        window between quarterly audits is where most incidents begin and develop. VaultRak closes that
+        window at the speed of the development team. On the live EncryptCoders engagement: 25 commits
+        classified, 20 vulnerabilities remediated, 42 incidents resolved, 100% uptime. Built on
+        Fortune 500 production expertise.
+      ]]></description>
+      <author>hr@t-matglobal.com (Sainath Mitalakar)</author>
+    </item>
+
+    <item>
       <title>RBAC Drift: How Access Creeps Wider Over Time Without Anyone Noticing | VaultRak</title>
       <link>https://www.t-matglobal.com/blog/vaultrak-rbac-drift-access-creep-2026/</link>
       <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-rbac-drift-access-creep-2026/</guid>
