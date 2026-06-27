@@ -28,6 +28,24 @@
     <!-- ── BLOG POSTS — newest first ── -->
 
     <item>
+      <title>CI/CD Pipelines as a Security Surface, Not Just a Deployment Tool | VaultRak</title>
+      <link>https://www.t-matglobal.com/blog/vaultrak-cicd-pipeline-security-surface-2026/</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-cicd-pipeline-security-surface-2026/</guid>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security Operations</category>
+      <description><![CDATA[
+        Your CI/CD pipeline has read access to secrets, write access to your codebase, and authority
+        to push to production. That makes it one of the highest-value attack surfaces in your
+        infrastructure. Five vectors create the risk: secrets in environment variables, third-party
+        actions with unreviewed code, artifact integrity gaps, overprivileged service accounts, and
+        logs that expose sensitive runtime data. VaultRak classifies pipeline configuration changes
+        continuously and monitors service account scope as a live posture signal. Built on Fortune
+        500 production expertise.
+      ]]></description>
+      <author>hr@t-matglobal.com (Sainath Mitalakar)</author>
+    </item>
+
+    <item>
       <title>What a Webhook-Based Security Pipeline Can Catch That a Quarterly Audit Can't | VaultRak</title>
       <link>https://www.t-matglobal.com/blog/vaultrak-webhook-security-pipeline-vs-audit-2026/</link>
       <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-webhook-security-pipeline-vs-audit-2026/</guid>

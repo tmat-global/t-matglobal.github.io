@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/vaultrak-cicd-pipeline-security-surface-2026/",
+    "tag": "Security Operations",
+    "title": "CI/CD Pipelines as a Security Surface, Not Just a Deployment Tool",
+    "desc": "Your CI/CD pipeline has read access to secrets, write access to your codebase, and authority to push to production. Here are the five vectors that make it a high-value attack surface and how VaultRak monitors it continuously.",
+    "date": "June 26, 2026",
+    "read": "7 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/vaultrak-webhook-security-pipeline-vs-audit-2026/",
     "tag": "",
     "title": "What a Webhook-Based Security Pipeline Can Catch That a Quarterly Audit Can",
