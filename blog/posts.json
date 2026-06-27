@@ -2,9 +2,9 @@
   {
     "published": true,
     "url": "/blog/vaultrak-cicd-pipeline-security-surface-2026/",
-    "tag": "Security Operations",
-    "title": "CI/CD Pipelines as a Security Surface, Not Just a Deployment Tool",
-    "desc": "Your CI/CD pipeline has read access to secrets, write access to your codebase, and authority to push to production. Here are the five vectors that make it a high-value attack surface and how VaultRak monitors it continuously.",
+    "tag": "",
+    "title": "CI/CD Pipelines as a Security Surface, Not Just a Deployment Tool | VaultRak",
+    "desc": "CI/CD pipelines run with production-level trust, access to secrets, and authority to push code to live systems. That makes them one of the highest-value security surfaces in a modern codebase. Here is what VaultRak monitors and why it matters.",
     "date": "June 26, 2026",
     "read": "7 min read"
   },
