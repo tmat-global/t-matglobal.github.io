@@ -2,9 +2,9 @@
   {
     "published": true,
     "url": "/blog/vaultrak-container-docker-security-2026/",
-    "tag": "Security Operations",
+    "tag": "",
     "title": "Docker and Container Security Basics Every Engineering Team Underestimates | VaultRak",
-    "desc": "Containers feel isolated but are not secure by default. Six security basics most teams skip: running as root, mutable base image tags, baked-in secrets, unscanned images, missing .dockerignore, and no resource or network limits. VaultRak classifies Dockerfile changes at commit time.",
+    "desc": "Containers feel isolated but they are not secure by default. Running as root, pulling unverified images, exposing container ports without network policy, and skipping image scanning are mistakes every engineering team makes. Here is what VaultRak monitors and why it matters.",
     "date": "June 27, 2026",
     "read": "7 min read"
   },
