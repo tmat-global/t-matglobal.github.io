@@ -1,6 +1,15 @@
 [
   {
     "published": true,
+    "url": "/blog/vaultrak-container-docker-security-2026/",
+    "tag": "Security Operations",
+    "title": "Docker and Container Security Basics Every Engineering Team Underestimates | VaultRak",
+    "desc": "Containers feel isolated but are not secure by default. Six security basics most teams skip: running as root, mutable base image tags, baked-in secrets, unscanned images, missing .dockerignore, and no resource or network limits. VaultRak classifies Dockerfile changes at commit time.",
+    "date": "June 27, 2026",
+    "read": "7 min read"
+  },
+  {
+    "published": true,
     "url": "/blog/vaultrak-cicd-pipeline-security-surface-2026/",
     "tag": "",
     "title": "CI/CD Pipelines as a Security Surface, Not Just a Deployment Tool | VaultRak",

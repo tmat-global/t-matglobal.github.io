@@ -28,6 +28,23 @@
     <!-- ── BLOG POSTS — newest first ── -->
 
     <item>
+      <title>Docker and Container Security Basics Every Engineering Team Underestimates | VaultRak</title>
+      <link>https://www.t-matglobal.com/blog/vaultrak-container-docker-security-2026/</link>
+      <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-container-docker-security-2026/</guid>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Security Operations</category>
+      <description><![CDATA[
+        Containers feel isolated but are not secure by default. Running as root, pulling unverified
+        base images, baking secrets into the image, skipping vulnerability scanning, missing a
+        .dockerignore, and applying no resource or network limits are the six container security
+        basics most engineering teams underestimate. VaultRak classifies Dockerfile and container
+        configuration changes as security-relevant commits and catches these misconfigurations
+        before they reach production. Built on Fortune 500 production expertise.
+      ]]></description>
+      <author>hr@t-matglobal.com (Sainath Mitalakar)</author>
+    </item>
+
+    <item>
       <title>CI/CD Pipelines as a Security Surface, Not Just a Deployment Tool | VaultRak</title>
       <link>https://www.t-matglobal.com/blog/vaultrak-cicd-pipeline-security-surface-2026/</link>
       <guid isPermaLink="true">https://www.t-matglobal.com/blog/vaultrak-cicd-pipeline-security-surface-2026/</guid>
