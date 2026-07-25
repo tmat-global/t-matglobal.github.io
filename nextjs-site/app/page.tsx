@@ -1,5 +1,7 @@
 import PageHero from "@/components/PageHero";
 import ServicesGrid from "@/components/ServicesGrid";
+import WorkflowSteps from "@/components/WorkflowSteps";
+import TechStackCarousel from "@/components/TechStackCarousel";
 
 export default function HomePage() {
   return (
@@ -13,6 +15,8 @@ export default function HomePage() {
         imageSrc="/heroes/home.jpg"
       />
       <ServicesGrid limit={6} />
+      <WorkflowSteps />
+      <TechStackCarousel />
     </>
   );
 }
