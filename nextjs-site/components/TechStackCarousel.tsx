@@ -53,6 +53,7 @@ export default function TechStackCarousel() {
                 className="h-16 w-16"
                 fill={tech.color}
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path d={tech.path} />
               </svg>
@@ -76,7 +77,7 @@ export default function TechStackCarousel() {
             type="button"
             onClick={() => scroll("next")}
             aria-label="Next technologies"
-            className="flex h-12 w-12 items-center justify-center bg-brand-green text-white transition-colors hover:bg-brand-green-dark"
+            className="flex h-12 w-12 items-center justify-center bg-brand-green text-brand-black transition-colors hover:bg-brand-green-dark"
           >
             <ChevronRight className="h-6 w-6" />
           </button>

@@ -12,7 +12,7 @@ interface SectionHeadingProps {
 
 const colorClass: Record<NonNullable<Segment["color"]>, string> = {
   black: "text-brand-black",
-  green: "text-brand-green",
+  green: "text-brand-accent",
   white: "text-white",
 };
 

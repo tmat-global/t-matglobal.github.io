@@ -1,7 +1,7 @@
 export default function FloatingContactPill() {
   return (
     <a
-      href="tel:+15550100100"
+      href="tel:+917028278808"
       aria-label="Contact T-Mat Global"
       className="fixed left-0 top-1/2 z-30 flex -translate-y-1/2 items-center gap-2 rounded-r-full bg-white py-3 pl-4 pr-5 text-blue-600 shadow-lg transition-transform hover:translate-x-1"
     >

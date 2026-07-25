@@ -1,18 +1,28 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import ServicesGrid from "@/components/ServicesGrid";
+import ServicesHeroIllustration from "@/components/illustrations/ServicesHeroIllustration";
+import ServicesFullList from "@/components/ServicesFullList";
+
+const TITLE =
+  "DevSecOps Services | CI/CD Security, Cloud Security & Managed DevSecOps";
+const DESCRIPTION =
+  "Explore T-Mat Global's full DevSecOps services: CI/CD pipeline security, cloud security consulting, Kubernetes security, compliance automation, and 24/7 managed DevSecOps for enterprise clients across the US, UAE, and UK.";
 
 export const metadata: Metadata = {
-  title: "Services",
-  description:
-    "DevSecOps, cloud, and platform engineering services delivered by T-Mat Global to enterprise clients across the US, UAE, and UK.",
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: { title: TITLE, description: DESCRIPTION },
+  twitter: { title: TITLE, description: DESCRIPTION },
 };
 
 export default function ServicesPage() {
   return (
     <>
-      <PageHero firstWord="SERVICES" imageSrc="/heroes/services.jpg" />
-      <ServicesGrid showHeading={false} />
+      <PageHero
+        firstWord="SERVICES"
+        illustration={<ServicesHeroIllustration />}
+      />
+      <ServicesFullList />
     </>
   );
 }

@@ -22,8 +22,10 @@ export function generateMetadata({
   if (!service) return {};
 
   return {
-    title: service.title,
+    title: service.seoTitle,
     description: service.description,
+    openGraph: { title: service.seoTitle, description: service.description },
+    twitter: { title: service.seoTitle, description: service.description },
   };
 }
 
@@ -71,7 +73,7 @@ export default function ServiceDetailPage({
                 key={index}
                 className="flex gap-3 font-body text-lg text-brand-black"
               >
-                <span className="mt-1 text-brand-green">&#10003;</span>
+                <span className="mt-1 text-brand-accent">&#10003;</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -97,7 +99,7 @@ export default function ServiceDetailPage({
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <Link
             href="/contact"
-            className="inline-block rounded bg-brand-black px-10 py-5 font-heading text-lg font-bold uppercase tracking-wider text-white transition-colors hover:bg-black sm:text-xl"
+            className="block w-full rounded bg-brand-black px-10 py-5 font-heading text-lg font-bold uppercase tracking-wider text-white transition-colors hover:bg-black sm:inline-block sm:w-auto sm:text-xl"
           >
             Get a Free DevSecOps Assessment
           </Link>

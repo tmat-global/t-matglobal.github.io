@@ -39,7 +39,7 @@ export default function ServicesGrid({
               </p>
               <Link
                 href={`/services/${service.slug}`}
-                className="mt-4 inline-block font-heading text-sm font-semibold uppercase tracking-wide text-brand-green hover:underline"
+                className="mt-4 inline-block font-heading text-sm font-semibold uppercase tracking-wide text-brand-accent hover:underline"
               >
                 Read more ...
               </Link>
@@ -51,7 +51,7 @@ export default function ServicesGrid({
           <div className="mt-16 text-center">
             <Link
               href="/services"
-              className="inline-block rounded bg-brand-green px-8 py-4 font-heading text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-brand-green-dark"
+              className="block w-full rounded bg-brand-green px-8 py-4 font-heading text-sm font-semibold uppercase tracking-wider text-brand-black transition-colors hover:bg-brand-green-dark sm:inline-block sm:w-auto"
             >
               View All Services
             </Link>

@@ -1,6 +1,7 @@
 export interface Service {
   slug: string;
   title: string;
+  seoTitle: string;
   description: string;
   expandedDescription: string[];
   whatsIncluded: string[];
@@ -9,8 +10,32 @@ export interface Service {
 
 export const services: Service[] = [
   {
+    slug: "software-development",
+    title: "Software Development",
+    seoTitle: "Custom Software Development | Secure SDLC by DevSecOps Experts",
+    description:
+      "Full-cycle custom software development delivered with security built in from the first commit. Web platforms, SaaS products, and enterprise systems designed, built, and shipped by a team that treats DevSecOps as the default, not an add-on.",
+    expandedDescription: [
+      "Most software gets built by a team that hands off to security once, right before launch — if at all. That model produces products that ship fast and then spend the next two years accumulating technical and security debt nobody budgeted time to fix. It's also how founders end up needing a second team just to make their first team's code deployable to an enterprise customer.",
+      "T-Mat Global builds software the way we secure it: as one continuous discipline, not two handoffs. We work with founders and businesses from requirements and architecture through to production, designing systems that are secure by default because the same engineers writing the code are the ones who understand the threat model, the compliance requirements, and the infrastructure it will run on.",
+      "Our teams build web platforms, SaaS products, and enterprise systems end to end — frontend, backend, APIs, data layer, and cloud infrastructure — following a secure SDLC with code review, automated testing, and security scanning built into every pull request, not bolted on before a release. What we ship is deployable to the same cloud environments and CI/CD pipelines we harden for our DevSecOps clients, because it's built by the same team.",
+      "For founders and businesses that don't want to coordinate between a development shop and a separate security vendor, that means one partner accountable for the whole lifecycle: what gets built, how it's secured, and how it runs once real users depend on it.",
+    ],
+    whatsIncluded: [
+      "Requirements gathering and system architecture design",
+      "Secure SDLC with code review, automated testing, and security scanning on every pull request",
+      "Web and API development across your full stack",
+      "Cloud-native deployment on AWS, Azure, or GCP",
+      "QA and security testing before every release",
+      "Post-launch managed support and ongoing feature development",
+    ],
+    whoThisIsFor:
+      "Founders and businesses who want one partner to build and operate their product — from the first line of code to the infrastructure it runs on — instead of coordinating between a separate development shop and security vendor.",
+  },
+  {
     slug: "devsecops-consulting",
     title: "DevSecOps Consulting",
+    seoTitle: "DevSecOps Consulting Services | Pure-Play DevSecOps Company India",
     description:
       "Embed security into every stage of your delivery pipeline. We assess, design, and implement DevSecOps practices that let enterprises ship faster without compromising on security or compliance.",
     expandedDescription: [
@@ -33,6 +58,7 @@ export const services: Service[] = [
   {
     slug: "cicd-pipeline-security",
     title: "CI/CD Pipeline Security",
+    seoTitle: "CI/CD Pipeline Security Services | DevSecOps Company India",
     description:
       "Harden your build and release pipelines with automated security gates, secret scanning, SAST/DAST integration, and signed artifact workflows across GitHub Actions, GitLab, Jenkins, and Azure DevOps.",
     expandedDescription: [
@@ -55,6 +81,7 @@ export const services: Service[] = [
   {
     slug: "cloud-security",
     title: "Cloud Security",
+    seoTitle: "Cloud Security Consulting | AWS, Azure & GCP Security Experts",
     description:
       "Secure AWS, Azure, and GCP environments with best-practice architecture reviews, IAM hardening, guardrails, and continuous posture management aligned to CIS benchmarks.",
     expandedDescription: [
@@ -77,6 +104,7 @@ export const services: Service[] = [
   {
     slug: "container-kubernetes-security",
     title: "Container & Kubernetes Security",
+    seoTitle: "Kubernetes Security & Container Security Services",
     description:
       "Protect containerized workloads end to end: image scanning, admission controls, runtime protection, and hardened Kubernetes cluster configurations.",
     expandedDescription: [
@@ -99,6 +127,7 @@ export const services: Service[] = [
   {
     slug: "compliance-automation",
     title: "Compliance Automation",
+    seoTitle: "Compliance Automation Services | SOC 2, ISO 27001 & HIPAA",
     description:
       "Automate evidence collection and controls for SOC 2, ISO 27001, HIPAA, and PCI DSS so audits become a byproduct of your pipeline, not a fire drill.",
     expandedDescription: [
@@ -121,6 +150,7 @@ export const services: Service[] = [
   {
     slug: "vulnerability-management",
     title: "Vulnerability Management",
+    seoTitle: "Vulnerability Management Services | Risk-Based Remediation",
     description:
       "Continuous scanning, risk-based prioritization, and remediation tracking across applications, infrastructure, and dependencies.",
     expandedDescription: [
@@ -143,6 +173,7 @@ export const services: Service[] = [
   {
     slug: "infrastructure-as-code",
     title: "Infrastructure as Code",
+    seoTitle: "Infrastructure as Code Services | Terraform & Policy as Code",
     description:
       "Terraform and Ansible based provisioning with policy-as-code checks so every environment is reproducible, auditable, and secure by default.",
     expandedDescription: [
@@ -165,6 +196,7 @@ export const services: Service[] = [
   {
     slug: "managed-devsecops",
     title: "24/7 Managed DevSecOps",
+    seoTitle: "Managed DevSecOps Services | 24/7 Support for US, UAE & UK",
     description:
       "Round-the-clock monitoring, incident response, and pipeline support delivered from India with Fortune 500 delivery standards, built for US, UAE, and UK time zones.",
     expandedDescription: [

@@ -3,17 +3,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Calendar } from "lucide-react";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/our-work", label: "Our Work" },
+  { href: "/vaultrak", label: "VaultRak", isProduct: true },
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact Us" },
 ];
 
-const PHONE_NUMBER = "+15550100100";
-const PHONE_DISPLAY = "+1 (555) 010-0100";
+const PHONE_NUMBER = "+917028278808";
+const PHONE_DISPLAY = "+91 7028278808";
 
 function PhoneIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
@@ -43,7 +46,7 @@ export default function Header() {
             priority
           />
           <span className="hidden font-heading text-xl font-bold uppercase tracking-wide text-brand-black sm:inline">
-            T-Mat <span className="text-brand-green">Global</span>
+            T-Mat <span className="text-brand-accent">Global</span>
           </span>
         </Link>
 
@@ -52,28 +55,47 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-heading text-sm font-semibold uppercase tracking-wider text-brand-black transition-colors hover:text-brand-green"
+              className="flex items-center gap-1.5 font-heading text-sm font-semibold uppercase tracking-wider text-brand-black transition-colors hover:text-brand-accent"
             >
+              {link.isProduct ? (
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand-green-light" />
+              ) : null}
               {link.label}
             </Link>
           ))}
         </nav>
 
-        <a
-          href={`tel:${PHONE_NUMBER}`}
-          className="hidden rounded bg-brand-green px-6 py-3 font-heading text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-brand-green-dark lg:inline-block"
-        >
-          Call Us: {PHONE_DISPLAY}
-        </a>
+        <div className="hidden items-center gap-3 lg:flex">
+          <a
+            href={`tel:${PHONE_NUMBER}`}
+            className="inline-block rounded bg-brand-green px-6 py-3 font-heading text-sm font-semibold uppercase tracking-wider text-brand-black transition-colors hover:bg-brand-green-dark"
+          >
+            Call Us: {PHONE_DISPLAY}
+          </a>
+          <Link
+            href="/schedule-demo"
+            className="inline-block rounded bg-brand-green px-6 py-3 font-heading text-sm font-semibold uppercase tracking-wider text-brand-black transition-colors hover:bg-brand-green-dark"
+          >
+            Schedule a Demo
+          </Link>
+        </div>
 
         <div className="flex items-center gap-3 lg:hidden">
           <a
             href={`tel:${PHONE_NUMBER}`}
             aria-label="Call T-Mat Global"
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-green text-white transition-colors hover:bg-brand-green-dark"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-green text-brand-black transition-colors hover:bg-brand-green-dark"
           >
             <PhoneIcon />
           </a>
+
+          <Link
+            href="/schedule-demo"
+            aria-label="Schedule a demo"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-green text-brand-black transition-colors hover:bg-brand-green-dark"
+          >
+            <Calendar className="h-5 w-5" />
+          </Link>
 
           <button
             type="button"
@@ -90,14 +112,17 @@ export default function Header() {
       </div>
 
       {isMenuOpen ? (
-        <nav className="flex flex-col gap-1 border-t border-brand-grey bg-white px-4 py-4 lg:hidden">
+        <nav className="flex flex-col items-center gap-1 border-t border-brand-grey bg-white px-4 py-4 text-center lg:hidden">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
-              className="font-heading py-2 text-sm font-semibold uppercase tracking-wider text-brand-black transition-colors hover:text-brand-green"
+              className="flex w-full items-center justify-center gap-1.5 font-heading py-2 text-sm font-semibold uppercase tracking-wider text-brand-black transition-colors hover:text-brand-accent"
             >
+              {link.isProduct ? (
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand-green-light" />
+              ) : null}
               {link.label}
             </Link>
           ))}

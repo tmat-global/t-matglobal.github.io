@@ -54,10 +54,10 @@ export default function WorkflowSteps() {
               ) : null}
 
               <div className="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-brand-green">
-                <step.Icon className="h-7 w-7 text-white" strokeWidth={2} />
+                <step.Icon className="h-7 w-7 text-brand-black" strokeWidth={2} />
               </div>
 
-              <p className="mt-4 font-heading text-sm font-bold uppercase tracking-wide text-brand-green">
+              <p className="mt-4 font-heading text-sm font-bold uppercase tracking-wide text-brand-accent">
                 {step.number}. {step.label}
               </p>
             </div>

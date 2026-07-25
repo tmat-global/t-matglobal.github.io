@@ -13,10 +13,11 @@ const config: Config = {
         foreground: "var(--foreground)",
         brand: {
           green: {
-            DEFAULT: "#1B5E20",
-            dark: "#123D15",
-            light: "#2E7D32",
+            DEFAULT: "#F4C430",
+            dark: "#D9A400",
+            light: "#FFD966",
           },
+          accent: "#1B5E20",
           black: "#0A0A0A",
           grey: "#EBEBEB",
         },
@@ -25,8 +26,13 @@ const config: Config = {
         heading: ["var(--font-heading)", "sans-serif"],
         body: ["var(--font-body)", "sans-serif"],
       },
+      borderRadius: {
+        lg: "1rem",
+        xl: "1.5rem",
+        "2xl": "2rem",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;
