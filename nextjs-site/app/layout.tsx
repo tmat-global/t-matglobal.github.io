@@ -20,7 +20,7 @@ const poppins = Poppins({
   display: "swap",
 });
 
-const SITE_URL = "https://www.t-matglobal.com";
+const SITE_URL = "https://t-matglobal.com";
 const DEFAULT_TITLE =
   "DevSecOps Company India | Pure-Play DevSecOps Services for US, UAE & UK";
 const DEFAULT_DESCRIPTION =

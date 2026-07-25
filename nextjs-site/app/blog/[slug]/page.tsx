@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getAllPostSlugs, getPostBySlug } from "@/lib/blog";
 
-const SITE_URL = "https://www.t-matglobal.com";
+const SITE_URL = "https://t-matglobal.com";
 
 interface BlogPostPageProps {
   params: { slug: string };
@@ -81,7 +81,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${SITE_URL}/blog/${post.slug}`,
+      "@id": `${SITE_URL}/blog/${post.slug}/`,
     },
   };
 

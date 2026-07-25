@@ -4,6 +4,8 @@ import { useState, type FormEvent } from "react";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
+const CONTACT_EMAIL = "info@t-matglobal.com";
+
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -11,35 +13,27 @@ export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setStatus("submitting");
     setErrorMessage("");
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
-      });
+      const subject = `Website inquiry from ${name}`;
+      const body = `${message}\n\n— ${name} (${email})`;
+      const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
+        subject,
+      )}&body=${encodeURIComponent(body)}`;
 
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || "Something went wrong. Please try again.");
-      }
+      window.location.href = mailtoUrl;
 
       setStatus("success");
       setName("");
       setEmail("");
       setMessage("");
-    } catch (error) {
+    } catch {
       setStatus("error");
-      setErrorMessage(
-        error instanceof Error
-          ? error.message
-          : "Something went wrong. Please try again.",
-      );
+      setErrorMessage("Something went wrong. Please try again.");
     }
   };
 
@@ -47,10 +41,15 @@ export default function ContactForm() {
     return (
       <div className="rounded-lg border-2 border-brand-green bg-white p-8 text-center">
         <p className="font-heading text-lg font-bold uppercase text-brand-accent">
-          Thanks &mdash; Message Received
+          Almost There
         </p>
         <p className="mt-2 font-body text-brand-black/70">
-          We&apos;ll get back to you shortly.
+          Your email app should have opened with your message pre-filled —
+          just hit send. If it didn&apos;t open, email us directly at{" "}
+          <a href={`mailto:${CONTACT_EMAIL}`} className="font-semibold underline">
+            {CONTACT_EMAIL}
+          </a>
+          .
         </p>
       </div>
     );
