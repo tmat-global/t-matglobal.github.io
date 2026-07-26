@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import FloatingContactPill from "@/components/FloatingContactPill";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollToTop from "@/components/ScrollToTop";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -106,6 +107,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         <Header />
+        <SmoothScroll />
         <main>{children}</main>
         <Footer />
         <FloatingContactPill />
