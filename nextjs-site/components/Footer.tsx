@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 function LinkedInIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
@@ -129,6 +130,23 @@ export default function Footer() {
               <Icon className="h-5 w-5" />
             </a>
           ))}
+        </div>
+      </div>
+
+      <div className="border-t border-brand-black/10 py-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-4 sm:px-6 lg:px-8">
+          <p className="font-heading text-xs font-bold uppercase tracking-widest text-brand-black/60">
+            Recognized By
+          </p>
+          <div className="rounded-lg bg-white px-5 py-3 shadow-sm">
+            <Image
+              src="/startup-india.png"
+              alt="DPIIT Recognized — Startup India"
+              width={160}
+              height={109}
+              className="h-auto w-32 sm:w-36"
+            />
+          </div>
         </div>
       </div>
 
