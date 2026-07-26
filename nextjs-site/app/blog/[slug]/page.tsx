@@ -76,7 +76,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       name: "T-Mat Global Technologies Pvt. Ltd.",
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_URL}/logo.svg`,
+        url: `${SITE_URL}/logo.png`,
       },
     },
     mainEntityOfPage: {

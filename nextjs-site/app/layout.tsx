@@ -71,7 +71,7 @@ const organizationJsonLd = {
   name: "T-Mat Global Technologies Pvt. Ltd.",
   alternateName: "T-Mat Global",
   url: SITE_URL,
-  logo: `${SITE_URL}/logo.svg`,
+  logo: `${SITE_URL}/logo.png`,
   image: `${SITE_URL}/og-image.png`,
   description: DEFAULT_DESCRIPTION,
   address: {

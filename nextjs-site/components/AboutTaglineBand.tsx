@@ -6,7 +6,7 @@ export default function AboutTaglineBand() {
     <section className="relative bg-brand-green pb-16 pt-20">
       <div className="absolute left-1/2 top-0 z-10 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white p-4 shadow-lg sm:h-28 sm:w-28">
         <Image
-          src="/logo.svg"
+          src="/logo.png"
           alt="T-Mat Global logo"
           width={80}
           height={80}

@@ -39,7 +39,7 @@ export default function OurVision() {
 
         <ScrollFadeIn className="mx-auto mt-16 flex h-28 w-28 items-center justify-center rounded-2xl bg-white p-5 shadow-lg">
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="T-Mat Global logo"
             width={72}
             height={72}
