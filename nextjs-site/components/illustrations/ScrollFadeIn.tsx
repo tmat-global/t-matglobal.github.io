@@ -5,9 +5,11 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 export default function ScrollFadeIn({
   children,
   className = "",
+  delayMs = 0,
 }: {
   children: ReactNode;
   className?: string;
+  delayMs?: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -34,6 +36,7 @@ export default function ScrollFadeIn({
     <div
       ref={ref}
       className={`scroll-fade-up ${isVisible ? "is-visible" : ""} ${className}`}
+      style={delayMs ? { transitionDelay: `${delayMs}ms` } : undefined}
     >
       {children}
     </div>

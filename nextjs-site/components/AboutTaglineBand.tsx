@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 
 export default function AboutTaglineBand() {
   return (
@@ -13,11 +14,11 @@ export default function AboutTaglineBand() {
         />
       </div>
 
-      <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+      <ScrollFadeIn className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
         <h2 className="font-heading text-2xl font-bold uppercase tracking-tight text-brand-black sm:text-4xl">
           Security Built Into Everything.
         </h2>
-      </div>
+      </ScrollFadeIn>
     </section>
   );
 }

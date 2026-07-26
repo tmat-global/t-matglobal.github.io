@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
+import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 import { projects } from "@/data/projects";
 
 export default function DashboardGallery() {
@@ -17,16 +18,18 @@ export default function DashboardGallery() {
   return (
     <section className="bg-brand-grey py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          align="center"
-          className="mb-16"
-          segments={[
-            { text: "DIFFERENT DASHBOARDS", color: "black" },
-            { text: "& PIPELINES", color: "green" },
-          ]}
-        />
+        <ScrollFadeIn>
+          <SectionHeading
+            align="center"
+            className="mb-16"
+            segments={[
+              { text: "DIFFERENT DASHBOARDS", color: "black" },
+              { text: "& PIPELINES", color: "green" },
+            ]}
+          />
+        </ScrollFadeIn>
 
-        <div className="relative mx-auto max-w-3xl">
+        <ScrollFadeIn delayMs={120} className="relative mx-auto max-w-3xl">
           <button
             type="button"
             onClick={prev}
@@ -65,7 +68,7 @@ export default function DashboardGallery() {
               </p>
             </div>
           </div>
-        </div>
+        </ScrollFadeIn>
 
         <div className="mt-8 flex items-center justify-center gap-3">
           {projects.map((item, dotIndex) => (

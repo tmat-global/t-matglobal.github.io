@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
+import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 import { projects } from "@/data/projects";
 
 export default function DeviceMockupCarousel() {
@@ -17,20 +18,25 @@ export default function DeviceMockupCarousel() {
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          align="center"
-          className="mb-4"
-          segments={[
-            { text: "RESPONSIVE DEVSECOPS", color: "black" },
-            { text: "FOR ANY STACK", color: "green" },
-          ]}
-        />
-        <p className="mx-auto max-w-2xl text-center font-body text-base text-brand-black/70">
-          The platforms we secure and operate look and perform the same
-          whether a client&apos;s team is on a laptop, a tablet, or a phone.
-        </p>
+        <ScrollFadeIn>
+          <SectionHeading
+            align="center"
+            className="mb-4"
+            segments={[
+              { text: "RESPONSIVE DEVSECOPS", color: "black" },
+              { text: "FOR ANY STACK", color: "green" },
+            ]}
+          />
+          <p className="mx-auto max-w-2xl text-center font-body text-base text-brand-black/70">
+            The platforms we secure and operate look and perform the same
+            whether a client&apos;s team is on a laptop, a tablet, or a phone.
+          </p>
+        </ScrollFadeIn>
 
-        <div className="relative mx-auto mt-16 max-w-3xl pb-16">
+        <ScrollFadeIn
+          delayMs={120}
+          className="relative mx-auto mt-16 max-w-3xl pb-16"
+        >
           <button
             type="button"
             onClick={prev}
@@ -90,7 +96,7 @@ export default function DeviceMockupCarousel() {
               </div>
             </div>
           </div>
-        </div>
+        </ScrollFadeIn>
 
         <p className="text-center font-heading text-sm font-bold uppercase tracking-wide text-brand-accent">
           {project.name}

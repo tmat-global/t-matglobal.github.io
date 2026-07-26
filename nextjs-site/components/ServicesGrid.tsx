@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { services } from "@/data/services";
 import SectionHeading from "@/components/SectionHeading";
+import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 
 interface ServicesGridProps {
   limit?: number;
@@ -18,19 +19,21 @@ export default function ServicesGrid({
     <section className="bg-brand-black py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {showHeading ? (
-          <SectionHeading
-            align="center"
-            className="mb-16"
-            segments={[
-              { text: "OUR", color: "white" },
-              { text: "SERVICES", color: "green" },
-            ]}
-          />
+          <ScrollFadeIn>
+            <SectionHeading
+              align="center"
+              className="mb-16"
+              segments={[
+                { text: "OUR", color: "white" },
+                { text: "SERVICES", color: "green" },
+              ]}
+            />
+          </ScrollFadeIn>
         ) : null}
 
         <div className="grid grid-cols-1 gap-x-10 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-          {list.map((service) => (
-            <div key={service.slug}>
+          {list.map((service, i) => (
+            <ScrollFadeIn key={service.slug} delayMs={(i % 3) * 100}>
               <h3 className="font-heading text-xl font-bold uppercase tracking-tight text-white md:text-2xl">
                 {service.title}
               </h3>
@@ -43,7 +46,7 @@ export default function ServicesGrid({
               >
                 Read more ...
               </Link>
-            </div>
+            </ScrollFadeIn>
           ))}
         </div>
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Check } from "lucide-react";
 import PageHero from "@/components/PageHero";
-import AboutHeroIllustration from "@/components/illustrations/AboutHeroIllustration";
 import AboutTaglineBand from "@/components/AboutTaglineBand";
 import SectionHeading from "@/components/SectionHeading";
+import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 
 const TITLE =
   "About T-Mat Global | AWS Certified DevSecOps Team, Pune, India";
@@ -35,15 +35,11 @@ const DIFFERENTIATORS = [
 export default function AboutPage() {
   return (
     <>
-      <PageHero
-        firstWord="ABOUT"
-        restOfTitle="US"
-        illustration={<AboutHeroIllustration />}
-      />
+      <PageHero firstWord="ABOUT" restOfTitle="US" bgVariant="team" />
       <AboutTaglineBand />
 
       <section className="bg-white py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <ScrollFadeIn className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="space-y-6 font-body text-base leading-relaxed text-brand-black/80">
             <p>
               T-Mat Global Technologies was founded on a simple observation:
@@ -106,11 +102,11 @@ export default function AboutPage() {
               Fortune 500 budget or headcount.
             </p>
           </div>
-        </div>
+        </ScrollFadeIn>
       </section>
 
       <section className="bg-brand-grey py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <ScrollFadeIn className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <div>
               <SectionHeading
@@ -142,11 +138,11 @@ export default function AboutPage() {
               />
             </div>
           </div>
-        </div>
+        </ScrollFadeIn>
       </section>
 
       <section className="bg-white py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <ScrollFadeIn className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <div>
               <Image
@@ -184,7 +180,7 @@ export default function AboutPage() {
               </ul>
             </div>
           </div>
-        </div>
+        </ScrollFadeIn>
       </section>
     </>
   );

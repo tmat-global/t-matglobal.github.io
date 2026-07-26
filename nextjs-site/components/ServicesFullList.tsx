@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Check } from "lucide-react";
 import { services } from "@/data/services";
+import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 
 export default function ServicesFullList() {
   return (
@@ -10,7 +11,7 @@ export default function ServicesFullList() {
           key={service.slug}
           className={index % 2 === 0 ? "bg-white py-16" : "bg-brand-grey py-16"}
         >
-          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <ScrollFadeIn className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
               <div>
                 <p className="font-heading text-sm font-bold uppercase tracking-widest text-brand-accent">
@@ -52,7 +53,7 @@ export default function ServicesFullList() {
                 </ul>
               </div>
             </div>
-          </div>
+          </ScrollFadeIn>
         </section>
       ))}
     </>

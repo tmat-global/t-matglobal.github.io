@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import VaultRakHeroIllustration from "@/components/illustrations/VaultRakHeroIllustration";
 import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
+import TechBackground from "@/components/hero-bg/TechBackground";
 import {
   Workflow,
   ShieldAlert,
@@ -92,58 +92,55 @@ const STEPS = [
 export default function VaultRakPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-brand-black py-24 sm:py-32">
-        <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/3 rounded-full bg-brand-green/20 blur-3xl" />
+      <section className="relative flex min-h-[90vh] items-center overflow-hidden bg-brand-black">
+        <TechBackground variant="vault" />
 
-        <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center gap-12 px-4 sm:px-6 lg:flex-row lg:gap-16 lg:px-8">
-          <div className="w-full text-center lg:w-1/2 lg:text-left">
-            <p className="font-heading text-sm font-semibold uppercase tracking-widest text-brand-green-light">
-              Managed DevSecOps Platform
-            </p>
-            <h1 className="mt-4 font-heading text-5xl font-bold uppercase leading-none tracking-tight text-white sm:text-6xl md:text-7xl">
-              Vault<span className="text-brand-green-light">Rak</span>
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl font-body text-lg text-white/80 lg:mx-0">
-              Continuous pipeline security visibility, vulnerability
-              management, and compliance score tracking — backed by T-Mat
-              Global&apos;s 24/7 managed DevSecOps team.
-            </p>
+        <ScrollFadeIn className="relative z-10 mx-auto max-w-3xl px-4 py-24 text-center sm:px-6 lg:px-8">
+          <p className="font-heading text-sm font-semibold uppercase tracking-widest text-brand-green-light">
+            Managed DevSecOps Platform
+          </p>
+          <h1 className="mt-4 font-heading text-5xl font-bold uppercase leading-none tracking-tight text-white sm:text-6xl md:text-7xl">
+            Vault<span className="text-brand-green-light">Rak</span>
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl font-body text-lg text-white/80">
+            Continuous pipeline security visibility, vulnerability
+            management, and compliance score tracking — backed by T-Mat
+            Global&apos;s 24/7 managed DevSecOps team.
+          </p>
 
-            <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
-              <a
-                href="https://vaultrak.t-matglobal.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block rounded bg-brand-green px-8 py-4 text-center font-heading text-sm font-semibold uppercase tracking-wider text-brand-black transition-colors hover:bg-brand-green-dark sm:inline-block"
-              >
-                Launch VaultRak
-              </a>
-              <Link
-                href="/schedule-demo"
-                className="block rounded border-2 border-white px-8 py-4 text-center font-heading text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-white hover:text-brand-black sm:inline-block"
-              >
-                Schedule a Demo
-              </Link>
-            </div>
+          <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+            <a
+              href="https://vaultrak.t-matglobal.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded bg-brand-green px-8 py-4 text-center font-heading text-sm font-semibold uppercase tracking-wider text-brand-black transition-colors hover:bg-brand-green-dark sm:inline-block"
+            >
+              Launch VaultRak
+            </a>
+            <Link
+              href="/schedule-demo"
+              className="block rounded border-2 border-white px-8 py-4 text-center font-heading text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-white hover:text-brand-black sm:inline-block"
+            >
+              Schedule a Demo
+            </Link>
           </div>
-
-          <ScrollFadeIn className="w-full max-w-sm lg:w-1/2 lg:max-w-none">
-            <VaultRakHeroIllustration />
-          </ScrollFadeIn>
-        </div>
+        </ScrollFadeIn>
       </section>
 
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center font-heading text-3xl font-bold uppercase tracking-tight text-brand-black sm:text-4xl">
-            Everything Your Team Needs In{" "}
-            <span className="text-brand-accent">One Platform</span>
-          </h2>
+          <ScrollFadeIn>
+            <h2 className="text-center font-heading text-3xl font-bold uppercase tracking-tight text-brand-black sm:text-4xl">
+              Everything Your Team Needs In{" "}
+              <span className="text-brand-accent">One Platform</span>
+            </h2>
+          </ScrollFadeIn>
 
           <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {FEATURES.map(({ Icon, title, description }) => (
-              <div
+            {FEATURES.map(({ Icon, title, description }, i) => (
+              <ScrollFadeIn
                 key={title}
+                delayMs={(i % 3) * 100}
                 className="rounded-lg border border-black/5 bg-brand-grey p-8 shadow-sm"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-green">
@@ -155,7 +152,7 @@ export default function VaultRakPage() {
                 <p className="mt-3 font-body text-sm leading-relaxed text-brand-black/70">
                   {description}
                 </p>
-              </div>
+              </ScrollFadeIn>
             ))}
           </div>
         </div>
@@ -163,13 +160,15 @@ export default function VaultRakPage() {
 
       <section className="bg-brand-grey py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center font-heading text-3xl font-bold uppercase tracking-tight text-brand-black sm:text-4xl">
-            How It <span className="text-brand-accent">Works</span>
-          </h2>
+          <ScrollFadeIn>
+            <h2 className="text-center font-heading text-3xl font-bold uppercase tracking-tight text-brand-black sm:text-4xl">
+              How It <span className="text-brand-accent">Works</span>
+            </h2>
+          </ScrollFadeIn>
 
           <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-3">
-            {STEPS.map(({ number, Icon, title, description }) => (
-              <div key={number} className="text-center">
+            {STEPS.map(({ number, Icon, title, description }, i) => (
+              <ScrollFadeIn key={number} delayMs={i * 100} className="text-center">
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand-green">
                   <Icon className="h-7 w-7 text-brand-black" />
                 </div>
@@ -182,14 +181,14 @@ export default function VaultRakPage() {
                 <p className="mt-3 font-body text-sm leading-relaxed text-brand-black/70">
                   {description}
                 </p>
-              </div>
+              </ScrollFadeIn>
             ))}
           </div>
         </div>
       </section>
 
       <section className="bg-brand-black py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <ScrollFadeIn className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-center font-heading text-3xl font-bold uppercase tracking-tight text-white sm:text-4xl">
             See <span className="text-brand-green-light">VaultRak</span> In
             Action
@@ -211,11 +210,11 @@ export default function VaultRakPage() {
               />
             </div>
           </div>
-        </div>
+        </ScrollFadeIn>
       </section>
 
       <section className="bg-brand-green py-16">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+        <ScrollFadeIn className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-heading text-2xl font-bold uppercase tracking-tight text-brand-black sm:text-3xl">
             See VaultRak On Your Pipeline
           </h2>
@@ -225,7 +224,7 @@ export default function VaultRakPage() {
           >
             Schedule a Demo
           </Link>
-        </div>
+        </ScrollFadeIn>
       </section>
     </>
   );

@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
+import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 import { projects } from "@/data/projects";
 
 export default function OurProjects() {
   return (
     <section className="bg-brand-green py-20">
-      <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+      <ScrollFadeIn className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
         <SectionHeading
           align="center"
           className="mb-6"
@@ -27,9 +28,10 @@ export default function OurProjects() {
         </Link>
 
         <div className="mt-14 grid grid-cols-1 gap-8 text-left sm:grid-cols-2">
-          {projects.map((project) => (
-            <div
+          {projects.map((project, i) => (
+            <ScrollFadeIn
               key={project.slug}
+              delayMs={(i % 2) * 100}
               className="overflow-hidden rounded-lg bg-white shadow-xl"
             >
               <div className="flex items-center gap-2 bg-brand-black px-4 py-3">
@@ -56,10 +58,10 @@ export default function OurProjects() {
                   {project.caption}
                 </p>
               </div>
-            </div>
+            </ScrollFadeIn>
           ))}
         </div>
-      </div>
+      </ScrollFadeIn>
     </section>
   );
 }

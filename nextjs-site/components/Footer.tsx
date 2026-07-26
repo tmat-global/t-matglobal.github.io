@@ -41,7 +41,7 @@ const SITEMAP_LINKS = [
 export default function Footer() {
   return (
     <footer className="bg-brand-green text-brand-black">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 py-16 text-center sm:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-12 px-4 py-16 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-3 lg:px-8">
         <div>
           <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-brand-black/70">
             Contact No.
@@ -116,7 +116,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-brand-black/10 py-8">
+      <div className="border-y border-brand-black/10 bg-brand-grey py-5">
         <div className="mx-auto flex max-w-7xl items-center justify-center gap-4 px-4 sm:px-6 lg:px-8">
           {SOCIAL_LINKS.map(({ href, label, Icon }) => (
             <a
@@ -125,7 +125,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/40 text-brand-black transition-colors hover:bg-white hover:text-brand-accent"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-brand-black transition-colors hover:bg-brand-black hover:text-white"
             >
               <Icon className="h-5 w-5" />
             </a>

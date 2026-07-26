@@ -1,5 +1,4 @@
 import PageHero from "@/components/PageHero";
-import HomeHeroIllustration from "@/components/illustrations/HomeHeroIllustration";
 import ServicesGrid from "@/components/ServicesGrid";
 import WorkflowSteps from "@/components/WorkflowSteps";
 import TechStackCarousel from "@/components/TechStackCarousel";
@@ -19,7 +18,7 @@ export default function HomePage() {
         subheadline="India's dedicated pure-play DevSecOps company. Enterprise-grade CI/CD security, cloud security, and 24/7 managed DevSecOps for US, UAE, and UK businesses."
         ctaLabel="Get a Free DevSecOps Assessment"
         ctaHref="/contact"
-        illustration={<HomeHeroIllustration />}
+        bgVariant="pipeline"
       />
       <ServicesGrid limit={6} />
       <WorkflowSteps />

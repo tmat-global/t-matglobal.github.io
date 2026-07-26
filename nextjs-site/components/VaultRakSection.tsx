@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Clock, Eye, ShieldCheck } from "lucide-react";
+import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 
 const STAT_CHIPS = [
   { label: "24/7 Monitoring", Icon: Clock },
@@ -12,7 +13,7 @@ export default function VaultRakSection() {
   return (
     <section className="bg-brand-black py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+        <ScrollFadeIn className="text-center">
           <h2 className="font-heading text-3xl font-bold uppercase tracking-tight sm:text-4xl md:text-5xl">
             <span className="text-white">MEET </span>
             <span className="text-brand-green-light">VAULTRAK</span>
@@ -20,10 +21,10 @@ export default function VaultRakSection() {
           <p className="mt-3 font-heading text-sm font-semibold uppercase tracking-widest text-white/60">
             Our Managed DevSecOps Platform
           </p>
-        </div>
+        </ScrollFadeIn>
 
         <div className="mt-16 grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-          <div>
+          <ScrollFadeIn>
             <p className="font-body text-lg leading-relaxed text-white/80">
               VaultRak is where T-Mat Global&apos;s DevSecOps engineering becomes
               a product: continuous visibility into your pipeline security,
@@ -59,9 +60,9 @@ export default function VaultRakSection() {
                 Explore VaultRak
               </Link>
             </div>
-          </div>
+          </ScrollFadeIn>
 
-          <div className="relative">
+          <ScrollFadeIn delayMs={120} className="relative">
             <div className="absolute -inset-10 rounded-full bg-brand-green/30 blur-3xl" />
             <div className="relative -rotate-2 overflow-hidden rounded-lg shadow-2xl ring-1 ring-white/10 transition-transform duration-500 hover:rotate-0">
               <div className="flex items-center gap-2 bg-[#0B0D10] px-4 py-3">
@@ -79,7 +80,7 @@ export default function VaultRakSection() {
                 />
               </div>
             </div>
-          </div>
+          </ScrollFadeIn>
         </div>
       </div>
     </section>

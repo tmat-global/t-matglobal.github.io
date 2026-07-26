@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { ReactNode } from "react";
 import ScrollFadeIn from "./illustrations/ScrollFadeIn";
+import TechBackground, { type BgVariant } from "./hero-bg/TechBackground";
 
 interface PageHeroProps {
   firstWord: string;
@@ -10,7 +10,7 @@ interface PageHeroProps {
   ctaLabel?: string;
   ctaHref?: string;
   imageSrc?: string;
-  illustration?: ReactNode;
+  bgVariant?: BgVariant;
 }
 
 export default function PageHero({
@@ -20,7 +20,7 @@ export default function PageHero({
   ctaLabel,
   ctaHref,
   imageSrc,
-  illustration,
+  bgVariant,
 }: PageHeroProps) {
   const heading = (
     <h1 className="font-heading text-4xl font-bold uppercase leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
@@ -47,19 +47,26 @@ export default function PageHero({
       </Link>
     ) : null;
 
-  if (illustration) {
+  if (bgVariant) {
     return (
-      <section className="relative flex min-h-[60vh] items-center overflow-hidden bg-brand-black sm:min-h-[70vh]">
-        <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center gap-10 px-4 py-16 sm:px-6 lg:flex-row lg:gap-16 lg:px-8 lg:py-20">
-          <div className="w-full text-center lg:w-1/2 lg:text-left">
-            {heading}
-            {subhead}
-            {cta}
-          </div>
-          <ScrollFadeIn className="w-full max-w-sm lg:w-1/2 lg:max-w-none">
-            {illustration}
-          </ScrollFadeIn>
-        </div>
+      <section className="relative flex min-h-[90vh] items-center overflow-hidden bg-brand-black">
+        <TechBackground variant={bgVariant} />
+        <ScrollFadeIn className="relative z-10 mx-auto max-w-3xl px-4 py-24 text-center sm:px-6 lg:px-8">
+          {heading}
+          {subheadline ? (
+            <p className="mx-auto mt-6 max-w-2xl font-body text-lg text-white/90">
+              {subheadline}
+            </p>
+          ) : null}
+          {ctaLabel && ctaHref ? (
+            <Link
+              href={ctaHref}
+              className="mx-auto mt-8 block w-full max-w-xs rounded bg-brand-green px-8 py-4 text-center font-heading text-sm font-semibold uppercase tracking-wider text-brand-black transition-colors hover:bg-brand-green-dark sm:inline-block sm:w-auto"
+            >
+              {ctaLabel}
+            </Link>
+          ) : null}
+        </ScrollFadeIn>
       </section>
     );
   }

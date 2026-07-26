@@ -96,12 +96,31 @@ h6 {
   transform: translateY(0);
 }
 
+@keyframes pipeline-flow {
+  to {
+    background-position: -40px 0;
+  }
+}
+
+.pipeline-flow {
+  background-image: repeating-linear-gradient(
+    90deg,
+    #d9a400 0,
+    #d9a400 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  background-size: 40px 100%;
+  animation: pipeline-flow 1.4s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .illo-float,
   .illo-float-sm,
   .illo-float-delay,
   .illo-float-delay-2,
-  .illo-pulse-glow {
+  .illo-pulse-glow,
+  .pipeline-flow {
     animation: none;
   }
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Mail, Phone } from "lucide-react";
 import PageHero from "@/components/PageHero";
-import ContactHeroIllustration from "@/components/illustrations/ContactHeroIllustration";
 import ContactForm from "@/components/ContactForm";
 import CalendlyEmbed from "@/components/CalendlyEmbed";
+import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 
 const TITLE = "Contact Us | 24/7 Managed DevSecOps Support";
 const DESCRIPTION =
@@ -20,14 +20,10 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <PageHero
-        firstWord="CONTACT"
-        restOfTitle="US"
-        illustration={<ContactHeroIllustration />}
-      />
+      <PageHero firstWord="CONTACT" restOfTitle="US" bgVariant="network" />
 
       <section className="bg-brand-grey py-20">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+        <ScrollFadeIn className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-heading text-3xl font-bold uppercase leading-tight tracking-tight text-brand-black sm:text-4xl">
             Schedule <span className="text-brand-accent">A Demo</span>
           </h2>
@@ -38,11 +34,11 @@ export default function ContactPage() {
           <div className="mt-10 text-left">
             <CalendlyEmbed />
           </div>
-        </div>
+        </ScrollFadeIn>
       </section>
 
       <section className="bg-white py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <ScrollFadeIn className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
             <div>
               <h2 className="font-heading text-3xl font-bold uppercase leading-tight tracking-tight text-brand-black sm:text-4xl">
@@ -90,7 +86,7 @@ export default function ContactPage() {
               <ContactForm />
             </div>
           </div>
-        </div>
+        </ScrollFadeIn>
       </section>
     </>
   );

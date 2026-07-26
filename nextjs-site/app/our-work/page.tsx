@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import OurWorkHeroIllustration from "@/components/illustrations/OurWorkHeroIllustration";
 import DeviceMockupCarousel from "@/components/DeviceMockupCarousel";
 import DashboardGallery from "@/components/DashboardGallery";
 
@@ -18,11 +17,7 @@ export const metadata: Metadata = {
 export default function OurWorkPage() {
   return (
     <>
-      <PageHero
-        firstWord="OUR"
-        restOfTitle="WORK"
-        illustration={<OurWorkHeroIllustration />}
-      />
+      <PageHero firstWord="OUR" restOfTitle="WORK" bgVariant="chart" />
       <DeviceMockupCarousel />
       <DashboardGallery />
     </>

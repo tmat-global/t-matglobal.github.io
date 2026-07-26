@@ -1,8 +1,9 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState, type KeyboardEvent } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
+import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 import { techStack } from "@/data/techStack";
 
 const TRIANGLE_PATTERN =
@@ -10,6 +11,7 @@ const TRIANGLE_PATTERN =
 
 export default function TechStackCarousel() {
   const scrollerRef = useRef<HTMLDivElement>(null);
+  const [flipped, setFlipped] = useState<string | null>(null);
 
   const scroll = (direction: "prev" | "next") => {
     const el = scrollerRef.current;
@@ -21,6 +23,17 @@ export default function TechStackCarousel() {
     });
   };
 
+  const toggle = (name: string) => {
+    setFlipped((current) => (current === name ? null : name));
+  };
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>, name: string) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggle(name);
+    }
+  };
+
   return (
     <section
       className="relative bg-brand-grey py-20"
@@ -30,38 +43,78 @@ export default function TechStackCarousel() {
       }}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          align="center"
-          className="mb-16"
-          segments={[
-            { text: "OUR TEAM WORKS ON", color: "black" },
-            { text: "TECHNOLOGIES SUCH AS", color: "green" },
-          ]}
-        />
+        <ScrollFadeIn>
+          <SectionHeading
+            align="center"
+            className="mb-4"
+            segments={[
+              { text: "OUR TEAM WORKS ON", color: "black" },
+              { text: "TECHNOLOGIES SUCH AS", color: "green" },
+            ]}
+          />
+          <p className="mb-12 text-center font-body text-sm text-brand-black/50">
+            Hover or tap a card to see how we actually use it in delivery.
+          </p>
+        </ScrollFadeIn>
 
         <div
           ref={scrollerRef}
           className="flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-4 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
-          {techStack.map((tech) => (
-            <div
-              key={tech.name}
-              className="flex aspect-square w-40 shrink-0 snap-start flex-col items-center justify-center gap-4 bg-white p-6 shadow-md sm:w-44"
-            >
-              <svg
-                viewBox={tech.viewBox}
-                className="h-16 w-16"
-                fill={tech.color}
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
+          {techStack.map((tech, i) => {
+            const isFlipped = flipped === tech.name;
+            return (
+              <ScrollFadeIn
+                key={tech.name}
+                delayMs={(i % 6) * 80}
+                className="w-40 shrink-0 snap-start sm:w-44"
               >
-                <path d={tech.path} />
-              </svg>
-              <p className="text-center font-heading text-sm font-bold uppercase tracking-wide text-brand-black">
-                {tech.name}
-              </p>
-            </div>
-          ))}
+                <div
+                  role="button"
+                  tabIndex={0}
+                  aria-pressed={isFlipped}
+                  aria-label={`${tech.name} — show usage details`}
+                  onMouseEnter={() => setFlipped(tech.name)}
+                  onMouseLeave={() =>
+                    setFlipped((current) => (current === tech.name ? null : current))
+                  }
+                  onClick={() => toggle(tech.name)}
+                  onKeyDown={(e) => handleKeyDown(e, tech.name)}
+                  className="aspect-square cursor-pointer [perspective:1000px]"
+                >
+                  <div
+                    className={`relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] ${
+                      isFlipped ? "[transform:rotateY(180deg)]" : ""
+                    }`}
+                  >
+                    <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-white p-6 shadow-md [backface-visibility:hidden]">
+                      <svg
+                        viewBox={tech.viewBox}
+                        className="h-16 w-16"
+                        fill={tech.color}
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path d={tech.path} />
+                      </svg>
+                      <p className="text-center font-heading text-sm font-bold uppercase tracking-wide text-brand-black">
+                        {tech.name}
+                      </p>
+                    </div>
+
+                    <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-brand-black p-4 text-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                      <p className="font-heading text-xs font-bold uppercase tracking-wide text-brand-green">
+                        {tech.name}
+                      </p>
+                      <p className="font-body text-[11px] leading-snug text-white/80">
+                        {tech.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </ScrollFadeIn>
+            );
+          })}
         </div>
 
         <div className="mt-8 flex justify-end gap-3">

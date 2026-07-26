@@ -1,10 +1,11 @@
 import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
+import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 
 export default function AboutCompany() {
   return (
     <section className="bg-white py-20">
-      <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+      <ScrollFadeIn className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
         <SectionHeading
           align="center"
           className="mb-10"
@@ -51,7 +52,7 @@ export default function AboutCompany() {
         >
           Read More
         </Link>
-      </div>
+      </ScrollFadeIn>
     </section>
   );
 }

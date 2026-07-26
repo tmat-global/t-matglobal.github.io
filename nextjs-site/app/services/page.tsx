@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import ServicesHeroIllustration from "@/components/illustrations/ServicesHeroIllustration";
 import ServicesFullList from "@/components/ServicesFullList";
 
 const TITLE =
@@ -18,10 +17,7 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <PageHero
-        firstWord="SERVICES"
-        illustration={<ServicesHeroIllustration />}
-      />
+      <PageHero firstWord="SERVICES" bgVariant="dashboard" />
       <ServicesFullList />
     </>
   );
