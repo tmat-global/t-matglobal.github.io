@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import LegalReviewNotice from "@/components/LegalReviewNotice";
+import AuditIllustration from "@/components/illustrations/support/AuditIllustration";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
@@ -19,6 +20,10 @@ export default function TermsConditionsPage() {
 
       <section className="bg-white py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-10 w-full max-w-xs">
+            <AuditIllustration />
+          </div>
+
           <LegalReviewNotice />
 
           <p className="mt-8 font-body text-sm text-brand-black/50">

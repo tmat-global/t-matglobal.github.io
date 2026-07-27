@@ -1,6 +1,6 @@
 import { ILLO } from "@/components/illustrations/palette";
 
-export type BgVariant = "pipeline" | "dashboard" | "chart" | "vault" | "team" | "network";
+export type BgVariant = "pipeline" | "dashboard" | "chart" | "vault" | "team" | "network" | "feed";
 
 function GlowLayer() {
   return (
@@ -165,6 +165,29 @@ function NetworkArt() {
   );
 }
 
+function FeedArt() {
+  const cards = [
+    { x: 820, y: 140, w: 220, h: 90 },
+    { x: 900, y: 260, w: 260, h: 90 },
+    { x: 820, y: 380, w: 220, h: 90 },
+    { x: 1160, y: 200, w: 200, h: 90 },
+    { x: 1160, y: 420, w: 200, h: 90 },
+  ];
+  return (
+    <g opacity="0.75">
+      {cards.map((c, i) => (
+        <g key={i} transform={`translate(${c.x}, ${c.y})`}>
+          <rect width={c.w} height={c.h} rx="6" fill="none" stroke={ILLO.charcoalLight} strokeWidth="2" />
+          <rect x="14" y="16" width={c.w * 0.32} height={c.w * 0.32} rx="4" fill={i % 2 === 0 ? ILLO.yellow : ILLO.charcoalLight} opacity={i % 2 === 0 ? 0.8 : 0.4} />
+          <rect x={14 + c.w * 0.32 + 12} y="18" width={c.w - c.w * 0.32 - 40} height="8" rx="4" fill={ILLO.charcoalLight} opacity="0.7" />
+          <rect x={14 + c.w * 0.32 + 12} y="34" width={(c.w - c.w * 0.32 - 40) * 0.7} height="8" rx="4" fill={ILLO.charcoalLight} opacity="0.45" />
+          <rect x="14" y={c.h - 24} width={c.w - 28} height="6" rx="3" fill={ILLO.charcoalLight} opacity="0.35" />
+        </g>
+      ))}
+    </g>
+  );
+}
+
 const RACK_SIDE: Record<BgVariant, "left" | "right" | "none"> = {
   pipeline: "left",
   dashboard: "left",
@@ -172,6 +195,7 @@ const RACK_SIDE: Record<BgVariant, "left" | "right" | "none"> = {
   vault: "left",
   team: "right",
   network: "left",
+  feed: "left",
 };
 
 export default function TechBackground({ variant }: { variant: BgVariant }) {
@@ -209,6 +233,7 @@ export default function TechBackground({ variant }: { variant: BgVariant }) {
         {variant === "vault" ? <VaultArt /> : null}
         {variant === "team" ? <TeamArt /> : null}
         {variant === "network" ? <NetworkArt /> : null}
+        {variant === "feed" ? <FeedArt /> : null}
       </svg>
 
       <div

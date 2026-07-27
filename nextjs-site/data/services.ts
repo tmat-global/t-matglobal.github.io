@@ -1,3 +1,9 @@
+export type ServiceIllustration =
+  | "collaboration"
+  | "consulting"
+  | "security-network"
+  | "audit";
+
 export interface Service {
   slug: string;
   title: string;
@@ -6,11 +12,13 @@ export interface Service {
   expandedDescription: string[];
   whatsIncluded: string[];
   whoThisIsFor: string;
+  illustration: ServiceIllustration;
 }
 
 export const services: Service[] = [
   {
     slug: "software-development",
+    illustration: "collaboration",
     title: "Software Development",
     seoTitle: "Custom Software Development | Secure SDLC by DevSecOps Experts",
     description:
@@ -34,6 +42,7 @@ export const services: Service[] = [
   },
   {
     slug: "devsecops-consulting",
+    illustration: "consulting",
     title: "DevSecOps Consulting",
     seoTitle: "DevSecOps Consulting Services | Pure-Play DevSecOps Company India",
     description:
@@ -57,6 +66,7 @@ export const services: Service[] = [
   },
   {
     slug: "cicd-pipeline-security",
+    illustration: "collaboration",
     title: "CI/CD Pipeline Security",
     seoTitle: "CI/CD Pipeline Security Services | DevSecOps Company India",
     description:
@@ -80,6 +90,7 @@ export const services: Service[] = [
   },
   {
     slug: "cloud-security",
+    illustration: "security-network",
     title: "Cloud Security",
     seoTitle: "Cloud Security Consulting | AWS, Azure & GCP Security Experts",
     description:
@@ -103,6 +114,7 @@ export const services: Service[] = [
   },
   {
     slug: "container-kubernetes-security",
+    illustration: "security-network",
     title: "Container & Kubernetes Security",
     seoTitle: "Kubernetes Security & Container Security Services",
     description:
@@ -126,6 +138,7 @@ export const services: Service[] = [
   },
   {
     slug: "compliance-automation",
+    illustration: "audit",
     title: "Compliance Automation",
     seoTitle: "Compliance Automation Services | SOC 2, ISO 27001 & HIPAA",
     description:
@@ -149,6 +162,7 @@ export const services: Service[] = [
   },
   {
     slug: "vulnerability-management",
+    illustration: "security-network",
     title: "Vulnerability Management",
     seoTitle: "Vulnerability Management Services | Risk-Based Remediation",
     description:
@@ -172,6 +186,7 @@ export const services: Service[] = [
   },
   {
     slug: "infrastructure-as-code",
+    illustration: "collaboration",
     title: "Infrastructure as Code",
     seoTitle: "Infrastructure as Code Services | Terraform & Policy as Code",
     description:
@@ -195,6 +210,7 @@ export const services: Service[] = [
   },
   {
     slug: "managed-devsecops",
+    illustration: "consulting",
     title: "24/7 Managed DevSecOps",
     seoTitle: "Managed DevSecOps Services | 24/7 Support for US, UAE & UK",
     description:

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
+import CollaborationIllustration from "@/components/illustrations/support/CollaborationIllustration";
 
 const TITLE = "Careers | Join Our DevSecOps Team";
 const DESCRIPTION =
@@ -19,6 +20,10 @@ export default function CareersPage() {
 
       <section className="bg-white py-20">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <div className="mx-auto mb-10 w-full max-w-xs">
+            <CollaborationIllustration />
+          </div>
+
           <p className="font-body text-lg leading-relaxed text-brand-black/80">
             T-Mat Global Technologies is growing. As a DPIIT-recognized,
             pure-play DevSecOps company serving enterprise clients across

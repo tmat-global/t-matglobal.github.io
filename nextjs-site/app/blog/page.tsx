@@ -19,7 +19,7 @@ export default function BlogPage() {
 
   return (
     <>
-      <PageHero firstWord="BLOG" imageSrc="/heroes/services.jpg" />
+      <PageHero firstWord="BLOG" bgVariant="feed" />
 
       <section className="bg-brand-grey py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

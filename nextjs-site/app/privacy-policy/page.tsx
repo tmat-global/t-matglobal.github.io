@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import LegalReviewNotice from "@/components/LegalReviewNotice";
+import SecurityNetworkIllustration from "@/components/illustrations/support/SecurityNetworkIllustration";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -19,6 +20,10 @@ export default function PrivacyPolicyPage() {
 
       <section className="bg-white py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-10 w-full max-w-xs">
+            <SecurityNetworkIllustration />
+          </div>
+
           <LegalReviewNotice />
 
           <p className="mt-8 font-body text-sm text-brand-black/50">

@@ -3,7 +3,18 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
-import { services } from "@/data/services";
+import { services, type ServiceIllustration } from "@/data/services";
+import CollaborationIllustration from "@/components/illustrations/support/CollaborationIllustration";
+import ConsultingIllustration from "@/components/illustrations/support/ConsultingIllustration";
+import SecurityNetworkIllustration from "@/components/illustrations/support/SecurityNetworkIllustration";
+import AuditIllustration from "@/components/illustrations/support/AuditIllustration";
+
+const ILLUSTRATIONS: Record<ServiceIllustration, () => JSX.Element> = {
+  collaboration: CollaborationIllustration,
+  consulting: ConsultingIllustration,
+  "security-network": SecurityNetworkIllustration,
+  audit: AuditIllustration,
+};
 
 interface ServiceDetailPageProps {
   params: { slug: string };
@@ -37,6 +48,7 @@ export default function ServiceDetailPage({
 
   const [firstWord, ...restWords] = service.title.split(" ");
   const restOfTitle = restWords.join(" ");
+  const Illustration = ILLUSTRATIONS[service.illustration];
 
   return (
     <>
@@ -47,15 +59,20 @@ export default function ServiceDetailPage({
       />
 
       <section className="bg-white py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          {service.expandedDescription.map((paragraph, index) => (
-            <p
-              key={index}
-              className="mt-6 font-body text-lg leading-relaxed text-brand-black first:mt-0"
-            >
-              {paragraph}
-            </p>
-          ))}
+        <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-[3fr_2fr] lg:px-8">
+          <div>
+            {service.expandedDescription.map((paragraph, index) => (
+              <p
+                key={index}
+                className="mt-6 font-body text-lg leading-relaxed text-brand-black first:mt-0"
+              >
+                {paragraph}
+              </p>
+            ))}
+          </div>
+          <div className="mx-auto w-full max-w-xs lg:max-w-none">
+            <Illustration />
+          </div>
         </div>
       </section>
 
