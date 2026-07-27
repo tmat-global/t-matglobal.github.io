@@ -15,7 +15,7 @@ export default function TermsConditionsPage() {
       <PageHero
         firstWord="TERMS &"
         restOfTitle="CONDITIONS"
-        imageSrc="/heroes/services.jpg"
+        bgVariant="network"
       />
 
       <section className="bg-white py-16">

@@ -55,7 +55,7 @@ export default function ServiceDetailPage({
       <PageHero
         firstWord={firstWord}
         restOfTitle={restOfTitle || undefined}
-        imageSrc="/heroes/services.jpg"
+        bgVariant="vault"
       />
 
       <section className="bg-white py-20">

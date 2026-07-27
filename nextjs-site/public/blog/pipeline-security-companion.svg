@@ -1,0 +1,39 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#F4C430" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#F4C430" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- pipeline line -->
+  <line x1="140" y1="360" x2="1060" y2="360" stroke="#2E2E2E" stroke-width="3"/>
+
+  <!-- pipeline nodes -->
+  <circle cx="220" cy="360" r="16" fill="#1B5E20"/>
+  <circle cx="440" cy="360" r="16" fill="#1B5E20"/>
+  <circle cx="660" cy="360" r="18" fill="#F4C430"/>
+  <circle cx="880" cy="360" r="16" fill="#1B5E20"/>
+  <circle cx="1060" cy="360" r="16" fill="#1B5E20"/>
+
+  <!-- shield on the highlighted "security gate" node -->
+  <g transform="translate(660,250)">
+    <path d="M0,0 L28,10 L28,45 Q28,75 0,90 Q-28,75 -28,45 L-28,10 Z" fill="#F4C430"/>
+    <path d="M-10,40 L-2,50 L16,28" stroke="#0A0A0A" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- labels -->
+  <text x="220" y="410" fill="#8A8A8A" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Build</text>
+  <text x="440" y="410" fill="#8A8A8A" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Test</text>
+  <text x="660" y="410" fill="#F4C430" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">Security Gate</text>
+  <text x="880" y="410" fill="#8A8A8A" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Deploy</text>
+  <text x="1060" y="410" fill="#8A8A8A" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Monitor</text>
+
+  <!-- title -->
+  <text x="600" y="140" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="42" font-weight="bold" text-anchor="middle">CI/CD Pipeline</text>
+  <text x="600" y="190" fill="#F4C430" font-family="Arial, sans-serif" font-size="42" font-weight="bold" text-anchor="middle">+ Security Companion</text>
+
+  <text x="600" y="540" fill="#6A6A6A" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">T-Mat Global · VaultRak</text>
+</svg>

@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
       <PageHero
         firstWord="PRIVACY"
         restOfTitle="POLICY"
-        imageSrc="/heroes/services.jpg"
+        bgVariant="vault"
       />
 
       <section className="bg-white py-16">

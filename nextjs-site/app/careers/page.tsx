@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function CareersPage() {
   return (
     <>
-      <PageHero firstWord="CAREERS" imageSrc="/heroes/services.jpg" />
+      <PageHero firstWord="CAREERS" bgVariant="team" />
 
       <section className="bg-white py-20">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
