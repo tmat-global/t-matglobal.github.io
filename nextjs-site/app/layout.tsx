@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import FloatingContactPill from "@/components/FloatingContactPill";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollToTop from "@/components/ScrollToTop";
+import CookieBanner from "@/components/CookieBanner";
 import SmoothScroll from "@/components/SmoothScroll";
 
 const oswald = Oswald({
@@ -113,6 +114,7 @@ export default function RootLayout({
         <FloatingContactPill />
         <WhatsAppButton />
         <ScrollToTop />
+        <CookieBanner />
       </body>
     </html>
   );

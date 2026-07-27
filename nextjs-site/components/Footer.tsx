@@ -154,6 +154,9 @@ export default function Footer() {
         <p className="mx-auto max-w-7xl px-4 py-6 text-center font-heading text-sm font-bold uppercase tracking-wider text-brand-black sm:px-6 lg:px-8">
           Created By : T-Mat Global Technologies
         </p>
+        <p className="mx-auto max-w-7xl px-4 pb-6 text-center font-body text-xs text-brand-black/60 sm:px-6 lg:px-8">
+          &copy; {new Date().getFullYear()} T-Mat Global Technologies Pvt. Ltd. All rights reserved. CIN: U62010PN2026PTC252419
+        </p>
       </div>
     </footer>
   );
