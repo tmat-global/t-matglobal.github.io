@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import LegalReviewNotice from "@/components/LegalReviewNotice";
 import AuditIllustration from "@/components/illustrations/support/AuditIllustration";
 
 export const metadata: Metadata = {
@@ -24,10 +23,9 @@ export default function TermsConditionsPage() {
             <AuditIllustration />
           </div>
 
-          <LegalReviewNotice />
 
           <p className="mt-8 font-body text-sm text-brand-black/50">
-            Last updated: July 2026
+            Last updated: February 2026
           </p>
 
           <div className="mt-6 space-y-10 font-body text-base leading-relaxed text-brand-black/80">

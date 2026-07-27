@@ -142,6 +142,18 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           </Link>
         </div>
       </section>
+      <section className="bg-brand-black py-16">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="font-heading text-2xl font-bold uppercase tracking-wide text-white">
+            Get in Touch
+          </h2>
+          <p className="mt-4 font-body text-lg text-white/80">
+            <a href="mailto:info@t-matglobal.com" className="underline hover:text-brand-accent">info@t-matglobal.com</a>
+            <span className="mx-3 text-white/40">|</span>
+            <a href="tel:+917028278808" className="underline hover:text-brand-accent">+91 7028278808</a>
+          </p>
+        </div>
+      </section>
     </>
   );
 }

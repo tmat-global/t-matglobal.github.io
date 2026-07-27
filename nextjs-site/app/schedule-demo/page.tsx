@@ -19,7 +19,7 @@ export default function ScheduleDemoPage() {
       <PageHero
         firstWord="SCHEDULE"
         restOfTitle="A DEMO"
-        imageSrc="/heroes/contact.jpg"
+        bgVariant="team"
       />
 
       <section className="bg-white py-20">
