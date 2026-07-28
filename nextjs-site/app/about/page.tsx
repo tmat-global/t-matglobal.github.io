@@ -51,7 +51,7 @@ export default function AboutPage() {
               <strong className="font-semibold text-brand-black">
                 pure-play DevSecOps
               </strong>{" "}
-              lives — and it&apos;s the gap we built T-Mat Global to close.
+              lives, and it&apos;s the gap we built T-Mat Global to close.
             </p>
 
             <p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
               <strong className="font-semibold text-brand-black">
                 pure-play DevSecOps company
               </strong>{" "}
-              — we don&apos;t treat security as a side practice inside a
+             , we don&apos;t treat security as a side practice inside a
               broader IT consultancy, it&apos;s the entire business. We work
               with growing businesses across the{" "}
               <strong className="font-semibold text-brand-black">
@@ -97,7 +97,7 @@ export default function AboutPage() {
               </strong>
               , we combine the agility of a startup with the delivery
               discipline of the enterprise environments our team has worked
-              inside. That combination is deliberate — it&apos;s how a
+              inside. That combination is deliberate, it&apos;s how a
               growing business gets Fortune 500 security standards without a
               Fortune 500 budget or headcount.
             </p>
@@ -162,8 +162,8 @@ export default function AboutPage() {
               />
               <p className="mt-6 font-body text-base leading-relaxed text-brand-black/70">
                 Most consultancies bolt security onto a broader IT or
-                software development practice. T-Mat Global doesn&apos;t —
-                DevSecOps is the entire business, not a service line
+                software development practice. T-Mat Global doesn&apos;t. DevSecOps
+                is the entire business, not a service line
                 competing for attention against ten others.
               </p>
               <ul className="mt-8 space-y-4">

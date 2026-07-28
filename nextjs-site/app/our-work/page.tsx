@@ -5,7 +5,7 @@ import DashboardGallery from "@/components/DashboardGallery";
 
 const TITLE = "Our Work | DevSecOps Case Studies Across US, UAE & UK";
 const DESCRIPTION =
-  "See how T-Mat Global's DevSecOps team secures and operates platforms for enterprise clients — from hotel operations SaaS to healthcare systems, ERPs, and laboratory information systems — across the US, UAE, and UK.";
+  "See how T-Mat Global's DevSecOps team secures and operates platforms for enterprise clients, from hotel operations SaaS to healthcare systems, ERPs, and laboratory information systems, across the US, UAE, and UK.";
 
 export const metadata: Metadata = {
   title: TITLE,

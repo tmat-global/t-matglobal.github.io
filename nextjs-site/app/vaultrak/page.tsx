@@ -31,7 +31,7 @@ const FEATURES = [
     Icon: Workflow,
     title: "Pipeline Security Visibility",
     description:
-      "See every stage of your CI/CD pipeline — source, build, test, scan, and deploy — with security status surfaced at each step, not buried in build logs.",
+      "See every stage of your CI/CD pipeline, source, build, test, scan, and deploy, with security status surfaced at each step, not buried in build logs.",
   },
   {
     Icon: ShieldAlert,
@@ -49,7 +49,7 @@ const FEATURES = [
     Icon: Activity,
     title: "Real-Time Monitoring",
     description:
-      "Continuous monitoring of your pipelines, infrastructure, and security posture — updated as your environment changes, not on a weekly scan cycle.",
+      "Continuous monitoring of your pipelines, infrastructure, and security posture, updated as your environment changes, not on a weekly scan cycle.",
   },
   {
     Icon: ListChecks,
@@ -61,7 +61,7 @@ const FEATURES = [
     Icon: Clock,
     title: "24/7 Managed Ops Behind It",
     description:
-      "VaultRak isn't just software — it's backed by T-Mat Global's managed DevSecOps team watching your environment around the clock.",
+      "VaultRak isn't just software, it's backed by T-Mat Global's managed DevSecOps team watching your environment around the clock.",
   },
 ];
 
@@ -78,7 +78,7 @@ const STEPS = [
     Icon: Radar,
     title: "VaultRak Monitors Continuously",
     description:
-      "Automated scanning, posture tracking, and compliance evidence collection run around the clock — no manual triggers required.",
+      "Automated scanning, posture tracking, and compliance evidence collection run around the clock, no manual triggers required.",
   },
   {
     number: 3,
@@ -104,7 +104,7 @@ export default function VaultRakPage() {
           </h1>
           <p className="mx-auto mt-6 max-w-2xl font-body text-lg text-white/80">
             Continuous pipeline security visibility, vulnerability
-            management, and compliance score tracking — backed by T-Mat
+            management, and compliance score tracking, backed by T-Mat
             Global&apos;s 24/7 managed DevSecOps team.
           </p>
 
