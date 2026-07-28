@@ -1,5 +1,10 @@
 import { ILLO } from "@/components/illustrations/palette";
 
+/**
+ * Borderless, solid-silhouette business illustration — same technique as
+ * SecurityNetworkIllustration: flat filled shapes only, dimension from a
+ * second darker shade rather than an outline, no facial features.
+ */
 export default function CollaborationIllustration() {
   return (
     <svg
@@ -8,7 +13,7 @@ export default function CollaborationIllustration() {
       role="img"
       aria-label="Two colleagues reviewing data together at a shared screen"
     >
-      <ellipse cx="230" cy="345" rx="130" ry="8" fill={ILLO.charcoalLight} opacity="0.15" />
+      <ellipse cx="230" cy="345" rx="130" ry="8" fill={ILLO.charcoal} opacity="0.08" />
 
       {/* ---- desk ---- */}
       <rect x="40" y="252" width="380" height="16" rx="4" fill={ILLO.charcoalLight} opacity="0.6" />
@@ -26,136 +31,88 @@ export default function CollaborationIllustration() {
         <rect x="50" y="114" width="50" height="6" rx="3" fill={ILLO.charcoalLight} />
       </g>
 
-      {/* ================= SEATED FIGURE (left) ================= */}
+      {/* ================= SEATED FIGURE (left) — solid silhouettes, no strokes ================= */}
       <g>
         {/* resting arm on desk */}
-        <path
-          d="M 108 200 Q 96 218 100 240 L 118 244 Q 116 224 124 208 Z"
-          fill={ILLO.offWhite}
-          stroke={ILLO.black}
-          strokeWidth="4"
-          strokeLinejoin="round"
-        />
-        <circle cx="102" cy="244" r="10" fill={ILLO.offWhite} stroke={ILLO.black} strokeWidth="3.5" />
+        <path d="M 108 200 Q 96 218 100 240 L 118 244 Q 116 224 124 208 Z" fill={ILLO.charcoalLight} />
+        <circle cx="102" cy="244" r="10" fill={ILLO.skin} />
 
-        {/* torso / blazer (seated, cropped by desk) */}
-        <path
-          d="M 96 160 Q 88 158 90 180 L 98 254 L 158 254 L 166 180 Q 168 156 158 154 Q 128 142 96 160 Z"
-          fill={ILLO.charcoalLight}
-          stroke={ILLO.black}
-          strokeWidth="5"
-          strokeLinejoin="round"
-        />
-        <path d="M 118 158 L 128 170 L 138 158 L 134 236 L 122 236 Z" fill={ILLO.offWhite} />
+        {/* torso / blazer (seated, cropped by desk) — lit half + shadow half */}
+        <path d="M 96 160 Q 88 158 90 180 L 98 254 L 128 254 L 130 154 Q 112 148 96 160 Z" fill={ILLO.charcoalLight} />
+        <path d="M 130 154 L 128 254 L 158 254 L 166 180 Q 168 156 158 154 Q 144 148 130 154 Z" fill={ILLO.charcoal} />
+        <path d="M 118 158 L 128 170 L 138 158 L 134 236 L 122 236 Z" fill={ILLO.white} />
 
         {/* other arm, reaching toward the screen */}
+        <path d="M 158 164 Q 182 168 204 176 L 200 190 Q 180 184 160 178 Z" fill={ILLO.charcoal} />
+        <circle cx="206" cy="182" r="9" fill={ILLO.skinShadow} />
+
+        <path d="M 116 130 L 138 130 L 136 158 L 118 158 Z" fill={ILLO.skin} />
+
+        {/* head + jaw shading */}
+        <circle cx="126" cy="98" r="32" fill={ILLO.skin} />
+        <path d="M 126 122 Q 142 120 146 104 Q 148 92 140 84 L 140 112 Q 136 120 126 122 Z" fill={ILLO.skinShadow} opacity="0.5" />
+
+        {/* hair — low bun, full volume, no stroke, no facial features */}
         <path
-          d="M 158 164 Q 182 168 204 176 L 200 190 Q 180 184 160 178 Z"
-          fill={ILLO.charcoalLight}
-          stroke={ILLO.black}
-          strokeWidth="4"
-          strokeLinejoin="round"
-        />
-        <circle cx="206" cy="182" r="9" fill={ILLO.offWhite} stroke={ILLO.black} strokeWidth="3.2" />
-
-        <path d="M 116 130 L 138 130 L 136 158 L 118 158 Z" fill={ILLO.offWhite} stroke={ILLO.black} strokeWidth="3.2" />
-
-        {/* head */}
-        <circle cx="126" cy="98" r="32" fill={ILLO.offWhite} stroke={ILLO.black} strokeWidth="4.5" />
-
-        {/* hair — low bun */}
-        <path
-          d="M 96 92 Q 92 60 126 58 Q 160 60 156 92 Q 156 76 140 70 Q 148 62 132 60 Q 116 58 104 70 Q 96 78 96 88 Z"
+          d="M 92 92
+             Q 88 54 126 52
+             Q 164 54 160 92
+             Q 158 68 138 60
+             Q 150 50 128 48
+             Q 106 46 96 66
+             Q 90 78 92 92
+             Z"
           fill={ILLO.charcoal}
-          stroke={ILLO.black}
-          strokeWidth="3.6"
-          strokeLinejoin="round"
         />
-        <circle cx="126" cy="52" r="11" fill={ILLO.charcoal} stroke={ILLO.black} strokeWidth="3.6" />
-
-        <path d="M 113 96 L 121 94" stroke={ILLO.black} strokeWidth="2.6" strokeLinecap="round" />
-        <path d="M 131 94 L 139 96" stroke={ILLO.black} strokeWidth="2.6" strokeLinecap="round" />
-        <circle cx="117" cy="102" r="2.8" fill={ILLO.black} />
-        <circle cx="135" cy="102" r="2.8" fill={ILLO.black} />
-        <path d="M 118 114 Q 126 120 134 114" stroke={ILLO.black} strokeWidth="2.8" fill="none" strokeLinecap="round" />
+        <circle cx="126" cy="46" r="11" fill={ILLO.charcoal} />
+        <path d="M 104 62 Q 118 50 136 52 Q 126 58 118 66 Q 110 72 102 76 Q 98 70 104 62 Z" fill={ILLO.charcoalLight} opacity="0.7" />
       </g>
 
-      {/* ================= STANDING FIGURE (right, leaning in, pointing) ================= */}
+      {/* ================= STANDING FIGURE (right, leaning in, pointing) — no strokes ================= */}
       <g>
-        {/* legs */}
-        <path
-          d="M 330 248 L 378 248 L 374 338 L 356 338 L 352 280 L 348 338 L 328 338 Z"
-          fill={ILLO.charcoalLight}
-          stroke={ILLO.black}
-          strokeWidth="5"
-          strokeLinejoin="round"
-        />
+        {/* legs — two-tone */}
+        <path d="M 352 248 L 378 248 L 374 338 L 356 338 L 352 280 Z" fill={ILLO.black} />
+        <path d="M 328 248 L 352 248 L 348 338 L 328 338 Z" fill={ILLO.charcoalLight} />
         <path d="M 324 338 L 350 338 L 350 350 Q 350 356 342 356 L 320 356 Q 316 356 318 350 Z" fill={ILLO.black} />
         <path d="M 350 338 L 376 338 L 380 350 Q 382 356 374 356 L 354 356 Q 350 356 350 350 Z" fill={ILLO.black} />
 
-        {/* back arm relaxed */}
+        {/* back arm relaxed — shadow tone */}
+        <path d="M 372 168 Q 388 186 388 204 Q 388 218 382 232 L 368 228 Q 372 212 372 200 Q 372 184 360 170 Z" fill={ILLO.black} />
+        <circle cx="380" cy="234" r="11" fill={ILLO.skinShadow} />
+
+        {/* torso / blazer, leaning slightly toward the screen — lit half + shadow half */}
+        <path d="M 322 158 Q 314 158 318 178 L 328 246 Q 330 258 344 260 L 358 260 L 360 154 Q 340 146 322 158 Z" fill={ILLO.charcoal} />
+        <path d="M 360 154 L 358 260 L 372 260 Q 386 258 386 244 L 392 178 Q 394 156 384 154 Q 372 148 360 154 Z" fill={ILLO.black} />
+        <path d="M 346 158 L 356 170 L 366 158 L 362 244 L 350 244 Z" fill={ILLO.white} />
+        <path d="M 352 174 L 362 174 L 358 240 L 354 240 Z" fill={ILLO.yellow} />
+
+        <path d="M 346 158 L 356 170 L 352 186 L 330 166 Z" fill={ILLO.charcoal} opacity="0.9" />
+        <path d="M 366 158 L 356 170 L 360 186 L 382 166 Z" fill={ILLO.black} opacity="0.9" />
+
+        <path d="M 346 132 L 366 132 L 364 158 L 348 158 Z" fill={ILLO.skin} />
+
+        {/* front arm, extended, pointing at the monitor — lit tone with a shirt cuff */}
+        <path d="M 322 166 Q 292 172 264 182 Q 246 190 236 200 L 244 212 Q 258 200 278 192 Q 302 182 328 176 Z" fill={ILLO.charcoalLight} />
+        <path d="M 240 204 L 250 212 L 246 218 L 236 210 Z" fill={ILLO.white} />
+        <circle cx="238" cy="206" r="11" fill={ILLO.skin} />
+
+        {/* head + jaw shading */}
+        <circle cx="356" cy="102" r="32" fill={ILLO.skin} />
+        <path d="M 356 126 Q 372 124 376 108 Q 378 96 370 88 L 370 116 Q 366 124 356 126 Z" fill={ILLO.skinShadow} opacity="0.5" />
+
+        {/* hair — short, textured, full volume, no stroke, no facial features */}
         <path
-          d="M 372 168 Q 388 186 388 204 Q 388 218 382 232 L 368 228 Q 372 212 372 200 Q 372 184 360 170 Z"
-          fill={ILLO.charcoal}
-          stroke={ILLO.black}
-          strokeWidth="4.5"
-          strokeLinejoin="round"
-        />
-        <circle cx="380" cy="234" r="11" fill={ILLO.offWhite} stroke={ILLO.black} strokeWidth="3.6" />
-
-        {/* torso / blazer, leaning slightly left toward the screen */}
-        <path
-          d="M 322 158 Q 314 158 318 178 L 328 246 Q 330 258 344 260 L 372 260 Q 386 258 386 244 L 392 178 Q 394 156 384 154 Q 350 138 322 158 Z"
-          fill={ILLO.charcoal}
-          stroke={ILLO.black}
-          strokeWidth="5.5"
-          strokeLinejoin="round"
-        />
-        <path d="M 346 158 L 356 170 L 366 158 L 362 244 L 350 244 Z" fill={ILLO.offWhite} />
-        <path d="M 354 174 L 360 174 L 364 188 L 356 240 L 350 188 Z" fill={ILLO.yellow} stroke={ILLO.black} strokeWidth="1.4" />
-
-        <path d="M 346 158 L 356 170 L 352 186 L 330 166 Z" fill={ILLO.charcoal} stroke={ILLO.black} strokeWidth="3.6" strokeLinejoin="round" />
-        <path d="M 366 158 L 356 170 L 360 186 L 382 166 Z" fill={ILLO.charcoal} stroke={ILLO.black} strokeWidth="3.6" strokeLinejoin="round" />
-
-        <path d="M 346 132 L 366 132 L 364 158 L 348 158 Z" fill={ILLO.offWhite} stroke={ILLO.black} strokeWidth="3.2" />
-
-        {/* front arm, extended, pointing at the monitor */}
-        <path
-          d="M 322 166 Q 292 172 264 182 Q 246 190 236 200 L 244 212 Q 258 200 278 192 Q 302 182 328 176 Z"
-          fill={ILLO.charcoalLight}
-          stroke={ILLO.black}
-          strokeWidth="4.5"
-          strokeLinejoin="round"
-        />
-        <circle cx="238" cy="206" r="11" fill={ILLO.offWhite} stroke={ILLO.black} strokeWidth="3.6" />
-        <path d="M 226 200 L 238 206 L 232 216" fill="none" stroke={ILLO.black} strokeWidth="3.6" strokeLinecap="round" strokeLinejoin="round" />
-
-        {/* head */}
-        <circle cx="356" cy="102" r="32" fill={ILLO.offWhite} stroke={ILLO.black} strokeWidth="4.5" />
-
-        {/* hair — short, textured */}
-        <path
-          d="M 326 96
-             Q 322 64 356 60
-             Q 392 64 388 96
-             Q 388 82 372 78
-             Q 380 70 366 68
-             Q 352 66 340 80
-             Q 326 88 326 94
+          d="M 318 96
+             Q 314 58 356 56
+             Q 398 58 394 96
+             Q 392 70 372 62
+             Q 382 52 360 48
+             Q 338 44 324 62
+             Q 314 76 318 96
              Z"
           fill={ILLO.charcoal}
-          stroke={ILLO.black}
-          strokeWidth="3.6"
-          strokeLinejoin="round"
         />
-        <path d="M 326 92 Q 324 104 330 114" fill="none" stroke={ILLO.black} strokeWidth="3.6" strokeLinecap="round" />
-        <path d="M 388 92 Q 390 104 384 114" fill="none" stroke={ILLO.black} strokeWidth="3.6" strokeLinecap="round" />
-
-        <path d="M 341 94 L 349 92" stroke={ILLO.black} strokeWidth="2.8" strokeLinecap="round" />
-        <path d="M 365 92 L 373 94" stroke={ILLO.black} strokeWidth="2.8" strokeLinecap="round" />
-        <circle cx="345" cy="102" r="3" fill={ILLO.black} />
-        <circle cx="369" cy="102" r="3" fill={ILLO.black} />
-        <path d="M 347 118 Q 357 124 367 118" stroke={ILLO.black} strokeWidth="3" fill="none" strokeLinecap="round" />
+        <path d="M 330 66 Q 346 50 368 50 Q 358 56 350 66 Q 342 74 332 78 Q 326 72 330 66 Z" fill={ILLO.charcoalLight} opacity="0.7" />
       </g>
     </svg>
   );
