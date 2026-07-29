@@ -3,18 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
-import { services, type ServiceIllustration } from "@/data/services";
-import CollaborationIllustration from "@/components/illustrations/support/CollaborationIllustration";
-import ConsultingIllustration from "@/components/illustrations/support/ConsultingIllustration";
-import SecurityNetworkIllustration from "@/components/illustrations/support/SecurityNetworkIllustration";
-import AuditIllustration from "@/components/illustrations/support/AuditIllustration";
-
-const ILLUSTRATIONS: Record<ServiceIllustration, () => JSX.Element> = {
-  collaboration: CollaborationIllustration,
-  consulting: ConsultingIllustration,
-  "security-network": SecurityNetworkIllustration,
-  audit: AuditIllustration,
-};
+import { services } from "@/data/services";
+import Image from "next/image";
 
 interface ServiceDetailPageProps {
   params: { slug: string };
@@ -48,7 +38,7 @@ export default function ServiceDetailPage({
 
   const [firstWord, ...restWords] = service.title.split(" ");
   const restOfTitle = restWords.join(" ");
-  const Illustration = ILLUSTRATIONS[service.illustration];
+
 
   return (
     <>
@@ -70,8 +60,14 @@ export default function ServiceDetailPage({
               </p>
             ))}
           </div>
-          <div className="mx-auto w-full max-w-xs lg:max-w-none">
-            <Illustration />
+          <div className="mx-auto w-full overflow-hidden rounded-2xl shadow-lg">
+            <Image
+              src={`/services/${service.slug}.jpg`}
+              alt={service.title}
+              width={800}
+              height={533}
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
       </section>

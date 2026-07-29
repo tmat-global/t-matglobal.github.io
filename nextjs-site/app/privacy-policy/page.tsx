@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import SecurityNetworkIllustration from "@/components/illustrations/support/SecurityNetworkIllustration";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 w-full max-w-xs">
-            <SecurityNetworkIllustration />
+            <Image src="/legal/careers.svg" alt="" width={400} height={400} className="mx-auto h-auto w-full max-w-sm" />
           </div>
 
 

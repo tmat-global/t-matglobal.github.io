@@ -1,6 +1,6 @@
 ---
 title: "How Real-Time Security Visibility Reduces DevSecOps Response Delays"
-date: "2026-08-10"
+date: "2026-07-29"
 description: "Fragmented communication between security, engineering, and leadership is the real reason findings sit unresolved for weeks. Here's exactly where the delays happen and what closes them."
 tags: ["devsecops", "vaultrak", "incident-response"]
 image: "/blog/second-post-cover.jpg"

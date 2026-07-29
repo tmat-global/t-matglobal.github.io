@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import AuditIllustration from "@/components/illustrations/support/AuditIllustration";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
@@ -20,7 +20,7 @@ export default function TermsConditionsPage() {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 w-full max-w-xs">
-            <AuditIllustration />
+            <Image src="/legal/careers.svg" alt="" width={400} height={400} className="mx-auto h-auto w-full max-w-sm" />
           </div>
 
 

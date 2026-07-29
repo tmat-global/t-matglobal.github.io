@@ -1,6 +1,6 @@
 ---
 title: "Why Every Growing Engineering Team Needs a CI/CD Pipeline, and a Security Operations Companion"
-date: "2026-08-03"
+date: "2026-07-27"
 description: "CI/CD pipelines handle builds and deployments well, but security visibility is usually an afterthought. Here's why a dedicated DevSecOps companion changes that."
 tags: ["devsecops", "ci-cd", "vaultrak"]
 image: "/blog/pipeline-security-companion-cover.jpg"

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import CollaborationIllustration from "@/components/illustrations/support/CollaborationIllustration";
+import Image from "next/image";
 
 const TITLE = "Careers | Join Our DevSecOps Team";
 const DESCRIPTION =
@@ -21,7 +21,7 @@ export default function CareersPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 w-full max-w-xs">
-            <CollaborationIllustration />
+            <Image src="/legal/careers.svg" alt="" width={400} height={400} className="mx-auto h-auto w-full max-w-sm" />
           </div>
 
           <p className="font-body text-lg leading-relaxed text-brand-black/80">
