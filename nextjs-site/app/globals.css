@@ -130,3 +130,19 @@ h6 {
     transition: none;
   }
 }
+
+/* Shift floating action buttons up while the cookie banner is visible, so they never overlap */
+body:has(#cookie-banner) a[aria-label="Chat with T-Mat Global on WhatsApp"] {
+  bottom: 7rem;
+}
+body:has(#cookie-banner) button[aria-label="Scroll to top"] {
+  bottom: 11rem;
+}
+@media (min-width: 640px) {
+  body:has(#cookie-banner) a[aria-label="Chat with T-Mat Global on WhatsApp"] {
+    bottom: 5.5rem;
+  }
+  body:has(#cookie-banner) button[aria-label="Scroll to top"] {
+    bottom: 9rem;
+  }
+}
