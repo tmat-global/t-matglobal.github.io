@@ -87,7 +87,7 @@ const organizationJsonLd = {
     "@type": "ContactPoint",
     contactType: "customer service",
     email: "info@t-matglobal.com",
-    telephone: "+91-7028278808",
+    telephone: "+91-9356307015",
     availableLanguage: ["English"],
   },
   sameAs: ["https://www.linkedin.com/company/tmatglobal/"],

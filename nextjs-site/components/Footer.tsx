@@ -47,7 +47,7 @@ export default function Footer() {
             Contact No.
           </h3>
           <p className="mt-4 font-body text-lg font-semibold">
-            +91 7028278808
+            +91 9356307015
           </p>
         </div>
 

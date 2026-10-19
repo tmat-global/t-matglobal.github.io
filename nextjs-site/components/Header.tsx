@@ -15,8 +15,8 @@ const NAV_LINKS = [
   { href: "/contact", label: "Contact Us" },
 ];
 
-const PHONE_NUMBER = "+917028278808";
-const PHONE_DISPLAY = "+91 7028278808";
+const PHONE_NUMBER = "+919356307015";
+const PHONE_DISPLAY = "+91 9356307015";
 
 function PhoneIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (

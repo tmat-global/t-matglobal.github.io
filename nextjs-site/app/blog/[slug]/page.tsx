@@ -150,7 +150,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           <p className="mt-4 font-body text-lg text-white/80">
             <a href="mailto:info@t-matglobal.com" className="underline hover:text-brand-accent">info@t-matglobal.com</a>
             <span className="mx-3 text-white/40">|</span>
-            <a href="tel:+917028278808" className="underline hover:text-brand-accent">+91 7028278808</a>
+            <a href="tel:+919356307015" className="underline hover:text-brand-accent">+91 9356307015</a>
           </p>
         </div>
       </section>

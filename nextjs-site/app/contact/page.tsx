@@ -70,13 +70,13 @@ export default function ContactPage() {
                   </a>
 
                   <a
-                    href="tel:+917028278808"
+                    href="tel:+919356307015"
                     className="flex items-center gap-3 font-body text-base text-brand-black/80 transition-colors hover:text-brand-accent"
                   >
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-grey">
                       <Phone className="h-5 w-5 text-brand-accent" />
                     </span>
-                    +91 7028278808
+                    +91 9356307015
                   </a>
                 </div>
               </div>
