@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { seoMeta } from "@/lib/seo";
 import PageHero from "@/components/PageHero";
 import BlogCard from "@/components/BlogCard";
 import { getAllPosts } from "@/lib/blog";
 
-const TITLE = "Blog | DevSecOps Insights for US, UAE & UK Enterprises";
+const TITLE =
+  "Blog | DevOps, Cloud and Security Insights";
 const DESCRIPTION =
-  "Practical guidance on CI/CD security, cloud security, compliance automation, and managed DevSecOps from T-Mat Global's engineering team.";
+  "Practical guides on CI/CD security, cloud security and cost, production readiness and disaster recovery from T-Mat Global's engineering team.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  openGraph: { title: TITLE, description: DESCRIPTION },
-  twitter: { title: TITLE, description: DESCRIPTION },
+  ...seoMeta({ title: TITLE, description: DESCRIPTION, path: "/blog/" }),
 };
 
 export default function BlogPage() {

@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
+import { seoMeta } from "@/lib/seo";
 import PageHero from "@/components/PageHero";
 import CalendlyEmbed from "@/components/CalendlyEmbed";
 
-const TITLE = "Schedule a Demo | T-Mat Global DevSecOps";
+const TITLE =
+  "Schedule a Demo";
 const DESCRIPTION =
   "Book time with T-Mat Global to see how we embed security into your CI/CD pipeline, cloud environment, and delivery workflow.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  openGraph: { title: TITLE, description: DESCRIPTION },
-  twitter: { title: TITLE, description: DESCRIPTION },
+  ...seoMeta({ title: TITLE, description: DESCRIPTION, path: "/schedule-demo/" }),
 };
 
 export default function ScheduleDemoPage() {

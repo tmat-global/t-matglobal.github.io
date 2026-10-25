@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { services } from "@/data/services";
 import { getAllPosts } from "@/lib/blog";
 
-const SITE_URL = "https://t-matglobal.com";
+const SITE_URL = "https://www.t-matglobal.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -10,7 +10,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/services/`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/our-work/`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/vaultrak/`, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${SITE_URL}/blog/`, changeFrequency: "weekly", priority: 0.7 },
+    {
+      url: `${SITE_URL}/blog/`,
+      lastModified: new Date(getAllPosts()[0].date),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
     { url: `${SITE_URL}/about/`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE_URL}/contact/`, changeFrequency: "monthly", priority: 0.7 },
     {
@@ -39,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogRoutes: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
     url: `${SITE_URL}/blog/${post.slug}/`,
+    lastModified: new Date(post.date),
     changeFrequency: "monthly",
     priority: 0.6,
   }));

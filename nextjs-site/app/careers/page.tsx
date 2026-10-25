@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
+import { seoMeta } from "@/lib/seo";
 import PageHero from "@/components/PageHero";
 import Image from "next/image";
 
-const TITLE = "Careers | Join Our DevSecOps Team";
+const TITLE =
+  "Careers | Join Our Engineering Team";
 const DESCRIPTION =
-  "T-Mat Global Technologies is growing. We're always interested in hearing from DevSecOps, cloud security, and platform engineers who want to work at a pure-play DevSecOps company serving the US, UAE, and UK.";
+  "T-Mat Global Technologies is growing. We are interested in hearing from DevOps, DevSecOps, cloud security and platform engineers.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  openGraph: { title: TITLE, description: DESCRIPTION },
-  twitter: { title: TITLE, description: DESCRIPTION },
+  ...seoMeta({ title: TITLE, description: DESCRIPTION, path: "/careers/" }),
 };
 
 export default function CareersPage() {

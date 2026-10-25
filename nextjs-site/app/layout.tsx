@@ -22,11 +22,11 @@ const poppins = Poppins({
   display: "swap",
 });
 
-const SITE_URL = "https://t-matglobal.com";
+const SITE_URL = "https://www.t-matglobal.com";
 const DEFAULT_TITLE =
-  "DevSecOps Company India | Pure-Play DevSecOps Services for US, UAE & UK";
+  "DevOps Services India | Cloud Security | T-Mat Global";
 const DEFAULT_DESCRIPTION =
-  "T-Mat Global is India's dedicated pure-play DevSecOps company, delivering CI/CD security, cloud security, Kubernetes security, and 24/7 managed DevSecOps with Fortune 500 delivery standards for enterprise clients across the US, UAE, and UK.";
+  "T-Mat Global is a DPIIT-recognized company in India offering DevOps, cloud security, DevSecOps and production support for teams in the US, UAE and UK.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -35,14 +35,7 @@ export const metadata: Metadata = {
     template: "%s | T-Mat Global",
   },
   description: DEFAULT_DESCRIPTION,
-  keywords: [
-    "DevSecOps company India",
-    "DevSecOps services USA",
-    "CI/CD security",
-    "cloud security consulting",
-    "managed DevSecOps",
-    "Kubernetes security",
-  ],
+  keywords: ["DevOps services India","cloud security services","DevSecOps services","CI/CD security","managed DevOps","Kubernetes security"],
   openGraph: {
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
@@ -55,7 +48,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "T-Mat Global Technologies — Pure-Play DevSecOps Company",
+        alt: "T-Mat Global Technologies: DevOps, Cloud Security and DevSecOps",
       },
     ],
   },
@@ -78,8 +71,6 @@ const organizationJsonLd = {
   description: DEFAULT_DESCRIPTION,
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Pune",
-    addressRegion: "Maharashtra",
     addressCountry: "IN",
   },
   areaServed: ["US", "AE", "GB", "IN"],

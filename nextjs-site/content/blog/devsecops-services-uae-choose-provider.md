@@ -74,7 +74,7 @@ What matters more than location is control. Insist on least-privilege access, se
 
 T-Mat Global Technologies is a DPIIT recognized DevSecOps company in India. We bring Fortune 500 production expertise to startups and engineering teams across the US, UAE and UK. Our founder, Sainath Mitalakar, is an AWS Certified DevOps Engineer Professional and a Top 25 Global DevOps Thought Leader on Thinkers360.
 
-Our services cover [DevSecOps consulting](/services), CI/CD pipeline security, cloud security, container and Kubernetes security, compliance automation, vulnerability management and managed DevSecOps. [VaultRak](https://vaultrak.com), our managed DevSecOps platform, brings pipeline security checks, vulnerability visibility and compliance evidence into one place.
+Our services cover [DevSecOps consulting](/services), CI/CD pipeline security, cloud security, container and Kubernetes security, compliance automation, vulnerability management and managed DevSecOps. [VaultRak](https://vaultrak.t-matglobal.com), our managed DevSecOps platform, brings pipeline security checks, vulnerability visibility and compliance evidence into one place.
 
 ## Get a free DevSecOps assessment
 

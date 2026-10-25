@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seoMeta } from "@/lib/seo";
 import Image from "next/image";
 import { Mail, Phone } from "lucide-react";
 import PageHero from "@/components/PageHero";
@@ -6,15 +7,15 @@ import ContactForm from "@/components/ContactForm";
 import CalendlyEmbed from "@/components/CalendlyEmbed";
 import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 
-const TITLE = "Contact Us | 24/7 Managed DevSecOps Support";
+const TITLE =
+  "Contact | Free Cloud Security Assessment";
 const DESCRIPTION =
-  "Get in touch with T-Mat Global's DevSecOps team for a free assessment or 24/7 managed DevSecOps support across the US, UAE, and UK.";
+  "Contact T-Mat Global for a free DevOps and cloud security assessment or support with CI/CD, cloud and production operations for teams in the US, UAE and UK.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  openGraph: { title: TITLE, description: DESCRIPTION },
-  twitter: { title: TITLE, description: DESCRIPTION },
+  ...seoMeta({ title: TITLE, description: DESCRIPTION, path: "/contact/" }),
 };
 
 export default function ContactPage() {

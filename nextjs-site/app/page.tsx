@@ -32,3 +32,5 @@ export default function HomePage() {
     </>
   );
 }
+
+export const metadata = { alternates: { canonical: "/" } };

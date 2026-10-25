@@ -4,6 +4,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
+  alternates: { canonical: "/privacy-policy/" },
   description:
     "How T-Mat Global Technologies collects, uses, and protects information from visitors and clients across the US, UAE, UK, and EU.",
 };

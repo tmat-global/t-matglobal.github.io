@@ -4,6 +4,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
+  alternates: { canonical: "/terms-conditions/" },
   description:
     "The terms governing use of the T-Mat Global Technologies website and engagement with our DevSecOps services.",
 };

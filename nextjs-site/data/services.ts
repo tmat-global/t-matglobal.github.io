@@ -20,7 +20,7 @@ export const services: Service[] = [
     slug: "software-development",
     illustration: "collaboration",
     title: "Software Development",
-    seoTitle: "Custom Software Development | Secure SDLC by DevSecOps Experts",
+    seoTitle: "Custom Software Development Services",
     description:
       "Full-cycle custom software development delivered with security built in from the first commit. Web platforms, SaaS products, and enterprise systems designed, built, and shipped by a team that treats DevSecOps as the default, not an add-on.",
     expandedDescription: [
@@ -44,7 +44,7 @@ export const services: Service[] = [
     slug: "devsecops-consulting",
     illustration: "consulting",
     title: "DevSecOps Consulting",
-    seoTitle: "DevSecOps Consulting Services | Pure-Play DevSecOps Company India",
+    seoTitle: "DevSecOps Consulting Services India",
     description:
       "Embed security into every stage of your delivery pipeline. We assess, design, and implement DevSecOps practices that let enterprises ship faster without compromising on security or compliance.",
     expandedDescription: [
@@ -68,7 +68,7 @@ export const services: Service[] = [
     slug: "cicd-pipeline-security",
     illustration: "collaboration",
     title: "CI/CD Pipeline Security",
-    seoTitle: "CI/CD Pipeline Security Services | DevSecOps Company India",
+    seoTitle: "CI/CD Pipeline Security Services",
     description:
       "Harden your build and release pipelines with automated security gates, secret scanning, SAST/DAST integration, and signed artifact workflows across GitHub Actions, GitLab, Jenkins, and Azure DevOps.",
     expandedDescription: [
@@ -92,7 +92,7 @@ export const services: Service[] = [
     slug: "cloud-security",
     illustration: "security-network",
     title: "Cloud Security",
-    seoTitle: "Cloud Security Consulting | AWS, Azure & GCP Security Experts",
+    seoTitle: "Cloud Security Consulting: AWS, Azure, GCP",
     description:
       "Secure AWS, Azure, and GCP environments with best-practice architecture reviews, IAM hardening, guardrails, and continuous posture management aligned to CIS benchmarks.",
     expandedDescription: [
@@ -116,7 +116,7 @@ export const services: Service[] = [
     slug: "container-kubernetes-security",
     illustration: "security-network",
     title: "Container & Kubernetes Security",
-    seoTitle: "Kubernetes Security & Container Security Services",
+    seoTitle: "Kubernetes and Container Security Services",
     description:
       "Protect containerized workloads end to end: image scanning, admission controls, runtime protection, and hardened Kubernetes cluster configurations.",
     expandedDescription: [
@@ -140,7 +140,7 @@ export const services: Service[] = [
     slug: "compliance-automation",
     illustration: "audit",
     title: "Compliance Automation",
-    seoTitle: "Compliance Automation Services | SOC 2, ISO 27001 & HIPAA",
+    seoTitle: "Compliance Automation: SOC 2, ISO 27001, HIPAA",
     description:
       "Automate evidence collection and controls for SOC 2, ISO 27001, HIPAA, and PCI DSS so audits become a byproduct of your pipeline, not a fire drill.",
     expandedDescription: [
@@ -164,7 +164,7 @@ export const services: Service[] = [
     slug: "vulnerability-management",
     illustration: "security-network",
     title: "Vulnerability Management",
-    seoTitle: "Vulnerability Management Services | Risk-Based Remediation",
+    seoTitle: "Vulnerability Management Services",
     description:
       "Continuous scanning, risk-based prioritization, and remediation tracking across applications, infrastructure, and dependencies.",
     expandedDescription: [
@@ -188,7 +188,7 @@ export const services: Service[] = [
     slug: "infrastructure-as-code",
     illustration: "collaboration",
     title: "Infrastructure as Code",
-    seoTitle: "Infrastructure as Code Services | Terraform & Policy as Code",
+    seoTitle: "Infrastructure as Code Services: Terraform",
     description:
       "Terraform and Ansible based provisioning with policy-as-code checks so every environment is reproducible, auditable, and secure by default.",
     expandedDescription: [
@@ -212,7 +212,7 @@ export const services: Service[] = [
     slug: "managed-devsecops",
     illustration: "consulting",
     title: "24/7 Managed DevSecOps",
-    seoTitle: "Managed DevSecOps Services | 24/7 Support for US, UAE & UK",
+    seoTitle: "Managed DevSecOps Services India",
     description:
       "Round-the-clock monitoring, incident response, and pipeline support delivered from India with Fortune 500 delivery standards, built for US, UAE, and UK time zones.",
     expandedDescription: [

@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
+import { seoMeta } from "@/lib/seo";
 import PageHero from "@/components/PageHero";
 import ServicesFullList from "@/components/ServicesFullList";
 
 const TITLE =
-  "DevSecOps Services | CI/CD Security, Cloud Security & Managed DevSecOps";
+  "DevOps, Cloud Security & DevSecOps Services";
 const DESCRIPTION =
-  "Explore T-Mat Global's full DevSecOps services: CI/CD pipeline security, cloud security consulting, Kubernetes security, compliance automation, and 24/7 managed DevSecOps for enterprise clients across the US, UAE, and UK.";
+  "Explore T-Mat Global's DevOps, cloud security, CI/CD security, Kubernetes security and managed operations services for teams in the US, UAE and UK.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  openGraph: { title: TITLE, description: DESCRIPTION },
-  twitter: { title: TITLE, description: DESCRIPTION },
+  ...seoMeta({ title: TITLE, description: DESCRIPTION, path: "/services/" }),
 };
 
 export default function ServicesPage() {

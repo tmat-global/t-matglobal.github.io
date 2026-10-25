@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seoMeta } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
@@ -25,8 +26,11 @@ export function generateMetadata({
   return {
     title: service.seoTitle,
     description: service.description,
-    openGraph: { title: service.seoTitle, description: service.description },
-    twitter: { title: service.seoTitle, description: service.description },
+    ...seoMeta({
+      title: service.seoTitle,
+      description: service.description,
+      path: `/services/${service.slug}/`,
+    }),
   };
 }
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getAllPostSlugs, getPostBySlug } from "@/lib/blog";
 
-const SITE_URL = "https://t-matglobal.com";
+const SITE_URL = "https://www.t-matglobal.com";
 
 interface BlogPostPageProps {
   params: { slug: string };
@@ -27,14 +27,18 @@ export function generateMetadata({ params }: BlogPostPageProps): Metadata {
   return {
     title: post.title,
     description: post.description,
+    alternates: { canonical: `/blog/${post.slug}/` },
     openGraph: {
       title: post.title,
       description: post.description,
+      url: `/blog/${post.slug}/`,
+      siteName: "T-Mat Global",
       type: "article",
       publishedTime: post.date,
       images: [{ url: post.image }],
     },
     twitter: {
+      card: "summary_large_image",
       title: post.title,
       description: post.description,
       images: [post.image],
@@ -67,9 +71,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     datePublished: post.date,
     dateModified: post.date,
     author: {
-      "@type": "Organization",
-      name: "T-Mat Global Technologies Pvt. Ltd.",
-      url: SITE_URL,
+      "@type": "Person",
+      name: "Sainath Mitalakar",
+      url: `${SITE_URL}/about/`,
     },
     publisher: {
       "@type": "Organization",

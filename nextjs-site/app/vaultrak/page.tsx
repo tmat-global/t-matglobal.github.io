@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seoMeta } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
@@ -15,15 +16,15 @@ import {
   ClipboardList,
 } from "lucide-react";
 
-const TITLE = "VaultRak | Managed DevSecOps Platform by T-Mat Global";
+const TITLE =
+  "VaultRak | Managed DevSecOps Platform";
 const DESCRIPTION =
-  "VaultRak gives you continuous pipeline security visibility, severity-based vulnerability management, and real-time compliance score tracking, backed by T-Mat Global's 24/7 managed DevSecOps team.";
+  "VaultRak gives you pipeline security visibility, severity-based vulnerability management and compliance score tracking, backed by T-Mat Global's managed team.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  openGraph: { title: TITLE, description: DESCRIPTION },
-  twitter: { title: TITLE, description: DESCRIPTION },
+  ...seoMeta({ title: TITLE, description: DESCRIPTION, path: "/vaultrak/" }),
 };
 
 const FEATURES = [

@@ -97,7 +97,7 @@ Multi-region gives you most of the resilience benefit with much less complexity,
 
 T-Mat Global Technologies is a DPIIT recognized company in India that helps teams with cloud, DevOps and security. We bring Fortune 500 production expertise to startups and engineering teams across the US, UAE and UK. Our founder, Sainath Mitalakar, is an AWS Certified DevOps Engineer Professional and a Top 25 Global DevOps Thought Leader on Thinkers360.
 
-We can review your recovery readiness, set up infrastructure as code and cross-region backups, build secure pipelines that can deploy to a recovery region, and automate checks so your protection does not slip over time. Our platform, [VaultRak](https://vaultrak.com), brings pipeline security checks, vulnerability visibility and compliance evidence into one place. See our [DevSecOps services](/services) and our guide on [choosing a provider in the UAE](/blog/devsecops-services-uae-choose-provider).
+We can review your recovery readiness, set up infrastructure as code and cross-region backups, build secure pipelines that can deploy to a recovery region, and automate checks so your protection does not slip over time. Our platform, [VaultRak](https://vaultrak.t-matglobal.com), brings pipeline security checks, vulnerability visibility and compliance evidence into one place. See our [DevSecOps services](/services) and our guide on [choosing a provider in the UAE](/blog/devsecops-services-uae-choose-provider).
 
 ## Get a free cloud and security assessment
 

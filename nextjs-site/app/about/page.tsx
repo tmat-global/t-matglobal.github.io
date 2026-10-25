@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seoMeta } from "@/lib/seo";
 import Image from "next/image";
 import { Check } from "lucide-react";
 import PageHero from "@/components/PageHero";
@@ -7,15 +8,14 @@ import SectionHeading from "@/components/SectionHeading";
 import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 
 const TITLE =
-  "About T-Mat Global | AWS Certified DevSecOps Team, Pune, India";
+  "About | Founder-Led DevOps Partner in India";
 const DESCRIPTION =
-  "T-Mat Global is India's dedicated pure-play DevSecOps company, founded by an AWS DevOps Professional certified engineer with enterprise experience at T-Mobile USA. DPIIT-recognized, serving the US, UAE, and UK.";
+  "A founder-led, DPIIT-recognized company in India. Our founder is an AWS Certified DevOps Engineer Professional with Fortune 500 production expertise.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  openGraph: { title: TITLE, description: DESCRIPTION },
-  twitter: { title: TITLE, description: DESCRIPTION },
+  ...seoMeta({ title: TITLE, description: DESCRIPTION, path: "/about/" }),
 };
 
 const ACCOMPLISHMENTS = [
