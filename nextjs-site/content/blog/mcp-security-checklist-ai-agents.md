@@ -119,7 +119,7 @@ AI coding agents and automation increasingly have access to repositories, pipeli
 
 ## How can T-Mat Global help?
 
-T-Mat Global Technologies is a founder-led technology delivery partner from India. We help startups and engineering teams with cloud security, CI/CD pipeline security, cloud infrastructure and production support. For AI agents and MCP, that can mean reviewing your integrations, designing least-privilege access, securing secrets and pipelines, and setting up monitoring and alerts. Our founder, Sainath Mitalakar, is an AWS Certified DevOps Engineer Professional with Fortune 500 production expertise.
+T-Mat Global Technologies is a founder-led technology delivery partner from India. We help startups and engineering teams with cloud security, CI/CD pipeline security, cloud infrastructure and production support. For AI agents and MCP, that can mean reviewing your integrations, designing least-privilege access, securing secrets and pipelines, and setting up monitoring and alerts. Our founder, Sainath Mitalakar, is an AWS Certified DevOps Engineer Professional with production expertise from the Fortune 100 ecosystem.
 
 See our [cloud security](/services/cloud-security) and [CI/CD pipeline security](/services/cicd-pipeline-security) services.
 

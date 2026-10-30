@@ -214,12 +214,12 @@ export const services: Service[] = [
     title: "24/7 Managed DevSecOps",
     seoTitle: "Managed DevSecOps Services India",
     description:
-      "Round-the-clock monitoring, incident response, and pipeline support delivered from India with Fortune 500 delivery standards, built for US, UAE, and UK time zones.",
+      "Round-the-clock monitoring, incident response, and pipeline support delivered from India with Fortune 100 ecosystem delivery standards, built for US, UAE, and UK time zones.",
     expandedDescription: [
       "Security incidents and pipeline failures don't wait for business hours, and for enterprises operating across US, UAE, and UK time zones, \"business hours\" barely exists as a single window to begin with. Building an internal team that can cover all three around the clock means hiring, training, and retaining specialized engineers across multiple geographies, an expensive proposition even before you account for the 3 a.m. pages nobody wants to own.",
       "T-Mat Global's managed DevSecOps service provides round-the-clock monitoring of your pipelines, infrastructure, and security alerts, backed by defined incident response runbooks and clear on-call escalation paths. Our delivery team is structured specifically around US, UAE, and UK working hours, so there is always an engineer who understands your environment actively watching it, not a follow-the-sun handoff that loses context at every shift change.",
       "Beyond monitoring, we provide ongoing pipeline maintenance and support, keeping your CI/CD and security tooling current without waiting for a dedicated project to justify the work. Monthly reporting covers both delivery performance and security posture, giving your leadership team a consistent, board-ready view of how the environment is trending.",
-      "This is delivered to the same standard our team applies across every engagement: Fortune 500 delivery discipline, SLA-backed response times, and a dedicated team that treats your production environment as if it were their own, because for the hours they're covering it, it is.",
+      "This is delivered to the same standard our team applies across every engagement: Fortune 100 ecosystem delivery discipline, SLA-backed response times, and a dedicated team that treats your production environment as if it were their own, because for the hours they're covering it, it is.",
     ],
     whatsIncluded: [
       "Round-the-clock monitoring of pipelines, infrastructure, and security alerts",

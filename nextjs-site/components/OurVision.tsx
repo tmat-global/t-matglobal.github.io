@@ -6,7 +6,7 @@ import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 const VISION_ITEMS = [
   "Making security a default in every software delivery pipeline",
   "Putting India on the map for pure-play DevSecOps",
-  "Fortune 500 standards for businesses of every size",
+  "Fortune 100 ecosystem standards for businesses of every size",
   "Continuous learning and certification across the team",
   "Expanding across US, UAE, and UK markets",
   "24/7 reliability our clients can build on",

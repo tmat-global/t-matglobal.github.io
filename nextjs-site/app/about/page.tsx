@@ -10,7 +10,7 @@ import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 const TITLE =
   "About | Founder-Led DevOps Partner in India";
 const DESCRIPTION =
-  "A founder-led, DPIIT-recognized company in India. Our founder is an AWS Certified DevOps Engineer Professional with Fortune 500 production expertise.";
+  "A founder-led, DPIIT-recognized company in India. Our founder is an AWS Certified DevOps Engineer Professional with production expertise from the Fortune 100 ecosystem.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -22,12 +22,12 @@ const ACCOMPLISHMENTS = [
   "Built a full-stack DevSecOps practice spanning CI/CD security, cloud security, container security, compliance automation, vulnerability management, and infrastructure as code",
   "Earned DPIIT Startup India recognition",
   "Established a 24/7 managed operations capability aligned to US, UAE, and UK working hours",
-  "Brought Fortune 500 delivery discipline, learned firsthand inside enterprise environments like T-Mobile USA, to growing businesses that couldn't previously access it",
+  "Brought Fortune 100 ecosystem delivery discipline, learned firsthand inside enterprise environments like T-Mobile USA, to growing businesses that couldn't previously access it",
 ];
 
 const DIFFERENTIATORS = [
   "Pure-play focus: security and delivery pipeline work is all we do",
-  "Enterprise pedigree: our team has worked inside Fortune 500-grade delivery environments, not just around them",
+  "Enterprise pedigree: our team has worked inside Fortune 100 ecosystem delivery environments, not just around them",
   "Startup agility: DPIIT-recognized, lean, and able to move at the pace growing businesses need",
   "Genuine 24/7 coverage: a delivery model actually structured around US, UAE, and UK time zones, not a follow-the-sun handoff that loses context",
 ];
@@ -59,7 +59,7 @@ export default function AboutPage() {
               <strong className="font-semibold text-brand-black">
                 enterprise DevOps engineer at T-Mobile USA
               </strong>
-              , working inside a Fortune 500 delivery organization where
+              , working inside a Fortune 100 ecosystem delivery organization where
               release velocity and security compliance had to coexist at
               scale. That experience shaped a conviction that carried
               directly into T-Mat Global:{" "}
@@ -98,8 +98,8 @@ export default function AboutPage() {
               , we combine the agility of a startup with the delivery
               discipline of the enterprise environments our team has worked
               inside. That combination is deliberate, it&apos;s how a
-              growing business gets Fortune 500 security standards without a
-              Fortune 500 budget or headcount.
+              growing business gets Fortune 100 ecosystem security standards without a
+              Fortune 100 budget or headcount.
             </p>
           </div>
         </ScrollFadeIn>

@@ -135,7 +135,7 @@ Start small, judge the work and then expand.
 
 ## How does T-Mat Global work with clients?
 
-T-Mat Global Technologies is a founder-led technology delivery partner from India. We help startups and engineering teams with cloud infrastructure, DevOps, CI/CD, cloud security, vulnerability remediation, production support and software development. Our founder, Sainath Mitalakar, is an AWS Certified DevOps Engineer Professional with Fortune 500 production expertise.
+T-Mat Global Technologies is a founder-led technology delivery partner from India. We help startups and engineering teams with cloud infrastructure, DevOps, CI/CD, cloud security, vulnerability remediation, production support and software development. Our founder, Sainath Mitalakar, is an AWS Certified DevOps Engineer Professional with production expertise from the Fortune 100 ecosystem.
 
 Engagements can be project-based, ongoing technical maintenance or managed infrastructure support. We recommend starting with a small, scoped engagement so you can judge us on delivered work. We work in your cloud accounts and repositories, so the code and documentation stay yours. See our [services](/services) and our [managed platform approach](/blog/what-is-managed-devsecops-platform).
 

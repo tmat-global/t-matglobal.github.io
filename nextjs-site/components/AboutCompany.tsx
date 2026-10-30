@@ -31,7 +31,7 @@ export default function AboutCompany() {
           </strong>
           , we bring{" "}
           <strong className="font-semibold text-brand-black">
-            Fortune 500 delivery standards
+            Fortune 100 ecosystem delivery standards
           </strong>{" "}
           to growing businesses in the US, UAE, and UK. From securing CI/CD
           pipelines to running{" "}

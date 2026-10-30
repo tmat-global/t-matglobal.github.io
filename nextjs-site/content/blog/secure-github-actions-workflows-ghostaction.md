@@ -135,7 +135,7 @@ This layered approach also supports compliance. Auditors for SOC 2 and ISO 27001
 
 VaultRak is T-Mat Global's managed DevSecOps platform. It brings pipeline security checks, vulnerability visibility and compliance evidence into one place, so your team is not stitching together separate scanners and spreadsheets. To understand the model, read [what a managed DevSecOps platform is](/blog/what-is-managed-devsecops-platform), or explore [VaultRak](https://vaultrak.t-matglobal.com).
 
-T-Mat Global Technologies is a DPIIT recognized DevSecOps company in India. We bring Fortune 500 production expertise to startups and engineering teams in the US, UAE and UK, covering [CI/CD pipeline security](/services), cloud security, Kubernetes security and compliance automation. Our founder, Sainath Mitalakar, is an AWS Certified DevOps Engineer Professional and a Top 25 Global DevOps Thought Leader on Thinkers360.
+T-Mat Global Technologies is a DPIIT recognized DevSecOps company in India. We bring production expertise from the Fortune 100 ecosystem to startups and engineering teams in the US, UAE and UK, covering [CI/CD pipeline security](/services), cloud security, Kubernetes security and compliance automation. Our founder, Sainath Mitalakar, is an AWS Certified DevOps Engineer Professional and a Top 25 Global DevOps Thought Leader on Thinkers360.
 
 ## Get a free DevSecOps assessment
 

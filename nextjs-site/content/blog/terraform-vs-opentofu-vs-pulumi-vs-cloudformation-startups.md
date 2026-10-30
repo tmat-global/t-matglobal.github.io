@@ -153,7 +153,7 @@ Moving between CloudFormation and Terraform, OpenTofu or Pulumi is more work. It
 
 ## How can T-Mat Global help with infrastructure as code?
 
-T-Mat Global Technologies is a founder-led technology delivery partner from India. We help startups and engineering teams with cloud infrastructure, DevOps, CI/CD, cloud security, vulnerability remediation and production support. For infrastructure as code, that can mean choosing a tool with you, structuring your modules and state, building reviewed pipelines and adding security and drift checks. Our founder, Sainath Mitalakar, is an AWS Certified DevOps Engineer Professional with Fortune 500 production expertise.
+T-Mat Global Technologies is a founder-led technology delivery partner from India. We help startups and engineering teams with cloud infrastructure, DevOps, CI/CD, cloud security, vulnerability remediation and production support. For infrastructure as code, that can mean choosing a tool with you, structuring your modules and state, building reviewed pipelines and adding security and drift checks. Our founder, Sainath Mitalakar, is an AWS Certified DevOps Engineer Professional with production expertise from the Fortune 100 ecosystem.
 
 See our [infrastructure as code service](/services/infrastructure-as-code) and our other [services](/services).
 
