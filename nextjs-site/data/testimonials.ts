@@ -2,9 +2,19 @@ export interface Testimonial {
   name: string;
   role: string;
   quote: string;
+  logo?: string;
+  logoAlt?: string;
 }
 
 export const testimonials: Testimonial[] = [
+  {
+    name: "Prof. Bhikane",
+    role: "Principal, Saksham English School",
+    quote:
+      "T-Mat Global has done an excellent job developing and maintaining our school's website. Their team is responsive, professional, and quick to address our requirements. Whenever we request updates, they ensure the changes are implemented within approximately 9 hours. We truly appreciate their consistent support, timely delivery, and the positive working relationship we have built with their team.",
+    logo: "/clients/client-saksham-english-school.jpg",
+    logoAlt: "Saksham English School logo",
+  },
   {
     name: "Michael Chen",
     role: "VP of Engineering",

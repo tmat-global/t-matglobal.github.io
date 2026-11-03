@@ -75,9 +75,21 @@ export default function TestimonialCarousel() {
               />
 
               <div className="relative z-10 flex flex-col items-center">
-                <div className="flex h-20 w-20 items-center justify-center rounded-full bg-brand-grey">
-                  <User className="h-10 w-10 text-brand-black/40" />
-                </div>
+                {testimonial.logo ? (
+                  <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-full bg-white shadow-md ring-1 ring-brand-black/10">
+                    <Image
+                      src={testimonial.logo}
+                      alt={testimonial.logoAlt ?? ""}
+                      width={96}
+                      height={96}
+                      className="h-full w-full object-contain p-1"
+                    />
+                  </div>
+                ) : (
+                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-brand-grey">
+                    <User className="h-10 w-10 text-brand-black/40" />
+                  </div>
+                )}
 
                 <p className="mt-5 font-heading text-lg font-bold text-brand-black">
                   {testimonial.name}
