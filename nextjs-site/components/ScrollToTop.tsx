@@ -2,8 +2,13 @@
 
 import { useEffect, useState } from "react";
 
-export default function ScrollToTop() {
+type ScrollToTopProps = {
+  locale?: "en" | "zh-CN";
+};
+
+export default function ScrollToTop({ locale = "en" }: ScrollToTopProps) {
   const [isVisible, setIsVisible] = useState(false);
+  const isChinese = locale === "zh-CN";
 
   useEffect(() => {
     const handleScroll = () => setIsVisible(window.scrollY > 400);
@@ -17,7 +22,7 @@ export default function ScrollToTop() {
     <button
       type="button"
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      aria-label="Scroll to top"
+      aria-label={isChinese ? "返回顶部" : "Scroll to top"}
       className="fixed bottom-24 right-6 z-30 flex h-12 w-12 items-center justify-center rounded-full bg-brand-black text-white shadow-lg transition-transform hover:scale-105"
     >
       <svg

@@ -1,10 +1,22 @@
-export default function WhatsAppButton() {
+type WhatsAppButtonProps = {
+  locale?: "en" | "zh-CN";
+};
+
+export default function WhatsAppButton({
+  locale = "en",
+}: WhatsAppButtonProps) {
+  const isChinese = locale === "zh-CN";
+
   return (
     <a
       href="https://wa.me/919356307015"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with T-Mat Global on WhatsApp"
+      aria-label={
+        isChinese
+          ? "通过 WhatsApp 联系 T-Mat Global"
+          : "Chat with T-Mat Global on WhatsApp"
+      }
       className="fixed bottom-6 right-6 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-105"
     >
       <svg

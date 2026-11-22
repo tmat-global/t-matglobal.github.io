@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Oswald, Poppins } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContactPill from "@/components/FloatingContactPill";
@@ -98,14 +98,14 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
-        <Header />
+        <Header locale="en" />
         <SmoothScroll />
         <main>{children}</main>
-        <Footer />
-        <FloatingContactPill />
-        <WhatsAppButton />
-        <ScrollToTop />
-        <CookieBanner />
+        <Footer locale="en" />
+        <FloatingContactPill locale="en" />
+        <WhatsAppButton locale="en" />
+        <ScrollToTop locale="en" />
+        <CookieBanner locale="en" />
       </body>
     </html>
   );

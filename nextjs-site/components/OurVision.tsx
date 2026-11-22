@@ -12,7 +12,23 @@ const VISION_ITEMS = [
   "24/7 reliability our clients can build on",
 ];
 
-export default function OurVision() {
+const CHINESE_VISION_ITEMS = [
+  "让安全成为每一条软件交付流水线的默认标准",
+  "推动印度成为专业 DevSecOps 服务的重要力量",
+  "为各种规模的企业提供符合财富 100 强生态系统标准的服务",
+  "推动团队持续学习并取得专业认证",
+  "持续拓展美国、阿联酋和英国市场",
+  "提供客户值得信赖的全天候可靠服务",
+];
+
+export default function OurVision({
+  locale = "en",
+}: {
+  locale?: "en" | "zh-CN";
+}) {
+  const isChinese = locale === "zh-CN";
+  const items = isChinese ? CHINESE_VISION_ITEMS : VISION_ITEMS;
+
   return (
     <section className="bg-brand-green py-20">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -20,12 +36,17 @@ export default function OurVision() {
           <SectionHeading
             align="center"
             className="mb-16"
-            segments={[{ text: "OUR VISION", color: "black" }]}
+            segments={[
+              {
+                text: isChinese ? "我们的愿景" : "OUR VISION",
+                color: "black",
+              },
+            ]}
           />
         </ScrollFadeIn>
 
         <ul className="grid grid-cols-1 gap-x-10 gap-y-6 sm:grid-cols-2">
-          {VISION_ITEMS.map((item, i) => (
+          {items.map((item, i) => (
             <li key={item}>
               <ScrollFadeIn delayMs={(i % 2) * 90} className="flex items-start gap-4">
                 <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white">
@@ -40,7 +61,7 @@ export default function OurVision() {
         <ScrollFadeIn className="mx-auto mt-16 flex h-28 w-28 items-center justify-center rounded-2xl bg-white p-5 shadow-lg">
           <Image
             src="/logo.png"
-            alt="T-Mat Global logo"
+            alt={isChinese ? "T-Mat Global 标志" : "T-Mat Global logo"}
             width={72}
             height={72}
           />
