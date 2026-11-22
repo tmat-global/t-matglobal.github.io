@@ -22,7 +22,23 @@ const STEPS = [
   { number: 8, label: "Operate", Icon: Truck },
 ];
 
-export default function WorkflowSteps() {
+export default function WorkflowSteps({
+  locale = "en",
+}: {
+  locale?: "en" | "zh-CN";
+}) {
+  const isChinese = locale === "zh-CN";
+
+  const stepLabels: Record<string, string> = {
+    Assess: "评估",
+    Plan: "规划",
+    Design: "设计",
+    Implement: "实施",
+    Test: "测试",
+    Analyze: "分析",
+    Harden: "安全加固",
+    Operate: "运维",
+  };
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -30,10 +46,17 @@ export default function WorkflowSteps() {
           <SectionHeading
             align="center"
             className="mb-20"
-            segments={[
-              { text: "HOW DOES OUR", color: "black" },
-              { text: "WORK FLOW GO", color: "green" },
-            ]}
+            segments={
+              isChinese
+                ? [
+                    { text: "我们的", color: "black" },
+                    { text: "工作流程", color: "green" },
+                  ]
+                : [
+                    { text: "HOW DOES OUR", color: "black" },
+                    { text: "WORK FLOW GO", color: "green" },
+                  ]
+            }
           />
         </ScrollFadeIn>
 
@@ -68,10 +91,10 @@ export default function WorkflowSteps() {
                     <step.Icon className="h-6 w-6 text-brand-black" strokeWidth={2} />
                   </div>
                   <p className="mt-3 font-heading text-xs font-bold uppercase tracking-wide text-brand-accent">
-                    Stage {step.number}
+                    {isChinese ? "阶段" : "Stage"} {step.number}
                   </p>
                   <p className="mt-1 font-heading text-sm font-bold uppercase tracking-wide text-brand-black">
-                    {step.label}
+                    {isChinese ? stepLabels[step.label] : step.label}
                   </p>
                 </div>
 

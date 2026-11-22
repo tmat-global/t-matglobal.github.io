@@ -6,10 +6,14 @@ import { ChevronLeft, ChevronRight, Quote, User } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 import { Shield, GlowBlob, BlurDefs } from "@/components/illustrations/parts";
-// import ClientLogoStrip from "@/components/ClientLogoStrip"; // disabled: no real client logos with permission yet
 import { testimonials } from "@/data/testimonials";
 
-export default function TestimonialCarousel() {
+export default function TestimonialCarousel({
+  locale = "en",
+}: {
+  locale?: "en" | "zh-CN";
+}) {
+  const isChinese = locale === "zh-CN";
   const [index, setIndex] = useState(0);
   const testimonial = testimonials[index];
 
@@ -32,7 +36,12 @@ export default function TestimonialCarousel() {
           <SectionHeading
             align="center"
             className="mb-16"
-            segments={[{ text: "WHAT OUR CLIENTS SAY", color: "white" }]}
+            segments={[
+              {
+                text: isChinese ? "客户评价" : "WHAT OUR CLIENTS SAY",
+                color: "white",
+              },
+            ]}
           />
         </ScrollFadeIn>
 
@@ -49,7 +58,7 @@ export default function TestimonialCarousel() {
             <button
               type="button"
               onClick={prev}
-              aria-label="Previous testimonial"
+              aria-label={isChinese ? "上一条客户评价" : "Previous testimonial"}
               className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-brand-accent shadow-lg transition-transform hover:scale-105 sm:-left-4 sm:-translate-x-1/2"
             >
               <ChevronLeft className="h-6 w-6" />
@@ -58,7 +67,7 @@ export default function TestimonialCarousel() {
             <button
               type="button"
               onClick={next}
-              aria-label="Next testimonial"
+              aria-label={isChinese ? "下一条客户评价" : "Next testimonial"}
               className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-brand-accent shadow-lg transition-transform hover:scale-105 sm:-right-4 sm:translate-x-1/2"
             >
               <ChevronRight className="h-6 w-6" />
@@ -112,15 +121,17 @@ export default function TestimonialCarousel() {
               key={item.name}
               type="button"
               onClick={() => setIndex(dotIndex)}
-              aria-label={`Show testimonial from ${item.name}`}
+              aria-label={
+                isChinese
+                  ? `查看来自 ${item.name} 的客户评价`
+                  : `Show testimonial from ${item.name}`
+              }
               className={`h-2.5 w-2.5 rounded-full transition-colors ${
                 dotIndex === index ? "bg-brand-green" : "bg-white/40"
               }`}
             />
           ))}
         </div>
-
-        {/* <ClientLogoStrip /> disabled: no real client logos with permission yet */}
       </div>
     </section>
   );

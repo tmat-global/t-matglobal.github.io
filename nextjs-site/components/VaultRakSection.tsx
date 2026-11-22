@@ -4,42 +4,47 @@ import { Clock, Eye, ShieldCheck } from "lucide-react";
 import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 
 const STAT_CHIPS = [
-  { label: "24/7 Monitoring", Icon: Clock },
-  { label: "Vulnerability Visibility", Icon: Eye },
-  { label: "Compliance Posture", Icon: ShieldCheck },
+  { label: "24/7 Monitoring", chineseLabel: "全天候监控", Icon: Clock },
+  { label: "Vulnerability Visibility", chineseLabel: "漏洞可视化", Icon: Eye },
+  { label: "Compliance Posture", chineseLabel: "合规状态", Icon: ShieldCheck },
 ];
 
-export default function VaultRakSection() {
+export default function VaultRakSection({
+  locale = "en",
+}: {
+  locale?: "en" | "zh-CN";
+}) {
+  const isChinese = locale === "zh-CN";
+
   return (
     <section className="bg-brand-black py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollFadeIn className="text-center">
           <h2 className="font-heading text-3xl font-bold uppercase tracking-tight sm:text-4xl md:text-5xl">
-            <span className="text-white">MEET </span>
+            <span className="text-white">{isChinese ? "认识" : "MEET"} </span>
             <span className="text-brand-green-light">VAULTRAK</span>
           </h2>
           <p className="mt-3 font-heading text-sm font-semibold uppercase tracking-widest text-white/60">
-            Our Managed DevSecOps Platform
+            {isChinese ? "托管式 DevSecOps 平台" : "Our Managed DevSecOps Platform"}
           </p>
         </ScrollFadeIn>
 
         <div className="mt-16 grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <ScrollFadeIn>
             <p className="font-body text-lg leading-relaxed text-white/80">
-              VaultRak is where T-Mat Global&apos;s DevSecOps engineering becomes
-              a product: continuous visibility into your pipeline security,
-              vulnerability posture, and compliance status, backed by our
-              24/7 managed operations team.
+              {isChinese
+                ? "VaultRak 将 T-Mat Global 的 DevSecOps 工程能力转化为产品，为您持续提供 CI/CD 流水线安全、漏洞风险及合规状态的可视化信息，并由我们的全天候托管运营团队提供支持。"
+                : "VaultRak is where T-Mat Global's DevSecOps engineering becomes a product: continuous visibility into your pipeline security, vulnerability posture, and compliance status, backed by our 24/7 managed operations team."}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              {STAT_CHIPS.map(({ label, Icon }) => (
+              {STAT_CHIPS.map(({ label, chineseLabel, Icon }) => (
                 <span
                   key={label}
                   className="flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 font-heading text-xs font-semibold uppercase tracking-wide text-white/90"
                 >
                   <Icon className="h-4 w-4 text-brand-green-light" />
-                  {label}
+                  {isChinese ? chineseLabel : label}
                 </span>
               ))}
             </div>
@@ -51,13 +56,13 @@ export default function VaultRakSection() {
                 rel="noopener noreferrer"
                 className="block rounded bg-brand-green px-8 py-4 text-center font-heading text-sm font-semibold uppercase tracking-wider text-brand-black transition-colors hover:bg-brand-green-dark sm:inline-block"
               >
-                Launch VaultRak
+                {isChinese ? "启动 VaultRak" : "Launch VaultRak"}
               </a>
               <Link
-                href="/vaultrak"
+                href={isChinese ? "/zh-cn/vaultrak" : "/vaultrak"}
                 className="block rounded border-2 border-white px-8 py-4 text-center font-heading text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-white hover:text-brand-black sm:inline-block"
               >
-                Explore VaultRak
+                {isChinese ? "了解 VaultRak" : "Explore VaultRak"}
               </Link>
             </div>
           </ScrollFadeIn>
@@ -74,7 +79,11 @@ export default function VaultRakSection() {
               <div className="relative aspect-[16/10] w-full">
                 <Image
                   src="/vaultrak.png"
-                  alt="VaultRak dashboard showing vulnerability counts, pipeline security status, compliance score, and recent findings"
+                  alt={
+                    isChinese
+                      ? "VaultRak 仪表板，展示漏洞数量、流水线安全状态、合规评分及近期发现"
+                      : "VaultRak dashboard showing vulnerability counts, pipeline security status, compliance score, and recent findings"
+                  }
                   fill
                   className="object-cover"
                 />

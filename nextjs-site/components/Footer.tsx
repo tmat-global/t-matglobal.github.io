@@ -1,6 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 
+type FooterProps = {
+  locale?: "en" | "zh-CN";
+};
+
 function LinkedInIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
     <svg
@@ -22,29 +26,41 @@ const SOCIAL_LINKS = [
   },
 ];
 
-const NAV_LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/our-work", label: "Our Work" },
-  { href: "/vaultrak", label: "VaultRak" },
-  { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About Us" },
-  { href: "/contact", label: "Contact Us" },
-];
+export default function Footer({ locale = "en" }: FooterProps) {
+  const isChinese = locale === "zh-CN";
+  const prefix = isChinese ? "/zh-cn" : "";
 
-const SITEMAP_LINKS = [
-  { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/terms-conditions", label: "Terms & Conditions" },
-  { href: "/careers", label: "Careers" },
-];
+  const navLinks = [
+    { href: "/", label: isChinese ? "首页" : "Home" },
+    { href: "/services", label: isChinese ? "服务" : "Services" },
+    { href: "/our-work", label: isChinese ? "项目案例" : "Our Work" },
+    { href: "/vaultrak", label: "VaultRak" },
+    { href: "/blog", label: isChinese ? "博客" : "Blog" },
+    { href: "/about", label: isChinese ? "关于我们" : "About Us" },
+    { href: "/contact", label: isChinese ? "联系我们" : "Contact Us" },
+  ];
 
-export default function Footer() {
+  const sitemapLinks = [
+    {
+      href: "/privacy-policy",
+      label: isChinese ? "隐私政策" : "Privacy Policy",
+    },
+    {
+      href: "/terms-conditions",
+      label: isChinese ? "条款与条件" : "Terms & Conditions",
+    },
+    { href: "/careers", label: isChinese ? "招聘" : "Careers" },
+  ];
+
+  const localizedHref = (href: string) =>
+    `${prefix}${href === "/" ? "/" : href}`;
+
   return (
     <footer className="bg-brand-green text-brand-black">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-12 px-4 py-16 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-3 lg:px-8">
         <div>
           <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-brand-black/70">
-            Contact No.
+            {isChinese ? "联系电话" : "Contact No."}
           </h3>
           <p className="mt-4 font-body text-lg font-semibold">
             +91 9356307015
@@ -53,7 +69,7 @@ export default function Footer() {
 
         <div>
           <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-brand-black/70">
-            Email
+            {isChinese ? "电子邮箱" : "Email"}
           </h3>
           <p className="mt-4 font-body text-brand-black/80">
             info@t-matglobal.com
@@ -62,20 +78,22 @@ export default function Footer() {
 
         <div>
           <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-brand-black/70">
-            Address
+            {isChinese ? "地址" : "Address"}
           </h3>
-          <p className="mt-4 font-body text-brand-black/80">Pune, India</p>
+          <p className="mt-4 font-body text-brand-black/80">
+            {isChinese ? "印度，浦那" : "Pune, India"}
+          </p>
         </div>
 
         <div>
           <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-brand-black/70">
-            Navigation
+            {isChinese ? "网站导航" : "Navigation"}
           </h3>
           <ul className="mt-4 space-y-2">
-            {NAV_LINKS.map((link) => (
+            {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
-                  href={link.href}
+                  href={localizedHref(link.href)}
                   className="font-body text-brand-black/80 transition-colors hover:text-black"
                 >
                   {link.label}
@@ -87,13 +105,13 @@ export default function Footer() {
 
         <div>
           <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-brand-black/70">
-            Sitemap
+            {isChinese ? "网站地图" : "Sitemap"}
           </h3>
           <ul className="mt-4 space-y-2">
-            {SITEMAP_LINKS.map((link) => (
+            {sitemapLinks.map((link) => (
               <li key={link.href}>
                 <Link
-                  href={link.href}
+                  href={localizedHref(link.href)}
                   className="font-body text-brand-black/80 transition-colors hover:text-black"
                 >
                   {link.label}
@@ -105,13 +123,13 @@ export default function Footer() {
 
         <div>
           <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-brand-black/70">
-            For Any Business Inquiry
+            {isChinese ? "商务咨询" : "For Any Business Inquiry"}
           </h3>
           <Link
-            href="/contact"
+            href={localizedHref("/contact")}
             className="mt-4 block w-full rounded bg-brand-grey px-6 py-3 font-heading text-sm font-semibold uppercase tracking-wider text-brand-black transition-colors hover:bg-white sm:inline-block sm:w-auto"
           >
-            Apply Now
+            {isChinese ? "立即联系" : "Apply Now"}
           </Link>
         </div>
       </div>
@@ -136,7 +154,7 @@ export default function Footer() {
       <div className="border-t border-brand-black/10 py-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-4 sm:px-6 lg:px-8">
           <p className="font-heading text-xs font-bold uppercase tracking-widest text-brand-black/60">
-            Recognized By
+            {isChinese ? "认可机构" : "Recognized By"}
           </p>
           <div className="rounded-lg bg-white px-5 py-3 shadow-sm">
             <Image
@@ -152,7 +170,9 @@ export default function Footer() {
 
       <div className="border-t border-brand-black/10">
         <p className="mx-auto max-w-7xl px-4 py-6 text-center font-body text-xs text-brand-black/60 sm:px-6 lg:px-8">
-          &copy; {new Date().getFullYear()} T-Mat Global Technologies Pvt. Ltd. All rights reserved. CIN: U62010PN2026PTC252419
+          &copy; {new Date().getFullYear()} T-Mat Global Technologies Pvt. Ltd.
+          {isChinese ? "。保留所有权利。" : " All rights reserved."} CIN:
+          U62010PN2026PTC252419
         </p>
       </div>
     </footer>

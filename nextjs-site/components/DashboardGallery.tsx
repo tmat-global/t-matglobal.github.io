@@ -7,13 +7,19 @@ import SectionHeading from "@/components/SectionHeading";
 import ScrollFadeIn from "@/components/illustrations/ScrollFadeIn";
 import { projects } from "@/data/projects";
 
-export default function DashboardGallery() {
+export default function DashboardGallery({
+  locale = "en",
+}: {
+  locale?: "en" | "zh-CN";
+}) {
+  const isChinese = locale === "zh-CN";
   const [index, setIndex] = useState(0);
   const project = projects[index];
 
   const prev = () =>
     setIndex((current) => (current - 1 + projects.length) % projects.length);
-  const next = () => setIndex((current) => (current + 1) % projects.length);
+  const next = () =>
+    setIndex((current) => (current + 1) % projects.length);
 
   return (
     <section className="bg-brand-grey py-20">
@@ -22,10 +28,17 @@ export default function DashboardGallery() {
           <SectionHeading
             align="center"
             className="mb-16"
-            segments={[
-              { text: "DIFFERENT DASHBOARDS", color: "black" },
-              { text: "& PIPELINES", color: "green" },
-            ]}
+            segments={
+              isChinese
+                ? [
+                    { text: "多样化仪表板", color: "black" },
+                    { text: "与交付流水线", color: "green" },
+                  ]
+                : [
+                    { text: "DIFFERENT DASHBOARDS", color: "black" },
+                    { text: "& PIPELINES", color: "green" },
+                  ]
+            }
           />
         </ScrollFadeIn>
 
@@ -33,7 +46,7 @@ export default function DashboardGallery() {
           <button
             type="button"
             onClick={prev}
-            aria-label="Previous screenshot"
+            aria-label={isChinese ? "上一张截图" : "Previous screenshot"}
             className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-brand-accent shadow-lg transition-transform hover:scale-105 sm:-left-6"
           >
             <ChevronLeft className="h-6 w-6" />
@@ -41,7 +54,7 @@ export default function DashboardGallery() {
           <button
             type="button"
             onClick={next}
-            aria-label="Next screenshot"
+            aria-label={isChinese ? "下一张截图" : "Next screenshot"}
             className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-brand-accent shadow-lg transition-transform hover:scale-105 sm:-right-6"
           >
             <ChevronRight className="h-6 w-6" />
@@ -57,7 +70,11 @@ export default function DashboardGallery() {
             <div className="relative aspect-[16/10] w-full">
               <Image
                 src={project.image}
-                alt={`Dashboard and pipeline view from the ${project.name} platform`}
+                alt={
+                  isChinese
+                    ? `${project.name} 平台的仪表板与交付流水线界面`
+                    : `Dashboard and pipeline view from the ${project.name} platform`
+                }
                 fill
                 className="object-cover"
               />
@@ -76,7 +93,10 @@ export default function DashboardGallery() {
               key={item.slug}
               type="button"
               onClick={() => setIndex(dotIndex)}
-              aria-label={`Show ${item.name}`}
+              aria-label={
+                isChinese ? `显示 ${item.name}` : `Show ${item.name}`
+              }
+              aria-current={dotIndex === index ? "true" : undefined}
               className={`h-2.5 w-2.5 rounded-full transition-colors ${
                 dotIndex === index ? "bg-brand-green" : "bg-brand-black/20"
               }`}
